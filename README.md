@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **General Practicioner Website 🩺**
 
-## Getting Started
+Welcome to the **`General Practicioner Website`** project! This Next.js website is designed for a general practitioner, built with modern web technologies to provide a seamless and efficient experience.
 
-First, run the development server:
+## **Table of Contents 📋**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Introduction](https://chat.openai.com/c/21ca5b30-b7c8-4ec2-8ac1-281042954f44#introduction)
+- [Getting Started](https://chat.openai.com/c/21ca5b30-b7c8-4ec2-8ac1-281042954f44#getting-started)
+- [Scripts](https://chat.openai.com/c/21ca5b30-b7c8-4ec2-8ac1-281042954f44#scripts)
+- [Dependencies](https://chat.openai.com/c/21ca5b30-b7c8-4ec2-8ac1-281042954f44#dependencies)
+- [Dev Dependencies](https://chat.openai.com/c/21ca5b30-b7c8-4ec2-8ac1-281042954f44#dev-dependencies)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **Introduction 🌐**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This website is developed by [André Rodrigues](https://www.andrerodrigo.com/) and is based on Next.js, a powerful React framework. It incorporates internationalization, SEO optimization, styling with Sass, and sitemap generation for improved search engine visibility.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## **Getting Started 🚀**
 
-## Learn More
+1. **Clone the repository:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   bashCopy code
+   git clone https://github.com/andre/sp-website.git
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Navigate to the project directory:**
 
-## Deploy on Vercel
+   ```bash
+   bashCopy code
+   cd sp-website
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. **Install dependencies:**
+
+   ```bash
+   bashCopy code
+   npm install
+
+   ```
+
+4. **Run the development server:**
+
+   ```bash
+   bashCopy code
+   npm run dev
+
+   ```
+
+   The website will be available at http://localhost:3000.
+
+## **Scripts 📜**
+
+- **dev:** Run the Next.js development server.
+- **build:** Build the production-ready version of the website.
+- **start:** Start the production server.
+- **lint:** Run linting checks for code quality.
+- **postbuild:** Generate the sitemap after the build.
+- **prod:** Build and start the production server.
+
+## **Dependencies 🛠️**
+
+- **react:** ^18
+- **react-dom:** ^18
+- **next:** 14.1.0
+- **next-intl:** ^3.4.2
+- **next-seo:** ^6.4.0
+- **sass:** ^1.69.7
+- **next-sitemap:** ^4.2.3
+- **@iconify/react:** ^4.1.1
+
+## **Dev Dependencies 🚧**
+
+- **typescript:** ^5
+- **@types/node:** ^20
+- **@types/react:** ^18
+- **@types/react-dom:** ^18
+- **autoprefixer:** ^10.0.1
+- **postcss:** ^8
+- **tailwindcss:** ^3.3.0
+- **eslint:** ^8
+- **node-sass:** ^9.0.0
+- **eslint-config-next:** 14.1.0
+
+Feel free to explore the website! If you have any questions or suggestions, don't hesitate to reach out. Happy coding! 🚀✨
