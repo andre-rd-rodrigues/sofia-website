@@ -1,8 +1,7 @@
 {
   "pages": {
     "homepage": {
-      "title": "Bárbara Barbizani",
-      "subtitle": "Law Practice & Legal Consulting",
+      "subtitle": "General Practicioner",
       "practice": {
         "title": "Practice Areas",
         "subtitle": "My practice revolves around trust, ethics, and commitment. Specializing in international, citizenship, and corporate law, I deliver results with care and precision. Your legal ally for a seamless journey through the complexities of the legal landscape. Explore the power of legal advocacy with me."
@@ -89,8 +88,8 @@
           "href": "/about"
         },
         {
-          "name": "Pratice Areas",
-          "href": "/practice-areas"
+          "name": "Services",
+          "href": "/services"
         },
         {
           "name": "Contacts",
@@ -302,8 +301,9 @@
       "contact": "Contact",
       "see more": "See more",
       "read more": "Read more",
-      "pratice areas": "Pratice Areas",
-      "fill form": "Send Message"
+      "services": "Services",
+      "fill form": "Send Message",
+      "appointment": "Make an appointment"
     }
   },
   "metadata": {

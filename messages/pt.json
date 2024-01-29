@@ -1,8 +1,7 @@
 {
   "pages": {
     "homepage": {
-      "title": "Bárbara Barbizani",
-      "subtitle": "Advocacia & Consultoria Jurídica",
+      "subtitle": "Medicina Geral e Familiar",
       "practice": {
         "title": "Áreas de Atuação",
         "subtitle": "A minha prática gira em torno da confiança, da ética e do empenhamento. Especializada em direito internacional, direito de cidadania e direito societário, apresento resultados com cuidado e precisão. O seu aliado legal para uma viagem sem problemas através das complexidades da paisagem legal. Explore o poder da advocacia legal comigo."
@@ -85,15 +84,15 @@
       "links": [
         {
           "name": "Sobre",
-          "href": "/about"
+          "href": "/sobre"
         },
         {
-          "name": "Áreas de Atuação",
-          "href": "/practice-areas"
+          "name": "Serviços",
+          "href": "/serviços"
         },
         {
           "name": "Contatos",
-          "href": "/contacts"
+          "href": "/contactos"
         }
       ]
     },
@@ -301,8 +300,9 @@
       "contact": "Contacto",
       "see more": "Saber mais",
       "read more": "Ler mais",
-      "pratice areas": "Áreas de Atuação",
-      "fill form": "Enviar Mensagem"
+      "services": "Serviços",
+      "fill form": "Enviar Mensagem",
+      "appointment": "Marcar consulta"
     }
   },
 
