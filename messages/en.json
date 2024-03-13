@@ -39,7 +39,12 @@
           "description": "Whether you're navigating complex legal issues or simply seeking guidance, I'm here to.",
           "icon": "solar:medical-kit-bold"
         }
-      ]
+      ],
+      "heroSection1": {
+        "subtitle": "Medical Center",
+        "title": "Providing the best medical services for you and your family.",
+        "description": "I'm here to help. As your medical partner, I provide personalized solutions that protect your health and guide you to informed decisions. Let's work together to find clarity in healthcare. Schedule a consultation today and take the first step toward peace of mind."
+      }
     },
     "about": {
       "title": "About",
@@ -56,6 +61,7 @@
       "citizens": "Citizens",
       "companies": "Companies"
     },
+
     "contacts": {
       "title": "Contacts",
       "formTitle": "Send a direct message.",

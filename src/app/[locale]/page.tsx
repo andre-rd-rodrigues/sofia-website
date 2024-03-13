@@ -26,7 +26,8 @@ export default function Home() {
           opacity: 0.45
         }}
         style={{
-          height: "600px"
+          height: "600px",
+          textAlign: "center"
         }}
       >
         <Animated type="slide">
@@ -135,9 +136,30 @@ export default function Home() {
         </div>
       </Section>
 
+      {/* FAQs */}
       <Section>
         <Faqs />
       </Section>
+
+      {/* Hero Section */}
+      <HeroSection imageSrc="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <div className="flex flex-col md:flex-row justify-between gap-20 text-white py-32">
+          {/* Left section  */}
+          <div className="mb-4 md:mb-0 md:flex-1">
+            <p className="tracking-widest uppercase text-xs mb-3 font-normal">
+              {t("homepage.heroSection1.subtitle")}
+            </p>
+            <h4 className="text-5xl mb-2">
+              {t("homepage.heroSection1.title")}
+            </h4>
+          </div>
+          {/* Right section  */}
+          <div className="md:flex-1">
+            <p className="mb-10">{t("homepage.heroSection1.description")}</p>
+            <Button label="contact" />
+          </div>
+        </div>
+      </HeroSection>
     </main>
   );
 }

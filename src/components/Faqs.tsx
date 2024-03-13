@@ -11,19 +11,17 @@ type Faqs = {
   question: string;
 };
 
-export default function Faqs({}: Props) {
+export default function Faqs() {
   const t = useTranslations("components.faqs");
   const { getTranslationsArray } = useTranslation();
 
   const faqs: Faqs[] = getTranslationsArray("components.faqs.questions");
 
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
-
-  console.log(faqs);
 
   return (
     <div className="flex flex-wrap lg:flex-nowrap gap-10">
@@ -45,7 +43,7 @@ export default function Faqs({}: Props) {
                         <Icon
                           icon="iconamoon:arrow-down-2-thin"
                           fontSize={30}
-                          rotate="-90"
+                          rotate={-90}
                         />
                       ) : (
                         <Icon
