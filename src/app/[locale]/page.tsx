@@ -1,12 +1,21 @@
 import Animated from "@/components/Animated";
 import Button from "@/components/Button";
+import Faqs from "@/components/Faqs";
 import HeroSection from "@/components/HeroSection/HeroSection";
+import IconCard from "@/components/IconCard/IconCard";
+import { getBgColor } from "@/components/IconCard/iconcard.utils";
+import Section from "@/components/Section";
 import { libre } from "@/fonts";
+import useTranslation from "@/hooks/useTranslation";
+import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function Home() {
   const t = useTranslations("pages");
+  const { getTranslationsArray } = useTranslation();
+
+  const services = getTranslationsArray("pages.homepage.services");
 
   return (
     <main>
@@ -38,7 +47,7 @@ export default function Home() {
         </Animated>
 
         <Animated type="slide-in-left" delay={200}>
-          <h2 className={`text-white mb-6 font-extralight text-lg`}>
+          <h2 className="text-white mb-6 font-extralight text-lg">
             {t("homepage.subtitle")}
           </h2>
         </Animated>
@@ -53,6 +62,82 @@ export default function Home() {
           <Button label="appointment" />
         </Animated>
       </HeroSection>
+
+      {/* About me */}
+      <Section sectionClassName="flex flex-wrap lg:flex-nowrap gap-10">
+        <div className="w-full lg:w-1/2">
+          <div className="m-auto">
+            <Animated delay={500}>
+              <Image
+                src="https://scontent.flis8-2.fna.fbcdn.net/v/t1.6435-9/36802271_10215727744762086_83971532669321216_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7a1959&_nc_ohc=qWnz2PutGTkAX9jpNCf&_nc_ht=scontent.flis8-2.fna&oh=00_AfCdtdj-peuAStMNfixYug9sk4xYJq9O_MrlbvSK-zznnA&oe=65DF6890"
+                alt="Sofia Diogo"
+                width={500}
+                height={600}
+                layout="responsive"
+                objectFit="cover"
+                className="shadow-2xl"
+              />
+            </Animated>
+          </div>
+        </div>
+        <div className="w-full lg:w-1/2 p-0 sm:p-4 justify-center items-center">
+          <Animated type="slide-in-left">
+            <h3 className="text-blue uppercase tracking-widest text-xs">
+              {t("homepage.about.subtitle")}
+            </h3>
+          </Animated>
+          <Animated type="slide-in-left" delay={100}>
+            <h4 className="md:text-5xl sm:text-4xl text-blue mt-3">
+              {t("homepage.about.title")}
+            </h4>
+          </Animated>
+
+          <Animated type="fade" delay={600}>
+            <p className="my-7">{t("homepage.about.description")}</p>
+          </Animated>
+
+          <Animated type="fade" delay={1000}>
+            <Link href="/about" className="flex justify-center sm:block">
+              <Button label="see more" variant />
+            </Link>
+          </Animated>
+        </div>
+      </Section>
+
+      {/* Practice Areas  */}
+      <Section containerClassName="bg-bgBlue text-blue">
+        <Animated delay={300}>
+          <h4 className={`tracking-widest uppercase text-xs`}>
+            {t("homepage.practice.subtitle")}
+          </h4>
+        </Animated>
+        <Animated>
+          <h3 className="text-5xl my-3 max-w-xl">
+            {t("homepage.practice.title")}
+          </h3>
+        </Animated>
+        <Animated>
+          <p className="text-gray-500 max-w-xl">
+            {t("homepage.practice.description")}
+          </p>
+        </Animated>
+        <div className="flex flex-wrap justify-center md:justify-start lg:justify-between gap-5 mt-12">
+          {services.map(({ title, description, icon }, i) => (
+            <Animated type="slide" delay={i * 100} key={title}>
+              <IconCard
+                title={title}
+                description={description}
+                icon={icon}
+                bgColor={getBgColor(i)}
+              />
+            </Animated>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <Faqs />
+      </Section>
     </main>
   );
 }

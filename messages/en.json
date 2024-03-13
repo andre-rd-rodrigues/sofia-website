@@ -2,28 +2,17 @@
   "pages": {
     "homepage": {
       "subtitle": "General Practicioner",
-      "practice": {
-        "title": "Practice Areas",
-        "subtitle": "My practice revolves around trust, ethics, and commitment. Specializing in international, citizenship, and corporate law, I deliver results with care and precision. Your legal ally for a seamless journey through the complexities of the legal landscape. Explore the power of legal advocacy with me."
-      },
+
       "about": {
-        "title": "Helping to overcome and ease the legal burden.",
+        "title": "Providing quality healthcare.",
         "subtitle": "About me",
-        "description": "My name is Bárbara Barbizani de Carvalho, I have a client-oriented approach where trust, ethics, and commitment remain fundamental in building lasting business relationships. I only accept cases when I possess the level of knowledge and experience to provide prompt and excellent service. I operate locally with a global mindset, specializing in serving Portuguese, Brazilian, and Chinese companies and individuals.\nI collaborate with companies and individuals with a partnership mindset, aligned with their goals and focused on optimizing value in their legal issues and disputes. I aim for clients to feel a high level of confidence that they have made the right choice in our partnership and respect their time.\nI create a coherent process that not only delivers results of technical excellence but also does so quickly and robustly.",
-        "extraInfo": [
-          {
-            "title": "Experience",
-            "value": 10
-          },
-          {
-            "title": "Cases",
-            "value": 100
-          },
-          {
-            "title": "Clients",
-            "value": 128
-          }
-        ]
+        "description": "I'm Sofia Diogo, a dedicated General Practitioner based in Portugal. With a specialized focus on palliative care, I bring a compassionate and personalized approach to my practice. My commitment to providing exceptional healthcare is rooted in trust, ethics, and a deep understanding of the complexities of palliative medicine. I hold a degree in Palliative Care, ensuring that my patients receive the highest quality of care during challenging times. Let's work together to navigate your healthcare journey with empathy and expertise.",
+        "extraInfo": []
+      },
+      "practice": {
+        "subtitle": "Premium care",
+        "title": "Medical services and all types of diagnostics.",
+        "description": "Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
       },
       "hero1": {
         "title": "A Careful, Committed, and Dignified Approach to Law.",
@@ -33,7 +22,24 @@
         "title": "Get in Touch for Expert Advice",
         "subtitle": "Contacts",
         "description": "Whether you're navigating complex legal issues or simply seeking guidance, I'm here to assist you. Let's embark on this journey together - your legal matters deserve the attention and expertise I provide. Get in touch today and experience personalized counsel that puts your needs first. Your concerns matter, and I'm committed to providing the expert advice you deserve. I look forward to hearing from you and addressing your legal needs with care and precision."
-      }
+      },
+      "services": [
+        {
+          "title": "Modern Laboratory",
+          "description": "Whether you're navigating complex legal issues or simply seeking guidance, I'm here to.",
+          "icon": "solar:medical-kit-bold"
+        },
+        {
+          "title": "Modern Laboratory",
+          "description": "Whether you're navigating complex legal issues or simply seeking guidance, I'm here to.",
+          "icon": "solar:medical-kit-bold"
+        },
+        {
+          "title": "Modern Laboratory",
+          "description": "Whether you're navigating complex legal issues or simply seeking guidance, I'm here to.",
+          "icon": "solar:medical-kit-bold"
+        }
+      ]
     },
     "about": {
       "title": "About",
@@ -223,7 +229,7 @@
       ]
     },
     "faqs": {
-      "title": "Frequentley Asked Questions",
+      "title": "Frequentley Asked Questions.",
       "questions": [
         {
           "question": "Education Lawyer & Consultation",

@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.scss";
 import Navbar from "@/components/Navbar";
-import { dm_sans } from "@/fonts";
+import { dm_sans, libre } from "@/fonts";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 
 export default function RootLayout({
   children,
@@ -11,12 +10,17 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }>) {
+  // Receive messages provided in `i18n.ts`
+  const messages = useMessages();
+
   return (
-    <html lang={locale}>
-      <body className={dm_sans.className}>
-        <Navbar />
-        {children}
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <html lang={locale} className={`${dm_sans.variable} ${libre.variable}`}>
+        <body>
+          <Navbar />
+          {children}
+        </body>
+      </html>
+    </NextIntlClientProvider>
   );
 }
