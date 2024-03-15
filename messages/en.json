@@ -332,6 +332,9 @@
       "appointment": "Make an appointment"
     }
   },
+  "notifications": {
+    "success": "Your message has been sent successfully!"
+  },
   "metadata": {
     "homeTitle": "Bárbara Barbizani - Law Practice & Legal Consulting",
     "aboutTitle": "About Me - Bárbara Barbizani",

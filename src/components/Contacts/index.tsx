@@ -7,6 +7,7 @@ import useTranslation from "@/hooks/useTranslation";
 import IconContact from "../IconContact";
 import { useForm } from "@formspree/react";
 import * as Form from "../Form";
+import { Icon } from "@iconify/react";
 
 type Contact = {
   description: string;
@@ -15,15 +16,11 @@ type Contact = {
 };
 
 function Contacts() {
-  const [state, handleSubmit] = useForm("YOUR_FORM_ID");
-  const t = useTranslations("pages.contacts");
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM!!);
+  const t = useTranslations();
   const { getTranslationsArray } = useTranslation();
 
   const contacts: Contact[] = getTranslationsArray("pages.contacts.links");
-
-  if (state.succeeded) {
-    return <p>Thanks for your submission!</p>;
-  }
 
   return (
     <>
@@ -31,16 +28,18 @@ function Contacts() {
       <div className="w-full lg:w-1/2 p-0 sm:p-4 justify-center items-center">
         <Animated type="slide-in-left">
           <h3 className="text-blue uppercase tracking-widest text-xs">
-            {t("subtitle")}
+            {t("pages.contacts.subtitle")}
           </h3>
         </Animated>
         <Animated type="slide-in-left" delay={100}>
           <h4 className="md:text-5xl sm:text-4xl text-blue mt-3">
-            {t("title")}
+            {t("pages.contacts.title")}
           </h4>
         </Animated>
         <Animated type="slide-in-left" delay={300}>
-          <p className="my-7 text-zinc-500">{t("description")}</p>
+          <p className="my-7 text-zinc-500">
+            {t("pages.contacts.description")}
+          </p>
         </Animated>
 
         {contacts.map(({ description, icon, href }, i) => (
@@ -55,51 +54,66 @@ function Contacts() {
       </div>
 
       {/* Right Side -------------------------------- */}
-      <div className="w-full lg:w-1/2">
+      <div className="w-full lg:w-1/2 mt-9">
         <div className="m-auto">
-          <Animated delay={400}>
-            <form onSubmit={handleSubmit}>
-              <div className="flex gap-9 mb-8">
-                <Form.Input
-                  icon="solar-user-outline"
-                  label="fullName"
-                  placeholder="Name"
-                  required
-                />
-                <Form.Input
-                  icon="mage:email"
-                  label="email"
-                  type="email"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div className="flex gap-9 mb-8">
-                <Form.Input
-                  icon="solar:phone-rounded-outline"
-                  label="phone"
-                  type="tel"
-                  placeholder="Phone number"
-                />
-                <Form.Input
-                  icon="ph:info-light"
-                  label="subject"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-              <Form.Input
-                icon="cil:pencil"
-                label="message"
-                placeholder="How can I help you?"
-                required
+          {state.succeeded ? (
+            <Animated
+              type="slide-in-left"
+              className="flex flex-col items-center"
+            >
+              <Icon
+                icon="lets-icons:check-fill"
+                className="text-emerald-400"
+                fontSize={90}
               />
 
-              <div className="mt-14 text-end">
-                <Button label="send" icon="cil:send" type="submit" />
-              </div>
-            </form>
-          </Animated>
+              <p className="text-blue text-lg">{t("notifications.success")}</p>
+            </Animated>
+          ) : (
+            <Animated delay={400}>
+              <form onSubmit={handleSubmit}>
+                <div className="flex gap-9 mb-8">
+                  <Form.Input
+                    icon="solar-user-outline"
+                    label="Nome"
+                    placeholder="Name"
+                    required
+                  />
+                  <Form.Input
+                    icon="mage:email"
+                    label="Email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div className="flex gap-9 mb-8">
+                  <Form.Input
+                    icon="solar:phone-rounded-outline"
+                    label="Telefone"
+                    type="tel"
+                    placeholder="Phone number"
+                  />
+                  <Form.Input
+                    icon="ph:info-light"
+                    label="Assunto"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <Form.Input
+                  icon="cil:pencil"
+                  label="Mensagem"
+                  placeholder="How can I help you?"
+                  required
+                />
+
+                <div className="mt-14 text-end">
+                  <Button label="send" icon="cil:send" type="submit" />
+                </div>
+              </form>
+            </Animated>
+          )}
         </div>
       </div>
     </>

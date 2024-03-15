@@ -5,6 +5,7 @@ import { useSpring, animated, useInView } from "@react-spring/web";
 interface AnimatedProps {
   delay?: number;
   type?: "fade" | "slide-in-left" | "slide-in-right" | "slide";
+  className?: string;
   children: React.ReactNode;
   config?: {
     config: {
@@ -18,7 +19,8 @@ const Animated = ({
   delay = 0,
   type = "fade",
   children,
-  config
+  config,
+  className
 }: AnimatedProps) => {
   const [ref, inView] = useInView({
     once: true
@@ -69,7 +71,7 @@ const Animated = ({
   });
 
   return (
-    <animated.div ref={ref} style={props}>
+    <animated.div ref={ref} style={props} className={className}>
       {children}
     </animated.div>
   );
