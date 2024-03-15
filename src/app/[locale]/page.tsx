@@ -5,6 +5,7 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import IconCard from "@/components/IconCard/IconCard";
 import { getBgColor } from "@/components/IconCard/iconcard.utils";
 import Section from "@/components/Section";
+import Testimonials from "@/components/Testimonials/Testimonials";
 import { libre } from "@/fonts";
 import useTranslation from "@/hooks/useTranslation";
 import { Link } from "@/navigation";
@@ -140,7 +141,10 @@ export default function Home() {
       <Section>
         <Faqs />
       </Section>
-
+      {/* Testimonials  */}
+      <Section containerClassName="bg-bgBlue">
+        <Testimonials />
+      </Section>
       {/* Hero Section */}
       <HeroSection imageSrc="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
         <div className="flex flex-col md:flex-row justify-between gap-20 text-white py-32">

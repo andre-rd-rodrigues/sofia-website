@@ -76,3 +76,10 @@ nav,
 footer {
   padding: 0 var(--padding-y);
 }
+
+/* Slider */
+
+.slick-dots li.slick-active button:before {
+  color: #fd7959 !important;
+  font-size: 10px;
+}
