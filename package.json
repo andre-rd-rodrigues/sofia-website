@@ -15,6 +15,7 @@
     "prod": "next build && next start"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@headlessui/react": "^1.7.18",
     "@iconify/react": "^4.1.1",
     "@react-spring/web": "^9.7.3",

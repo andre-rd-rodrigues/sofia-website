@@ -61,16 +61,13 @@
       "citizens": "Citizens",
       "companies": "Companies"
     },
-
     "contacts": {
-      "title": "Contacts",
-      "formTitle": "Send a direct message.",
-      "formDescription": "Whether you have questions, need assistance, or just want to connect, sending a direct message is a hassle-free way to get in touch with me. Simply click on the 'Send Message' button bellow, and share your thoughts, concerns, or inquiries. I value your communication and am dedicated to providing you with a prompt and helpful response.",
-      "title2": "Connecting for clarity.",
+      "subtitle": "Contacts",
+      "title": "Have Questions?\nGet in touch!",
       "description": "Legal matters require prompt and reliable communication. Whether you have questions, need legal assistance, or want to schedule a consultation, I'm here to help. Feel free to get in touch through the following channels:",
       "links": [
         {
-          "description": "Rua Alvaro Velho, 2D, 2830-327 Barreiro",
+          "description": "Rua Alvaro Velho, 2D, 2830-327 Azeitão",
           "icon": "mdi:location",
           "href": "https://maps.app.goo.gl/3uHBdwxH8aqrWCp76"
         },
@@ -80,13 +77,8 @@
           "icon": "mingcute:phone-fill"
         },
         {
-          "description": "Bárbara Barbizani - +351 916 690 609",
-          "href": "https://wa.me/916690609",
-          "icon": "mingcute:whatsapp-fill"
-        },
-        {
-          "description": "barbara.caiado@caiadolaw.com",
-          "href": "mailto: barbara.caiado@caiadolaw.com",
+          "description": "sofiaptdiogo@gmail.com",
+          "href": "mailto: sofiaptdiogo@gmail.com",
           "icon": "ic:baseline-email"
         }
       ]
@@ -331,6 +323,7 @@
       ]
     },
     "buttons": {
+      "send": "Send",
       "contact": "Contact",
       "see more": "See more",
       "read more": "Read more",

@@ -21,7 +21,7 @@ const Animated = ({
   config
 }: AnimatedProps) => {
   const [ref, inView] = useInView({
-    triggerOnce: true
+    once: true
   });
 
   const getTransformFrom = () => {

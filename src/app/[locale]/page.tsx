@@ -1,5 +1,6 @@
 import Animated from "@/components/Animated";
 import Button from "@/components/Button";
+import Contacts from "@/components/Contacts";
 import Faqs from "@/components/Faqs";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import IconCard from "@/components/IconCard/IconCard";
@@ -95,7 +96,9 @@ export default function Home() {
           </Animated>
 
           <Animated type="fade" delay={600}>
-            <p className="my-7">{t("homepage.about.description")}</p>
+            <p className="my-7 text-zinc-500">
+              {t("homepage.about.description")}
+            </p>
           </Animated>
 
           <Animated type="fade" delay={1000}>
@@ -119,7 +122,7 @@ export default function Home() {
           </h3>
         </Animated>
         <Animated>
-          <p className="text-gray-500 max-w-xl">
+          <p className="text-zinc-600 max-w-xl">
             {t("homepage.practice.description")}
           </p>
         </Animated>
@@ -145,6 +148,7 @@ export default function Home() {
       <Section containerClassName="bg-bgBlue">
         <Testimonials />
       </Section>
+
       {/* Hero Section */}
       <HeroSection imageSrc="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
         <div className="flex flex-col md:flex-row justify-between gap-20 text-white py-32">
@@ -164,6 +168,11 @@ export default function Home() {
           </div>
         </div>
       </HeroSection>
+
+      {/* Contacts */}
+      <Section sectionClassName="flex flex-wrap lg:flex-nowrap gap-10">
+        <Contacts />
+      </Section>
     </main>
   );
 }
