@@ -1,16 +1,28 @@
-import { dm_serif } from "@/styles/fonts";
+import { Icon } from "@iconify/react";
+import Link from "next/link";
 
-const { Icon } = require("@iconify/react");
-const { default: Link } = require("next/link");
+interface SubLink {
+  name: string;
+  href: string;
+  icon: string;
+}
 
-const FooterSection = ({ title, sectionHref, subLinks }) => {
+interface FooterSectionProps {
+  title: string;
+  sectionHref: string;
+  subLinks?: SubLink[];
+}
+
+const FooterSection: React.FC<FooterSectionProps> = ({
+  title,
+  sectionHref,
+  subLinks
+}) => {
   const isContact = title.toLowerCase().includes("contact");
 
   return (
     <div>
-      <h2
-        className={`text-m font-medium mb-2 tracking-wider text-white ${dm_serif.className}`}
-      >
+      <h2 className={`text-m font-medium mb-2 tracking-wider text-white`}>
         {title}
       </h2>
       <ul className="text-white opacity-95 font-thin">
@@ -35,7 +47,7 @@ const FooterSection = ({ title, sectionHref, subLinks }) => {
         )}
 
         {/* When no sub links are provided */}
-        {!subLinks && !isContactSections(title) && (
+        {!subLinks && (
           <li>
             <Link href={sectionHref} className="hover:underline text-xs">
               {title}

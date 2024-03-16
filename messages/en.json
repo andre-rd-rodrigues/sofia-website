@@ -264,47 +264,33 @@
       "description": "Whether you have questions, need assistance, or just want to connect, I'm here to help.",
       "links": [
         {
-          "name": "About",
-          "href": "/about",
+          "name": "Sections",
+          "href": "",
           "subLinks": [
             {
-              "name": "Page",
-              "href": "/about"
+              "name": "About",
+              "href": "/#about"
             },
             {
-              "name": "Journey",
-              "href": "/about#journey"
+              "name": "Practice areas",
+              "href": "/#practice-areas"
             },
             {
-              "name": "Articles",
-              "href": "/about#articles"
+              "name": "FAQs",
+              "href": "/#faqs"
+            },
+            {
+              "name": "Testimonials",
+              "href": "/#testimonials"
             }
           ]
         },
-        {
-          "name": "Pratice Areas",
-          "href": "/practice-areas",
-          "subLinks": [
-            {
-              "name": "All",
-              "href": "/practice-areas"
-            },
-            {
-              "name": "Citizens",
-              "href": "/practice-areas#citizens"
-            },
-            {
-              "name": "Companies",
-              "href": "/practice-areas#companies"
-            }
-          ]
-        },
+
         {
           "name": "Contacts",
-
           "subLinks": [
             {
-              "name": "Rua Alvaro Velho, 2D, 2830-327 Barreiro",
+              "name": "Rua Alvaro Velho, 2D, 2830-327 Azeitão",
               "icon": "mdi:location",
               "href": "https://maps.app.goo.gl/3uHBdwxH8aqrWCp76"
             },
@@ -314,8 +300,8 @@
               "icon": "mingcute:phone-fill"
             },
             {
-              "name": "barbara.caiado@caiadolaw.com",
-              "href": "mailto: barbara.caiado@caiadolaw.com",
+              "name": "sofiaptdiogo@gmail.com",
+              "href": "mailto: sofiaptdiogo@gmail.com",
               "icon": "ic:baseline-email"
             }
           ]

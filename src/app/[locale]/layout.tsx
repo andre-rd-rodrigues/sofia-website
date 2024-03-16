@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import "./globals.scss";
 import Navbar from "@/components/Navbar";
 import { dm_sans, libre } from "@/fonts";
@@ -19,6 +20,7 @@ export default function RootLayout({
         <body>
           <Navbar />
           {children}
+          <Footer />
         </body>
       </html>
     </NextIntlClientProvider>

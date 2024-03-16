@@ -1,62 +1,79 @@
+"use client";
 import React from "react";
-import Container from "./Container";
 import FooterSection from "./FooterSection";
 import { useTranslations } from "next-intl";
 import useTranslation from "@/hooks/useTranslation";
-import Logo from "./Logo";
+
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { SOCIAL_MEDIA } from "@/constants";
+import Container from "../Container";
+import { SOCIAL_MEDIA } from "@/constants/marketing.constants";
 
-function Footer() {
+interface SocialMediaLink {
+  icon: string;
+  href: string;
+}
+
+interface FooterLink {
+  name: string;
+  href: string;
+  subLinks: {
+    name: string;
+    href: string;
+    icon: string;
+  }[];
+}
+
+const Footer: React.FC = () => {
   const t = useTranslations("components");
   const { getTranslationsArray } = useTranslation();
-  const footerLinks = getTranslationsArray("components.footer.links");
+  const footerLinks: FooterLink[] = getTranslationsArray(
+    "components.footer.links"
+  );
 
   return (
-    <footer className="bg-blue">
-      <Container className="py-7">
+    <footer className="bg-darkBlue">
+      <Container className="pt-10">
         {/* Logo */}
-        <Logo fill="white" width={50} height={50} className="mx-auto" />
-
-        <hr className="my-6 border-gray-400 mx-auto opacity-50" />
+        {/*   <Logo fill="white" width={50} height={50} className="mx-auto" /> */}
 
         {/* Description & Social Media */}
-        <div className="md:flex md:justify-between ">
-          <div className="mb-6 md:mb-0 sm:max-w-52">
+        <div className="md:flex md:justify-between">
+          <div className="mb-6 md:mb-0 sm:max-w-72">
             <p className="text-white text-sm">{t("footer.description")}</p>
             <div className="flex gap-4 mt-3 justify-center sm:justify-start">
-              {SOCIAL_MEDIA.map(({ icon, href }) => (
-                <Link href={href} key={href} target="_blank">
-                  <Icon color="white" icon={icon} fontSize={20} />
+              {SOCIAL_MEDIA.map((social: SocialMediaLink) => (
+                <Link href={social.href} key={social.href} passHref>
+                  <Icon color="white" icon={social.icon} fontSize={20} />
                 </Link>
               ))}
             </div>
           </div>
 
           {/* Footer Links */}
-          <div className="flex flex-wrap gap-5 justify-between sm:justify-normal">
-            {footerLinks.map(({ name, href, subLinks }, i) => (
+          <div className="flex flex-wrap gap-24 justify-between sm:justify-normal">
+            {footerLinks.map((link: FooterLink, i: number) => (
               <FooterSection
                 key={i}
-                title={name}
-                subLinks={subLinks}
-                sectionHref={href}
+                title={link.name}
+                subLinks={link.subLinks}
+                sectionHref={link.href}
               />
             ))}
           </div>
         </div>
 
-        <hr className="my-6 border-gray-400 mx-auto opacity-50" />
+        <hr className="mt-10 mb-4 border-gray-700 mx-auto opacity-50" />
 
         {/* Copyright */}
-        <div className="text-center">
+        <div className="text-center pb-5">
           <span className="text-sm font-light text-gray-400">
             © 2024{" "}
             <a
               href="https://andrerodrigo.com"
               className="text-sm text-white hover:underline"
               target="_blank"
+              rel="noopener noreferrer"
             >
               André Rodrigo
             </a>
@@ -67,6 +84,6 @@ function Footer() {
       </Container>
     </footer>
   );
-}
+};
 
 export default Footer;

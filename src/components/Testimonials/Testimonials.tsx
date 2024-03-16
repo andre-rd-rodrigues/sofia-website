@@ -61,7 +61,7 @@ function Testimonials() {
             </h3>
           </Animated>
           <Animated type="slide-in-left" delay={100}>
-            <h4 className="text-4xl text-blue mt-3">
+            <h4 className="text-5xl text-blue mt-3">
               {t("testimonials.title")}
             </h4>
           </Animated>
