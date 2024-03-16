@@ -57,7 +57,7 @@ const Animated = ({
       opacity: 0,
       transform: getTransformFrom()
     },
-    to: async (next, cancel) => {
+    to: async (next) => {
       if (inView) {
         await next({
           opacity: 1,

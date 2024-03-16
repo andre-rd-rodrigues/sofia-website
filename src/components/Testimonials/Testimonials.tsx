@@ -1,12 +1,11 @@
 "use client";
 import useTranslation from "@/hooks/useTranslation";
 import { useTranslations } from "next-intl";
-import Testimonial from "./Testimonial";
-import useIsMobile from "@/hooks/useIsMobile";
-import Animated from "../Animated";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import Animated from "../Animated";
+import Testimonial from "./Testimonial";
 
 const settings = {
   dots: true,

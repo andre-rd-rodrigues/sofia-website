@@ -16,7 +16,7 @@ type Contact = {
 };
 
 function Contacts() {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM!!);
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM || "");
   const t = useTranslations();
   const { getTranslationsArray } = useTranslation();
 
