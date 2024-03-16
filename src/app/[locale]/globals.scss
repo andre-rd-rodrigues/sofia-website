@@ -83,3 +83,13 @@ footer {
   color: #fd7959 !important;
   font-size: 10px;
 }
+
+/* Calendar */
+
+.App button {
+  position: absolute;
+  top: -4px;
+  left: 100px;
+  opacity: 0;
+  padding: 1rem;
+}

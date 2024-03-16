@@ -25,14 +25,14 @@ function Contacts() {
   return (
     <>
       {/* Left Side --------------------------------  */}
-      <div className="w-full lg:w-1/2 p-0 sm:p-4 justify-center items-center">
+      <div className="w-full lg:w-1/2 justify-center items-center">
         <Animated type="slide-in-left">
           <h3 className="text-blue uppercase tracking-widest text-xs">
             {t("pages.contacts.subtitle")}
           </h3>
         </Animated>
         <Animated type="slide-in-left" delay={100}>
-          <h4 className="md:text-5xl sm:text-4xl text-blue mt-3">
+          <h4 className="text-5xl text-blue mt-3">
             {t("pages.contacts.title")}
           </h4>
         </Animated>
@@ -54,7 +54,7 @@ function Contacts() {
       </div>
 
       {/* Right Side -------------------------------- */}
-      <div className="w-full lg:w-1/2 mt-9">
+      <div className="w-full lg:w-1/2 mt-0 lg:mt-9">
         <div className="m-auto">
           {state.succeeded ? (
             <Animated

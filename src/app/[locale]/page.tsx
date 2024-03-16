@@ -12,6 +12,7 @@ import useTranslation from "@/hooks/useTranslation";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import * as Calendar from "@/components/Calendar";
 
 export default function Home() {
   const t = useTranslations("pages");
@@ -54,7 +55,6 @@ export default function Home() {
             {t("homepage.subtitle")}
           </h2>
         </Animated>
-
         <Animated
           type="fade"
           delay={500}
@@ -62,7 +62,7 @@ export default function Home() {
             config: { tension: 150, friction: 60 }
           }}
         >
-          <Button label="appointment" />
+          <Calendar.Button />
         </Animated>
       </HeroSection>
 
