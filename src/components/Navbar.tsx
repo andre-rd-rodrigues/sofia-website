@@ -60,7 +60,7 @@ const Navbar = () => {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               {navlinks.map(({ href, name }) => (
                 <Link
-                  className={`px-5 py-1 flex items-center justify-end lg:justify-center text-md text-left text-blue hover:opacity-75`}
+                  className={`px-5 py-3 flex items-center justify-end lg:justify-center text-md text-left text-blue hover:opacity-75`}
                   href={href}
                   key={name}
                   onClick={() => setNavbarOpen((prevState) => !prevState)}

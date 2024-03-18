@@ -6,11 +6,17 @@ import { Icon } from "@iconify/react";
 
 import { Fragment } from "react";
 import { Link, usePathname } from "../navigation";
+import { useLocale } from "next-intl";
 
 function LanguageSelector() {
   const pathname = usePathname();
+  const locale = useLocale();
 
   const isMobile = useIsMobile();
+
+  const checkMark = (lang: string) => (
+    <span className="ml-4">{locale === lang && `✔`}</span>
+  );
 
   return (
     <Popover className="relative mx-5 my-1 flex justify-end">
@@ -40,7 +46,7 @@ function LanguageSelector() {
             locale="en"
             className={`group relative flex items-center px-9 py-4 text-m  hover:bg-gray-50 ${dm_sans.className}`}
           >
-            English
+            English {checkMark("en")}
           </Popover.Button>
           <Popover.Button
             as={Link}
@@ -48,7 +54,7 @@ function LanguageSelector() {
             locale="pt"
             className={`group relative flex items-center px-9 py-4 text-m  hover:bg-gray-50 ${dm_sans.className}`}
           >
-            Português
+            Português {checkMark("pt")}
           </Popover.Button>
         </Popover.Panel>
       </Transition>

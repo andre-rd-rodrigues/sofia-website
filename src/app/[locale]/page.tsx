@@ -146,13 +146,16 @@ export default function Home() {
       </Section>
 
       {/* Hero Section */}
-      <HeroSection imageSrc="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-        <div className="flex flex-col md:flex-row gap-10 sm:gap-20 text-white py-20 sm:py-32">
+      <HeroSection
+        imageSrc="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        className="text-white py-20 sm:py-32"
+      >
+        <p className="tracking-widest uppercase text-xs mb-3 font-normal text ">
+          {t("homepage.heroSection1.subtitle")}
+        </p>
+        <div className="flex flex-col md:flex-row gap-10">
           {/* Left section  */}
           <div>
-            <p className="tracking-widest uppercase text-xs mb-3 font-normal">
-              {t("homepage.heroSection1.subtitle")}
-            </p>
             <h4 className="text-3xl sm:text-5xl mb-2">
               {t("homepage.heroSection1.title")}
             </h4>
