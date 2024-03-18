@@ -67,7 +67,10 @@ export default function Home() {
       </HeroSection>
 
       {/* About me */}
-      <Section sectionClassName="flex flex-wrap lg:flex-nowrap gap-10">
+      <Section
+        id="about"
+        sectionClassName="flex flex-wrap lg:flex-nowrap gap-10"
+      >
         <div className="w-full lg:w-1/2">
           <div className="m-auto">
             <Animated delay={500}>
@@ -110,7 +113,7 @@ export default function Home() {
       </Section>
 
       {/* Practice Areas  */}
-      <Section containerClassName="bg-bgBlue text-blue">
+      <Section id="practice-areas" containerClassName="bg-bgBlue text-blue">
         <Animated delay={300}>
           <h4 className={`tracking-widest uppercase text-xs`}>
             {t("homepage.practice.subtitle")}
@@ -140,13 +143,14 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* FAQs */}
-      <Section>
-        <Faqs />
-      </Section>
       {/* Testimonials  */}
-      <Section containerClassName="bg-bgBlue">
+      <Section id="testimonials">
         <Testimonials />
+      </Section>
+
+      {/* FAQs */}
+      <Section id="faqs" containerClassName="bg-bgBlue">
+        <Faqs />
       </Section>
 
       {/* Hero Section */}
@@ -164,13 +168,17 @@ export default function Home() {
           {/* Right section  */}
           <div className="md:flex-1">
             <p className="mb-10">{t("homepage.heroSection1.description")}</p>
-            <Button label="contact" />
+
+            <Calendar.Button />
           </div>
         </div>
       </HeroSection>
 
       {/* Contacts */}
-      <Section sectionClassName="flex flex-wrap lg:flex-nowrap gap-10">
+      <Section
+        id="contacts"
+        sectionClassName="flex flex-wrap lg:flex-nowrap gap-10"
+      >
         <Contacts />
       </Section>
     </main>

@@ -89,15 +89,23 @@
       "links": [
         {
           "name": "About",
-          "href": "/about"
+          "href": "#about"
         },
         {
-          "name": "Services",
-          "href": "/services"
+          "name": "Practice areas",
+          "href": "#practice-areas"
+        },
+        {
+          "name": "Testimonials",
+          "href": "#testimonials"
+        },
+        {
+          "name": "FAQs",
+          "href": "#faqs"
         },
         {
           "name": "Contacts",
-          "href": "/contacts"
+          "href": "#contacts"
         }
       ]
     },

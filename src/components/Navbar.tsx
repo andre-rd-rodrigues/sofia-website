@@ -73,7 +73,6 @@ const Navbar = () => {
                 </Link>
               ))}
               <LanguageSelector />
-              <Calendar.Button containerClassName="scale-90" />
             </ul>
           </div>
         </div>

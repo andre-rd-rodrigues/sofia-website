@@ -11,6 +11,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: boolean;
   icon?: string;
   iconSize?: number;
+  children?: React.ReactNode;
 }
 
 function Button({
@@ -20,6 +21,7 @@ function Button({
   variant,
   icon,
   iconSize = 22,
+  children,
   ...buttonProps
 }: ButtonProps) {
   const t = useTranslations("components.buttons");
@@ -28,7 +30,7 @@ function Button({
     <button
       className={`${
         variant ? "bg-cyan" : "bg-orange"
-      } py-4 px-8 gap-3 tracking-widest transition uppercase text-xs font-medium duration-200 text-white hover:opacity-85 ${className} ${
+      } relative py-4 px-8 gap-3 tracking-widest transition uppercase text-xs font-medium duration-200 text-white hover:opacity-85 ${className} ${
         libre.className
       }`}
       onClick={onClick}
@@ -39,6 +41,7 @@ function Button({
           <Icon icon={icon} fontSize={iconSize} className="text-white" />
         )}
         {label && t(label)}
+        {children}
       </div>
     </button>
   );

@@ -49,17 +49,18 @@ const CalendarView: React.FC<CalendlyProps> = ({ format, className }) => {
 };
 
 type ButtonProps = {
-  containerClassName: string;
+  containerClassName?: string;
 };
 
-const Button: React.FC<ButtonProps> = ({ containerClassName }) => {
+const Button: React.FC<ButtonProps> = () => {
   return (
-    <div className={`relative ${containerClassName}`}>
-      <ButtonApp icon="ph:calendar-light" label="appointment" />
-      <CalendarView
-        format="text"
-        className="absolute top-[-4px] left-[100px] opacity-0 p-[1rem]"
-      />
+    <div className="inherit block m-auto text-center">
+      <div className="relative w-[220px] h-[54px] flex justify-center items-center">
+        <ButtonApp icon="ph:calendar-light" label="appointment" />
+        <div className="absolute top-0 left-0">
+          <CalendarView format="text" className="opacity-0 p-[1rem]" />
+        </div>
+      </div>
     </div>
   );
 };
