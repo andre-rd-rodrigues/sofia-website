@@ -52,7 +52,7 @@ function Testimonials() {
 
   return (
     <>
-      <div className="relative flex mb-20">
+      <div className="relative flex mb-10 sm:mb-20">
         <div className="relative mt-5">
           <Animated type="slide-in-left">
             <h3 className="text-blue uppercase text-xs tracking-widest">
@@ -60,7 +60,7 @@ function Testimonials() {
             </h3>
           </Animated>
           <Animated type="slide-in-left" delay={100}>
-            <h4 className="text-5xl text-blue mt-3">
+            <h4 className="text-3xl sm:text-5xl text-blue mt-3">
               {t("testimonials.title")}
             </h4>
           </Animated>

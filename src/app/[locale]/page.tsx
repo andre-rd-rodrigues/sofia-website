@@ -1,5 +1,5 @@
 import Animated from "@/components/Animated";
-import Button from "@/components/Button";
+import * as Calendar from "@/components/Calendar";
 import Contacts from "@/components/Contacts";
 import Faqs from "@/components/Faqs";
 import HeroSection from "@/components/HeroSection/HeroSection";
@@ -9,10 +9,8 @@ import Section from "@/components/Section";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import { libre } from "@/fonts";
 import useTranslation from "@/hooks/useTranslation";
-import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import * as Calendar from "@/components/Calendar";
 
 export default function Home() {
   const t = useTranslations("pages");
@@ -62,7 +60,7 @@ export default function Home() {
             config: { tension: 150, friction: 60 }
           }}
         >
-          <Calendar.Button />
+          <Calendar.Button className="m-auto" />
         </Animated>
       </HeroSection>
 
@@ -93,7 +91,7 @@ export default function Home() {
             </h3>
           </Animated>
           <Animated type="slide-in-left" delay={100}>
-            <h4 className="md:text-5xl sm:text-4xl text-blue mt-3">
+            <h4 className="text-3xl sm:text-5xl text-blue mt-3">
               {t("homepage.about.title")}
             </h4>
           </Animated>
@@ -102,12 +100,6 @@ export default function Home() {
             <p className="my-7 text-zinc-500">
               {t("homepage.about.description")}
             </p>
-          </Animated>
-
-          <Animated type="fade" delay={1000}>
-            <Link href="/about" className="flex justify-center sm:block">
-              <Button label="see more" variant />
-            </Link>
           </Animated>
         </div>
       </Section>
@@ -120,7 +112,7 @@ export default function Home() {
           </h4>
         </Animated>
         <Animated>
-          <h3 className="text-5xl my-3 max-w-xl">
+          <h3 className="text-3xl sm:text-5xl my-3 max-w-xl">
             {t("homepage.practice.title")}
           </h3>
         </Animated>
@@ -155,21 +147,22 @@ export default function Home() {
 
       {/* Hero Section */}
       <HeroSection imageSrc="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-        <div className="flex flex-col md:flex-row justify-between gap-20 text-white py-32">
+        <div className="flex flex-col md:flex-row gap-10 sm:gap-20 text-white py-20 sm:py-32">
           {/* Left section  */}
-          <div className="mb-4 md:mb-0 md:flex-1">
+          <div>
             <p className="tracking-widest uppercase text-xs mb-3 font-normal">
               {t("homepage.heroSection1.subtitle")}
             </p>
-            <h4 className="text-5xl mb-2">
+            <h4 className="text-3xl sm:text-5xl mb-2">
               {t("homepage.heroSection1.title")}
             </h4>
           </div>
           {/* Right section  */}
-          <div className="md:flex-1">
+          <div>
             <p className="mb-10">{t("homepage.heroSection1.description")}</p>
-
-            <Calendar.Button />
+            <div className="flex items-end justify-end">
+              <Calendar.Button />
+            </div>
           </div>
         </div>
       </HeroSection>

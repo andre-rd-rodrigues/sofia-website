@@ -32,7 +32,7 @@ function Contacts() {
           </h3>
         </Animated>
         <Animated type="slide-in-left" delay={100}>
-          <h4 className="text-5xl text-blue mt-3">
+          <h4 className="text-3xl sm:text-5xl text-blue mt-3">
             {t("pages.contacts.title")}
           </h4>
         </Animated>

@@ -50,8 +50,10 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
+          <hr className="mb-9 border-gray-700 mx-auto opacity-50" />
+
           {/* Footer Links */}
-          <div className="flex flex-wrap gap-24 justify-between sm:justify-normal">
+          <div className="flex flex-wrap gap-5 sm:gap-24 justify-between sm:justify-normal">
             {footerLinks.map((link: FooterLink, i: number) => (
               <FooterSection
                 key={i}

@@ -25,18 +25,22 @@ export default function Faqs() {
 
   return (
     <div className="flex flex-wrap lg:flex-nowrap gap-10">
-      <div className="w-full lg:w-1/2 p-0 sm:p-4 justify-center items-center">
+      <div className="w-full lg:w-1/2 justify-center items-center">
         <Animated type="slide-in-left">
-          <h3 className="text-5xl my-3 max-w-xl text-blue">{t("title")}</h3>
+          <h3 className="text-3xl sm:text-5xl my-3 max-w-xl text-blue">
+            {t("title")}
+          </h3>
           {/* FAQs Questions */}
-          <ul className="mt-8">
+          <ul className="mt-8 sm:m-8">
             {faqs.map((faq, index) => (
-              <li key={index} className="text-blue">
+              <li key={index} className="text-blue bg-white mb-5 p-4">
                 <button
                   onClick={() => handleToggle(index)}
-                  className="flex items-center justify-between w-full py-4"
+                  className="flex items-center justify-between w-full"
                 >
-                  <h6 className="text-lg font-medium">{faq.question}</h6>
+                  <h6 className="text-md sm:text-lg font-medium">
+                    {faq.question}
+                  </h6>
                   <span>
                     <Icon
                       icon="iconamoon:arrow-down-2-thin"
@@ -50,7 +54,7 @@ export default function Faqs() {
                 <div
                   className={`px-4 transition-all duration-300 ${
                     openIndex === index
-                      ? "max-h-80 opacity-100"
+                      ? "max-h-80 opacity-100 pt-3"
                       : "max-h-0 opacity-0"
                   } overflow-hidden`}
                 >
