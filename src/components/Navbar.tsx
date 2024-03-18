@@ -8,6 +8,7 @@ import LanguageSelector from "./LanguageSelector";
 import { libre } from "@/fonts";
 import Image from "next/image";
 import { Link } from "@/navigation";
+import * as Calendar from "@/components/Calendar";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -72,6 +73,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <LanguageSelector />
+              <Calendar.Button containerClassName="scale-90" />
             </ul>
           </div>
         </div>

@@ -5,9 +5,11 @@ import ButtonApp from "@/components/Button";
 
 type CalendlyProps = {
   format: "widget" | "text" | "inline";
+  className?: string;
 };
 
-const CalendarView: React.FC<CalendlyProps> = ({ format }) => {
+// styles on global.scss
+const CalendarView: React.FC<CalendlyProps> = ({ format, className }) => {
   const [rootElement, setRootElement] = useState<Element | null>(null);
 
   useEffect(() => {
@@ -18,9 +20,11 @@ const CalendarView: React.FC<CalendlyProps> = ({ format }) => {
   }, []);
 
   const settings = {
-    url: "https://calendly.com/andreptrodrigo",
+    url: process.env.NEXT_PUBLIC_CALENDLY_URL,
     rootElement,
-    text: "MAKE AN APPOINTMENT"
+    text: "MAKE AN APPOINTMENT",
+    color: "#FD7959",
+    className
   };
 
   const calendlyElement = () => {
@@ -44,11 +48,14 @@ const CalendarView: React.FC<CalendlyProps> = ({ format }) => {
   );
 };
 
-const Button = () => {
+const Button = ({ containerClassName }) => {
   return (
-    <div className="relative">
-      <ButtonApp label="appointment" />
-      <CalendarView format="text" />
+    <div className={`relative ${containerClassName}`}>
+      <ButtonApp icon="ph:calendar-light" label="appointment" />
+      <CalendarView
+        format="text"
+        className="absolute top-[-4px] left-[100px] opacity-0 p-[1rem]"
+      />
     </div>
   );
 };

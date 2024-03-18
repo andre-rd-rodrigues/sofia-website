@@ -86,10 +86,9 @@ footer {
 
 /* Calendar */
 
-.calendar button {
-  position: absolute;
-  top: -4px;
-  left: 100px;
-  opacity: 0;
-  padding: 1rem;
+.calendly-badge-content {
+  border-radius: 0 !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  letter-spacing: 1.5px;
 }

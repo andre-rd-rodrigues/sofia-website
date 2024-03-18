@@ -7,9 +7,10 @@ import { useTranslations } from "next-intl";
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
   onClick?: () => void;
-  label: string;
+  label?: string;
   variant?: boolean;
   icon?: string;
+  iconSize?: number;
 }
 
 function Button({
@@ -18,6 +19,7 @@ function Button({
   label,
   variant,
   icon,
+  iconSize = 22,
   ...buttonProps
 }: ButtonProps) {
   const t = useTranslations("components.buttons");
@@ -33,8 +35,10 @@ function Button({
       {...buttonProps}
     >
       <div className="flex items-center gap-3">
-        {icon && <Icon icon={icon} fontSize={22} className="text-white" />}
-        {t(label)}
+        {icon && (
+          <Icon icon={icon} fontSize={iconSize} className="text-white" />
+        )}
+        {label && t(label)}
       </div>
     </button>
   );
