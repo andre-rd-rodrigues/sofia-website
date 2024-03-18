@@ -20,9 +20,7 @@ const CalendarView: React.FC<CalendlyProps> = ({ format }) => {
   const settings = {
     url: "https://calendly.com/andreptrodrigo",
     rootElement,
-    text: "MAKE AN APPOINTMENT",
-    textColor: "#ffffff",
-    color: "#FD7959"
+    text: "MAKE AN APPOINTMENT"
   };
 
   const calendlyElement = () => {
@@ -39,7 +37,7 @@ const CalendarView: React.FC<CalendlyProps> = ({ format }) => {
   };
 
   return (
-    <div className="App">
+    <div className="calendar">
       {rootElement && calendlyElement()}
       <div id="calendly-modal" />
     </div>

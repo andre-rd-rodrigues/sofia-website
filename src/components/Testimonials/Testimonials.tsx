@@ -53,7 +53,7 @@ function Testimonials() {
   return (
     <>
       <div className="relative flex mb-20">
-        <div className="relative z-10 mt-5">
+        <div className="relative mt-5">
           <Animated type="slide-in-left">
             <h3 className="text-blue uppercase text-xs tracking-widest">
               {t("testimonials.subtitle")}
