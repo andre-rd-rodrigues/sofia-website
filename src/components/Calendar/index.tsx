@@ -48,7 +48,11 @@ const CalendarView: React.FC<CalendlyProps> = ({ format, className }) => {
   );
 };
 
-const Button = ({ containerClassName }) => {
+type ButtonProps = {
+  containerClassName: string;
+};
+
+const Button: React.FC<ButtonProps> = ({ containerClassName }) => {
   return (
     <div className={`relative ${containerClassName}`}>
       <ButtonApp icon="ph:calendar-light" label="appointment" />

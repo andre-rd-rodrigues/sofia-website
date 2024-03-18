@@ -7,14 +7,17 @@ interface AvatarProps {
   size?: number;
 }
 
-const Avatar: React.FC<AvatarProps> = ({ imageUrl, alt, size = 20 }) => {
+const Avatar: React.FC<AvatarProps> = ({ imageUrl, alt, size = 90 }) => {
   return (
-    <div className={`w-${size} h-${size} relative`}>
+    <div
+      className="relative"
+      style={{ width: `${size}px`, height: `${size}px` }}
+    >
       <Image
         src={imageUrl}
         alt={alt}
-        layout="fill"
         className="rounded-full"
+        fill
         objectFit="cover"
       />
     </div>

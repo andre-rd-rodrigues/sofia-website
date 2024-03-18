@@ -31,41 +31,37 @@ export default function Faqs() {
           {/* FAQs Questions */}
           <ul className="mt-8">
             {faqs.map((faq, index) => (
-              <Animated key={index} delay={index * 100}>
-                <li className="text-blue">
-                  <button
-                    onClick={() => handleToggle(index)}
-                    className="flex items-center justify-between w-full py-4"
-                  >
-                    <h6 className="text-lg font-medium">{faq.question}</h6>
-                    <span>
-                      {openIndex === index ? (
-                        <Icon
-                          icon="iconamoon:arrow-down-2-thin"
-                          fontSize={30}
-                          rotate={-90}
-                        />
-                      ) : (
-                        <Icon
-                          icon="iconamoon:arrow-down-2-thin"
-                          fontSize={30}
-                        />
-                      )}
-                    </span>
-                  </button>
+              <li key={index} className="text-blue">
+                <button
+                  onClick={() => handleToggle(index)}
+                  className="flex items-center justify-between w-full py-4"
+                >
+                  <h6 className="text-lg font-medium">{faq.question}</h6>
+                  <span>
+                    <Icon
+                      icon="iconamoon:arrow-down-2-thin"
+                      fontSize={30}
+                      rotate={openIndex === index ? -90 : 0}
+                    />
+                  </span>
+                </button>
 
-                  {/* Collapsible content */}
-                  {openIndex === index && (
-                    <div className="px-4 pb-7">
-                      <p>{faq.answer}</p>
-                    </div>
-                  )}
-                </li>
-              </Animated>
+                {/* Collapsible content */}
+                <div
+                  className={`px-4 transition-all duration-300 ${
+                    openIndex === index
+                      ? "max-h-80 opacity-100"
+                      : "max-h-0 opacity-0"
+                  } overflow-hidden`}
+                >
+                  <p>{faq.answer}</p>
+                </div>
+              </li>
             ))}
           </ul>
         </Animated>
       </div>
+
       <div className="w-full lg:w-1/2">
         <div className="m-auto">
           <Animated delay={500}>
