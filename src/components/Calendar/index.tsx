@@ -20,7 +20,7 @@ const CalendarView: React.FC<CalendlyProps> = ({ format, className }) => {
   }, []);
 
   const settings = {
-    url: process.env.NEXT_PUBLIC_CALENDLY_URL,
+    url: process.env.NEXT_PUBLIC_CALENDLY_URL!,
     rootElement,
     text: "MAKE AN APPOINTMENT",
     color: "#FD7959",
@@ -30,9 +30,11 @@ const CalendarView: React.FC<CalendlyProps> = ({ format, className }) => {
   const calendlyElement = () => {
     switch (format) {
       case "widget":
+        // @ts-expect-error check later
         return <PopupWidget {...settings} />;
 
       case "text":
+        // @ts-expect-error check later
         return <PopupButton {...settings} />;
 
       default:

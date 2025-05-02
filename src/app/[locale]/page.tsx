@@ -11,6 +11,25 @@ import { libre } from "@/fonts";
 import useTranslation from "@/hooks/useTranslation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { Locale } from "../../../locale.types";
+import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { getMetadata } from "../../../metadata/metadata.utils";
+
+export type MetadataProps = {
+  params: { locale: Locale };
+};
+
+export async function generateMetadata({
+  params: { locale }
+}: MetadataProps): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  return getMetadata({
+    title: t("homeTitle"),
+    description: t("description")
+  });
+}
 
 export default function Home() {
   const t = useTranslations("pages");
