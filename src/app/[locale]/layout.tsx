@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar";
-import { dm_sans, libre } from "@/fonts";
+import { dm_sans, kumlien, libre, proximaNova } from "@/fonts";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import "./globals.scss";
 
@@ -16,7 +16,10 @@ export default function RootLayout({
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <html lang={locale} className={`${dm_sans.variable} ${libre.variable}`}>
+      <html
+        lang={locale}
+        className={`${dm_sans.variable} ${libre.variable} ${kumlien.variable} ${proximaNova.variable}`}
+      >
         <body>
           <Navbar />
           {children}

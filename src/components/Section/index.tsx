@@ -1,5 +1,7 @@
 import React, { ReactNode } from "react";
-import Container from "./Container";
+import Container from "../Container";
+import clsx from "clsx";
+import SectionTitle from "./Title";
 
 interface Props extends React.HTMLAttributes<HTMLElement> {
   children: ReactNode;
@@ -14,10 +16,14 @@ function Section({
   ...props
 }: Props) {
   return (
-    <section className={`${containerClassName} py-10 w-full`} {...props}>
-      <Container className={`${sectionClassName} py-6`}>{children}</Container>
+    <section className={clsx(containerClassName, "py-10 w-full")} {...props}>
+      <Container className={clsx(sectionClassName, "py-6")}>
+        {children}
+      </Container>
     </section>
   );
 }
+
+Section.Title = SectionTitle;
 
 export default Section;

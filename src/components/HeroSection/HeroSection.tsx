@@ -7,7 +7,7 @@ interface Props {
   children?: React.ReactNode;
   className?: string;
   style?: React.CSSProperties;
-  overlayStyle?: React.CSSProperties;
+  overlayClassName?: string;
 }
 
 const HeroSection: FC<Props> = ({
@@ -15,21 +15,21 @@ const HeroSection: FC<Props> = ({
   children,
   className,
   style,
-  overlayStyle = {
-    backgroundColor: "#1E2E45",
-    opacity: 0.75
-  }
+  overlayClassName
 }: Props) => {
   const containerStyle = {
     background: imageSrc ? `url(${imageSrc}) no-repeat center center` : "",
     backgroundSize: "cover",
+    backgroundPosition: "center",
     ...style
   };
 
   return (
     <div className={`${styles.container} ${className}`} style={containerStyle}>
+      <div
+        className={`absolute inset-0 bg-black/90 opacity-30 ${overlayClassName}`}
+      />
       <Container className={styles.content}>{children}</Container>
-      <div className={styles.overlay} style={overlayStyle}></div>
     </div>
   );
 };

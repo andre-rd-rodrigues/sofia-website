@@ -26,22 +26,23 @@ function Button({
 }: ButtonProps) {
   const t = useTranslations("components.buttons");
 
+  const baseClasses =
+    "border px-4 py-2 text-sm font-normal transition flex items-center justify-center gap-2";
+
+  const darkClasses = "border-black bg-black text-white hover:bg-gray-800";
+  const whiteClasses = "border-black bg-white text-black hover:bg-gray-100";
+
+  const buttonClasses = `${baseClasses} ${
+    variant ? darkClasses : whiteClasses
+  } ${className} ${libre.className}`;
+
   return (
-    <button
-      className={`${
-        variant ? "bg-cyan" : "bg-orange"
-      } relative py-4 px-8 gap-3 tracking-widest transition uppercase text-xs font-medium duration-200 text-white hover:opacity-85 ${className} ${
-        libre.className
-      }`}
-      onClick={onClick}
-      {...buttonProps}
-    >
-      <div className="flex items-center gap-3">
+    <button className={buttonClasses} onClick={onClick} {...buttonProps}>
+      <div className="flex items-center justify-center gap-2">
         {icon && (
-          <Icon icon={icon} fontSize={iconSize} className="text-white" />
+          <Icon icon={icon} fontSize={iconSize} className="text-black" />
         )}
-        {label && t(label)}
-        {children}
+        {label ? t(label) : children}
       </div>
     </button>
   );

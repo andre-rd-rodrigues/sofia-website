@@ -3,11 +3,23 @@
 @tailwind utilities;
 
 :root {
-  // Colors
+  /* Colors */
+  --color-background: #f1f1e4;
+  --color-background-alt: #959e94;
+  --color-foreground: #171717;
+  --color-primary: #333333;
+  --color-secondary: #182d27;
+  --color-text: #7a7a7a;
+  --color-accent: #568673;
+  --color-accent-light: #a5d7bf;
+  --color-danger: #cb6a61;
+  --color-border-primary: #33333338;
 
-  --background: white;
+  /* Fonts */
+  --font-kumlien: "Kumlien", sans-serif;
+  --font-libre-franklin: "Libre Franklin", sans-serif;
 
-  //Sizes
+  /* Sizes */
   --fs-xxl: clamp(3.5rem, 10vw, 5rem);
   --fs-xl: clamp(2.3rem, 8vw, 3.5rem);
   --fs-xl-l: clamp(1.8rem, 5vw, 3.2rem);
@@ -21,7 +33,7 @@
 
   --page-max-width: 1600px;
 
-  //Breakpoints
+  /* Breakpoints */
   --breaking-point-xxl: 1400px;
   --breaking-point-xl: 1200px;
   --breaking-point-lg: 992px;
@@ -45,25 +57,27 @@ body {
   scroll-behavior: smooth;
 }
 
-h1 {
-  font-size: var(--fs-xl);
+h1,
+h2 {
+  font-family: var(--font-kumlien);
 }
 
-h1,
-h2,
-h3,
-h4,
-h6 {
-  color: var(--blue);
-  font-family: var(--font-serif);
+h3 {
+  font-family: var(--font-proxima-nova);
   font-weight: 600;
-  margin: 0;
+}
+
+p,
+a,
+ul,
+li {
+  font-family: var(--font-proxima-nova);
 }
 
 p {
-  font-family: var(--font-sans);
+  font-family: var(--font-proxima-nova);
   font-size: var(--fs-m);
-  font-weight: 200;
+  font-weight: 300;
 }
 
 a,

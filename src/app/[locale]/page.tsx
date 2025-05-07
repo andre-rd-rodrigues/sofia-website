@@ -7,7 +7,6 @@ import IconCard from "@/components/IconCard/IconCard";
 import { getBgColor } from "@/components/IconCard/iconcard.utils";
 import Section from "@/components/Section";
 import Testimonials from "@/components/Testimonials/Testimonials";
-import { libre } from "@/fonts";
 import useTranslation from "@/hooks/useTranslation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -40,13 +39,9 @@ export default function Home() {
   return (
     <main>
       <HeroSection
-        imageSrc="https://images.unsplash.com/photo-1631248055158-edec7a3c072b?q=80&w=1722&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        overlayStyle={{
-          backgroundColor: "#011954",
-          opacity: 0.45
-        }}
+        imageSrc="https://images.squarespace-cdn.com/content/v1/64ad8b4cb2f8735d2ed972ed/b73cdd39-e04c-44b1-b2e3-e8af43f1dec4/kaboompics_travertine-coffee-table-and-greige-linen-couch-28884.jpg?format=1000w"
         style={{
-          height: "600px",
+          height: "700px",
           textAlign: "center"
         }}
       >
@@ -62,17 +57,15 @@ export default function Home() {
         </Animated>
 
         <Animated type="slide-in-right" delay={200}>
-          <h1 className={`text-white ${libre.className} font-semibold`}>
-            Dr.ª Sofia Diogo
-          </h1>
+          <h1 className="text-white text-5xl my-8">Dr.ª Sofia Diogo</h1>
         </Animated>
 
         <Animated type="slide-in-left" delay={200}>
-          <h2 className="text-white mb-6 font-extralight text-lg">
+          <h2 className="text-white mb-6 text-sm uppercase font-proxima-nova tracking-widest">
             {t("homepage.subtitle")}
           </h2>
         </Animated>
-        <Animated
+        {/*    <Animated
           type="fade"
           delay={500}
           config={{
@@ -80,7 +73,7 @@ export default function Home() {
           }}
         >
           <Calendar.Button className="m-auto" />
-        </Animated>
+        </Animated> */}
       </HeroSection>
 
       {/* About me */}
@@ -89,56 +82,39 @@ export default function Home() {
         sectionClassName="flex flex-wrap lg:flex-nowrap gap-10"
       >
         <div className="w-full lg:w-1/2">
-          <div className="m-auto">
+          <div className="m-auto shadow-2xl overflow-hidden rounded-lg">
             <Animated delay={500}>
               <Image
-                src="https://scontent.flis8-2.fna.fbcdn.net/v/t1.6435-9/36802271_10215727744762086_83971532669321216_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7a1959&_nc_ohc=qWnz2PutGTkAX9jpNCf&_nc_ht=scontent.flis8-2.fna&oh=00_AfCdtdj-peuAStMNfixYug9sk4xYJq9O_MrlbvSK-zznnA&oe=65DF6890"
+                src="https://images.unsplash.com/photo-1541976844346-f18aeac57b06?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Sofia Diogo"
                 width={500}
                 height={600}
                 layout="responsive"
                 objectFit="cover"
-                className="shadow-2xl"
               />
             </Animated>
           </div>
         </div>
         <div className="w-full lg:w-1/2 p-0 sm:p-4 justify-center items-center">
-          <Animated type="slide-in-left">
-            <h3 className="text-blue uppercase tracking-widest text-xs">
-              {t("homepage.about.subtitle")}
-            </h3>
-          </Animated>
-          <Animated type="slide-in-left" delay={100}>
-            <h4 className="text-3xl sm:text-5xl text-blue mt-3">
-              {t("homepage.about.title")}
-            </h4>
-          </Animated>
+          <Section.Title
+            title={t("homepage.about.title")}
+            subtitle={t("homepage.about.subtitle")}
+          />
 
           <Animated type="fade" delay={600}>
-            <p className="my-7 text-zinc-500">
-              {t("homepage.about.description")}
-            </p>
+            <p className="my-7">{t("homepage.about.description")}</p>
           </Animated>
         </div>
       </Section>
 
       {/* Practice Areas  */}
       <Section id="practice-areas" containerClassName="bg-bgBlue text-blue">
-        <Animated delay={300}>
-          <h4 className={`tracking-widest uppercase text-xs`}>
-            {t("homepage.practice.subtitle")}
-          </h4>
-        </Animated>
+        <Section.Title
+          title={t("homepage.practice.title")}
+          subtitle={t("homepage.practice.subtitle")}
+        />
         <Animated>
-          <h3 className="text-3xl sm:text-5xl my-3 max-w-xl">
-            {t("homepage.practice.title")}
-          </h3>
-        </Animated>
-        <Animated>
-          <p className="text-zinc-600 max-w-xl">
-            {t("homepage.practice.description")}
-          </p>
+          <p className="max-w-xl">{t("homepage.practice.description")}</p>
         </Animated>
         <div className="flex flex-wrap justify-center md:justify-start lg:justify-between gap-5 mt-12">
           {services.map(({ title, description, icon }, i) => (
@@ -155,29 +131,22 @@ export default function Home() {
       </Section>
 
       {/* Testimonials  */}
-      <Section id="testimonials">
-        <Testimonials />
-      </Section>
+      <Testimonials />
 
       {/* FAQs */}
-      <Section id="faqs" containerClassName="bg-bgBlue">
-        <Faqs />
-      </Section>
+      <Faqs />
 
       {/* Hero Section */}
       <HeroSection
         imageSrc="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         className="text-white py-20 sm:py-32"
       >
-        <p className="tracking-widest uppercase text-xs mb-3 font-normal text ">
-          {t("homepage.heroSection1.subtitle")}
-        </p>
         <div className="flex flex-col md:flex-row gap-10">
           {/* Left section  */}
           <div>
-            <h4 className="text-3xl sm:text-5xl mb-2">
+            <h2 className="text-3xl sm:text-5xl mb-2">
               {t("homepage.heroSection1.title")}
-            </h4>
+            </h2>
           </div>
           {/* Right section  */}
           <div>
