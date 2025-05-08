@@ -14,6 +14,8 @@ import { Locale } from "../../../locale.types";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { getMetadata } from "../../../metadata/metadata.utils";
+import { Link } from "@/navigation";
+import Button from "@/components/Button";
 
 export type MetadataProps = {
   params: { locale: Locale };
@@ -119,15 +121,15 @@ export default function Home() {
         <div className="flex flex-wrap justify-center md:justify-start lg:justify-between gap-5 mt-12">
           {services.map(({ title, description, icon }, i) => (
             <Animated type="slide" delay={i * 100} key={title}>
-              <IconCard
-                title={title}
-                description={description}
-                icon={icon}
-                bgColor={getBgColor(i)}
-              />
+              <IconCard title={title} description={description} icon={icon} />
             </Animated>
           ))}
         </div>
+        <Animated>
+          <Button className="mt-12 m-auto">
+            <Link href="/services">{t("homepage.practice.link")}</Link>
+          </Button>
+        </Animated>
       </Section>
 
       {/* Testimonials  */}

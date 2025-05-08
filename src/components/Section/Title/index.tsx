@@ -21,7 +21,7 @@ const SectionTitle = ({
       <Animated type="slide-in-left">
         <h3
           className={clsx(
-            "font-proxima-nova mb-3 text-sm uppercase tracking-widest",
+            "font-proxima-nova font-normal mb-3 text-sm uppercase tracking-widest",
             color ? color : "text-gray-400"
           )}
         >

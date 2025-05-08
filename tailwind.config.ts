@@ -14,14 +14,14 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
       },
       colors: {
-        background: "var(--background)",
+        background: "var(--color-background)",
         "background-alt": "var(--color-background-alt)",
-        foreground: "var(--foreground)",
-        primary: "var(--primary)",
-        secondary: "var(--secondary)",
-        text: "var(--text)",
-        accent: "var(--accent)",
-        danger: "var(--danger)"
+        foreground: "var(--color-foreground)",
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        text: "var(--color-text)",
+        accent: "var(--color-accent)",
+        danger: "var(--color-danger)"
       },
       fontFamily: {
         "proxima-nova": "var(--font-proxima-nova)",

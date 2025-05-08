@@ -31,7 +31,7 @@ export default function Faqs() {
         {/* FAQs Questions */}
         <ul className="mt-8 sm:m-5">
           {faqs.map((faq, index) => (
-            <>
+            <Animated type="slide" delay={index * 100}>
               <li key={index} className="text-blue bg-white p-4">
                 <button
                   onClick={() => handleToggle(index)}
@@ -60,7 +60,7 @@ export default function Faqs() {
                 </div>
               </li>
               <div className="h-[1px] bg-slate-200" />
-            </>
+            </Animated>
           ))}
         </ul>
       </div>
