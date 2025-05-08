@@ -22,10 +22,12 @@ const FooterSection: React.FC<FooterSectionProps> = ({
 
   return (
     <div>
-      <h2 className={`text-m font-medium mb-2 tracking-wider text-white`}>
+      <h4
+        className={`text-sm font-medium mb-2 uppercase tracking-widest text-white`}
+      >
         {title}
-      </h2>
-      <ul className="text-white opacity-95 font-thin">
+      </h4>
+      <ul className="text-white">
         {subLinks?.map(({ name, href, icon }, i) =>
           isContact ? (
             <li key={i}>
@@ -34,12 +36,12 @@ const FooterSection: React.FC<FooterSectionProps> = ({
                 className="hover:underline flex gap-1 items-center mb-2 mt-1"
               >
                 <Icon icon={icon} fontSize={15} />
-                <p className="text-xs">{name}</p>
+                <p className="text-sm">{name}</p>
               </Link>
             </li>
           ) : (
             <li key={i}>
-              <Link href={href} className="hover:underline text-xs">
+              <Link href={href} className="hover:underline text-sm font-light">
                 {name}
               </Link>
             </li>

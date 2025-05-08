@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
   );
 
   return (
-    <footer className="bg-darkBlue">
+    <footer className="bg-background-alt">
       <Container className="pt-10">
         {/* Logo */}
         {/*   <Logo fill="white" width={50} height={50} className="mx-auto" /> */}
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <hr className="mb-9 border-gray-700 mx-auto opacity-50" />
+          <hr className="mb-9 border-gray-200 mx-auto opacity-50" />
 
           {/* Footer Links */}
           <div className="flex flex-wrap gap-5 sm:gap-24 justify-between sm:justify-normal">
@@ -65,15 +65,15 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <hr className="mt-10 mb-4 border-gray-700 mx-auto opacity-50" />
+        <hr className="mt-10 mb-4 border-gray-300 mx-auto opacity-50" />
 
         {/* Copyright */}
-        <div className="text-center pb-5">
-          <span className="text-sm font-light text-gray-400">
-            © 2024{" "}
+        <div className="text-center pb-5 text-white text-sm">
+          <span className="font-proxima-nova font-light">
+            © 2025{" "}
             <a
               href="https://andrerodrigo.com"
-              className="text-sm text-white hover:underline"
+              className="hover:underline text-sm font-medium"
               target="_blank"
               rel="noopener noreferrer"
             >
