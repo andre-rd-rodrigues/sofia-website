@@ -28,8 +28,8 @@ const TreatmentCard = ({
     <section className="flex flex-col lg:flex-row gap-10 items-start">
       {/* Image and button */}
       <div className="w-full lg:w-1/2 flex flex-col h-full">
-        <h2 className="text-3xl mb-4 font-serif">{category}</h2>
-        <div className="relative flex-1 rounded overflow-hidden shadow-lg mb-6">
+        <h2 className="text-3xl mb-6">{category}</h2>
+        <div className="relative flex-1 shadow-lg mb-6">
           <Image src={image} alt={name} fill className="object-cover" />
         </div>
         <Button label={"make appointment"} />
@@ -37,8 +37,8 @@ const TreatmentCard = ({
 
       {/* Objective and treatment details */}
       <div className="w-full lg:w-1/2 space-y-6">
-        <div className="bg-background-alt text-white p-6  shadow">
-          <h5 className="mb-1">Objective</h5>
+        <div className="bg-background-alt text-white p-6">
+          <h5 className="mb-1 font-normal">Objective</h5>
           <p>{objective}</p>
         </div>
 
