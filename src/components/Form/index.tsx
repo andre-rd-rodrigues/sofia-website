@@ -16,11 +16,11 @@ const Input: FunctionComponent<FormInputProps> = ({
 }) => {
   return (
     <label className="flex items-center border-b border-gray-300 py-2 w-full">
-      <Icon className="text-blue" icon={icon} fontSize={26} />
+      <Icon icon={icon} fontSize={26} />
 
       <input
         {...inputProps}
-        className="border-none w-full text-blue py-1 px-2 leading-tight focus:outline-none "
+        className="border-none w-full py-1 px-2 leading-tight focus:outline-none font-proxima-nova font-light"
         type="text"
         placeholder={placeholder}
         name={label}

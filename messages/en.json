@@ -1,85 +1,81 @@
 {
   "pages": {
     "homepage": {
-      "subtitle": "General Practicioner",
+      "subtitle": "Aesthetic Medicine",
 
       "about": {
-        "title": "Providing quality healthcare.",
-        "subtitle": "About me",
-        "description": "I'm Sofia Diogo, a dedicated General Practitioner based in Portugal. With a specialized focus on palliative care, I bring a compassionate and personalized approach to my practice. My commitment to providing exceptional healthcare is rooted in trust, ethics, and a deep understanding of the complexities of palliative medicine. I hold a degree in Palliative Care, ensuring that my patients receive the highest quality of care during challenging times. Let's work together to navigate your healthcare journey with empathy and expertise.",
+        "title": "Enhancing Your Natural Beauty.",
+        "subtitle": "About Me",
+        "description": "Welcome to my Aesthetic Medicine practice, where I focus on enhancing your natural beauty with personalized treatments. As a dedicated professional, I am committed to providing the highest quality care, using the latest techniques and technologies to achieve stunning results. Whether you're looking for rejuvenation, anti-aging solutions, or cosmetic enhancements, I am here to guide you on your aesthetic journey.",
         "extraInfo": []
       },
       "practice": {
-        "subtitle": "Premium care",
-        "title": "Medical services and all types of diagnostics.",
-        "description": "Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+        "subtitle": "Services",
+        "title": "Personalized Aesthetic Excellence",
+        "description": "I offer a wide range of aesthetic services, from skincare and injectables to advanced laser treatments. My goal is to help you achieve your beauty goals with safe and effective procedures tailored to your unique needs."
       },
       "hero1": {
-        "title": "A Careful, Committed, and Dignified Approach to Law.",
-        "description": "I'm here to help. As your legal partner, I provide personalized solutions that protect your interests and guide you to informed decisions. Let's work together to find clarity in legal matters. Schedule a consultation today and take the first step toward peace of mind."
+        "title": "A Personalized Approach to Aesthetic Medicine.",
+        "description": "Discover the art of aesthetic medicine with my personalized approach. I offer customized solutions to enhance your natural beauty and boost your confidence. Schedule a consultation today to explore the possibilities."
       },
       "contacts": {
-        "title": "Get in Touch for Expert Advice",
-        "subtitle": "Contacts",
-        "description": "Whether you're navigating complex legal issues or simply seeking guidance, I'm here to assist you. Let's embark on this journey together - your legal matters deserve the attention and expertise I provide. Get in touch today and experience personalized counsel that puts your needs first. Your concerns matter, and I'm committed to providing the expert advice you deserve. I look forward to hearing from you and addressing your legal needs with care and precision."
+        "title": "Connect with Your Aesthetic Expert",
+        "subtitle": "Contact Me",
+        "description": "Whether you're interested in learning more about my services or ready to book a consultation, I am here to assist you. Reach out today and take the first step towards achieving your aesthetic goals."
       },
       "services": [
         {
-          "title": "Modern Laboratory",
-          "description": "Whether you're navigating complex legal issues or simply seeking guidance, I'm here to.",
-          "icon": "solar:medical-kit-bold"
+          "title": "Advanced Skincare",
+          "description": "Experience the latest in skincare technology with my advanced treatments designed to rejuvenate and refresh your skin.",
+          "icon": "solar:skincare-bold"
         },
         {
-          "title": "Modern Laboratory",
-          "description": "Whether you're navigating complex legal issues or simply seeking guidance, I'm here to.",
-          "icon": "solar:medical-kit-bold"
+          "title": "Injectables",
+          "description": "Achieve a youthful appearance with my range of injectable treatments, including Botox and dermal fillers.",
+          "icon": "solar:injectables-bold"
         },
         {
-          "title": "Modern Laboratory",
-          "description": "Whether you're navigating complex legal issues or simply seeking guidance, I'm here to.",
-          "icon": "solar:medical-kit-bold"
+          "title": "Laser Treatments",
+          "description": "Explore my cutting-edge laser treatments for skin resurfacing, hair removal, and more.",
+          "icon": "solar:laser-bold"
         }
       ],
       "heroSection1": {
-        "subtitle": "Medical Center",
-        "title": "Providing the best medical services for you and your family.",
-        "description": "I'm here to help. As your medical partner, I provide personalized solutions that protect your health and guide you to informed decisions. Let's work together to find clarity in healthcare. Schedule a consultation today and take the first step toward peace of mind."
+        "subtitle": "Aesthetic Excellence",
+        "title": "Transforming Beauty with Expert Care.",
+        "description": "As an aesthetic expert, I am dedicated to providing exceptional care and achieving beautiful results. Discover the difference with my personalized treatments and expert guidance."
       }
     },
     "about": {
-      "title": "About",
-      "title2": "Helping You To Overcome And Ease The Legal Burden.",
+      "title": "About Me",
+      "title2": "Your Trusted Partner in Aesthetic Medicine.",
 
-      "description": "Além de consultoria jurídica e disputas em tribunal para cidadãos e empresas, criou o departamento jurídico do Grupo Abraito em Portugal. Residente em Portugal nos últimos 10 anos, mas nascida no Brasil, defendeu em ambos os países, detendo um alto entendimento das suas diferenças legais, culturais e sistémicas.\nMestre em Ciências Jurídicas e Laborais – Universidade de Direito de Lisboa.\nEspecialista avançada em Direito Comercial e do Trabalho pela Faculdade de Direito da Universidade de Lisboa. Advogada e consultora jurídica, Membro da Ordem dos Advogados Portugueses. Membro da Ordem dos Advogados do Brasil. Pesquisadora académico com vários artigos e livros publicados, destacando-se a publicação em Direito Constitucional «[Ir]Redutibilidade Salarial e Princípio da Proibição do Retrocesso», em 2017.\n\nPORTUGUESE BAR ASSOCIATION NO. 52419L\n\nBRAZILIAN / PR BAR ASSOCIATION NO. 63348",
-      "hero": {
-        "title": "Empowering You Through Expert Legal Services and Consulting",
-        "description": "I'm dedicated to providing expert advice and comprehensive consulting services tailored to your unique needs. Whether you're facing intricate legal challenges or simply seeking guidance, I am here to assist you. My commitment is to safeguard your interests and guide you towards well-informed decisions, ensuring you receive the highest level of professional expertise. Explore the range of services."
-      }
+      "description": "I am committed to delivering the highest standard of aesthetic care. With a focus on innovation and excellence, I offer a comprehensive range of services to help you look and feel your best. As an experienced professional, I am here to support you every step of the way, ensuring a safe and satisfying experience."
     },
     "practiceAreas": {
-      "title": "Practice Areas",
-      "citizens": "Citizens",
-      "companies": "Companies"
+      "title": "My Services",
+      "citizens": "Individuals",
+      "companies": "Clinics"
     },
     "contacts": {
       "subtitle": "Contacts",
-      "title": "Have Questions?\nGet in touch!",
-      "description": "Legal matters require prompt and reliable communication. Whether you have questions, need legal assistance, or want to schedule a consultation, I'm here to help. Feel free to get in touch through the following channels:",
+      "title": "Have Questions? Contact Me.",
+      "description": "I am here to answer any questions you may have about my services or to help you schedule a consultation. Feel free to reach out through the following channels:",
       "links": [
         {
-          "description": "Rua Alvaro Velho, 2D, 2830-327 Azeitão",
-          "icon": "mdi:location",
+          "description": "My Location",
+          "icon": "material-symbols-light:location-on-outline-rounded",
           "href": "https://maps.app.goo.gl/3uHBdwxH8aqrWCp76"
         },
         {
           "description": "+351 211 956 606",
           "href": "tel:+351211956606",
-          "icon": "mingcute:phone-fill"
+          "icon": "mdi-light:phone"
         },
         {
-          "description": "sofiaptdiogo@gmail.com",
-          "href": "mailto: sofiaptdiogo@gmail.com",
-          "icon": "ic:baseline-email"
+          "description": "contact@aestheticdoctor.com",
+          "href": "mailto: contact@aestheticdoctor.com",
+          "icon": "mdi-light:email"
         }
       ]
     }
@@ -92,8 +88,8 @@
           "href": "#about"
         },
         {
-          "name": "Practice areas",
-          "href": "#practice-areas"
+          "name": "Services",
+          "href": "#services"
         },
         {
           "name": "Testimonials",
@@ -104,175 +100,77 @@
           "href": "#faqs"
         },
         {
-          "name": "Contacts",
-          "href": "#contacts"
+          "name": "Contact",
+          "href": "#contact"
         }
       ]
     },
     "practiceAreas": [
       {
-        "title": "Private International Law",
-        "description": "Specialization in emigration processes, Golden Visas in Portugal, Portuguese and Brazilian nationality, regularization and work in Portugal and Brazil, document research, translation and certification of foreign documents, recognition of foreign judgments, regularization of assets, inheritances, and property transfer in Portugal and Brazil, judicial appeals against administrative decisions.",
+        "title": "Facial Rejuvenation",
+        "description": "Specializing in non-surgical facial rejuvenation techniques to enhance your natural beauty.",
         "imageUrl": "https://images.unsplash.com/photo-1614107151491-6876eecbff89?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "type": "Citizens"
+        "type": "Individuals"
       },
       {
-        "title": "Real Estate Law",
-        "description": "Specialization in real estate due diligence, drafting and review of purchase and sale contracts, conflicts involving false powers of attorney, breach of fiduciary duty, risk mitigation in leasing, representation in assemblies and supervision of properties in plural ownership, licensing, licensing with municipalities, judicial appeals against administrative decisions, judicial representation in property disputes such as leasing, eviction, dispossession, property claims, repossession, and adverse possession.",
+        "title": "Body Contouring",
+        "description": "Offering advanced body contouring solutions to help you achieve your desired shape.",
         "imageUrl": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1596&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "type": "Citizens"
+        "type": "Individuals"
       },
       {
-        "title": "Tax Law",
-        "description": "Specialization in tax optimization, financial planning, tax obligations, income tax return, transnational taxation, advice on tax residence and double-taxation regimes, definitive departure from Brazil, non-habitual resident status, judicial appeals against tax executions.",
+        "title": "Skin Treatments",
+        "description": "Providing a range of skin treatments to address various concerns and enhance your complexion.",
         "imageUrl": "https://images.unsplash.com/photo-1604156425963-9be03f86a428?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "type": "Citizens"
-      },
-      {
-        "title": "Labor Law",
-        "description": "Specialization in contractual advice and negotiation of working conditions, consultancy and negotiation in case of dismissals, labor calculations of benefits and compensations, communications in case of disconnection and leaves with or without pay, labor litigation and judicial sponsorship.",
-        "imageUrl": "https://images.unsplash.com/photo-1620433042638-c9a00b98637c?q=80&w=1494&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "type": "Citizens"
-      },
-      {
-        "title": "Family Law",
-        "description": "Specialization in drafting prenuptial agreements, assistance and representation in marriages between foreign spouses, proxy marriage, transcription of marriages that occurred abroad, approval and recognition of common-law unions, drafting of common-law union contracts, consensual and litigious divorce, divorce conference, parental power regulation, judicial representation in cases of parental alienation and international child abduction, judicial representation in probate and division proceedings.",
-        "imageUrl": "https://images.unsplash.com/photo-1620433042631-3df212941910?q=80&w=1500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "type": "Citizens"
-      },
-      {
-        "title": "Civil Law",
-        "description": "Specialization in drafting and understanding contracts, validation of conditions, rules, and clauses of commercial legal transactions in general, construction contracts, intellectual property, copyright, and conflicts arising from electronic business and custom software production, insolvency and default, civil liability and corporate liability, representation in judicial proceedings.",
-        "imageUrl": "https://images.unsplash.com/photo-1530469525856-cf37954301f7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "type": "Citizens"
-      },
-      {
-        "title": "General Civil Law",
-        "description": "Specialization in drafting and reviewing contracts, debt collection, judicial representation in debt collection processes, judicial representation in processes against insurers, judicial representation in processes against airlines.",
-        "imageUrl": "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "type": "Citizens"
-      },
-      {
-        "title": "Labor Law & Unions",
-        "description": "Specialization in drafting and analysis of employment contracts, how to properly dismiss employees, advice, calculations, and negotiation, consultancy in subcontracting, consultancy in company's ancillary obligations to employees, resolution of labor disputes, judicial representation, and negotiations.",
-        "imageUrl": "https://images.unsplash.com/photo-1556484687-30636164638b?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "type": "Company"
-      },
-      {
-        "title": "Civil Law",
-        "description": "Specialization in drafting and understanding contracts, validation of conditions, rules, and clauses of commercial legal transactions in general, construction contracts, intellectual property, copyright, and conflicts arising from electronic business and custom software production, insolvency and default, civil liability and corporate liability, representation in judicial proceedings.",
-        "imageUrl": "https://images.unsplash.com/photo-1530469525856-cf37954301f7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "type": "Company"
-      },
-      {
-        "title": "Commercial Law",
-        "description": "Specialization in the creation and registration of companies, assemblies, assignments, mergers, closure, and sale of commercial companies, licensing of activities, joint venture regime, adherence to current regulations, mitigation of legal risks, franchise contracts.",
-        "imageUrl": "https://images.unsplash.com/photo-1542908371-3d8e22825a4f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "type": "Company"
-      },
-      {
-        "title": "Intellectual Property",
-        "description": "Specialization in the registration and protection of trademarks and patents, licensing and royalties contracts, patents and utility models, marketing and transfer of IP, disputes and IP assessment, judicial representation in industrial property and copyright conflicts.",
-        "imageUrl": "https://images.unsplash.com/photo-1593444285553-28163240e3f1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "type": "Company"
-      },
-      {
-        "title": "Tax Consulting",
-        "description": "Specialization in tax optimization, financial planning, tax obligations, collective income tax return, transnational taxation, dividends, advice on tax residence and double-taxation regimes, judicial appeals against tax executions.",
-        "imageUrl": "https://images.unsplash.com/photo-1554224155-a1487473ffd9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "type": "Company"
+        "type": "Individuals"
       }
     ],
     "testimonials": {
-      "title": "What My Clients Experienced",
+      "title": "Client Experiences",
       "subtitle": "Testimonials",
       "feedback": [
         {
-          "author": "André Rodrigues",
-          "feedback": "Lorem ipsum dolor sit amet consectetur. Commodo pulvinar molestie pellentesque urna libero velit porta. Velit pellentesque hac gravida pellentesque est semper. Duis lectus gravida ultricies eleifend in pharetra faucibus orci sem.",
+          "author": "Jane Doe",
+          "feedback": "The personalized care I received was amazing! I felt comfortable and the results were fantastic.",
           "imageUrl": "https://images.unsplash.com/photo-1673623702948-082634e585e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D",
-          "role": "Patient"
+          "role": "Client"
         },
         {
-          "author": "André Rodrigues",
-          "feedback": "Lorem ipsum dolor sit amet consectetur. Commodo pulvinar molestie pellentesque urna libero velit porta. Velit pellentesque hac gravida pellentesque est semper. Duis lectus gravida ultricies eleifend in pharetra faucibus orci sem. Proin ac a cursus praesent. ",
+          "author": "John Smith",
+          "feedback": "I am thrilled with the results of my treatment. The personalized attention was exceptional.",
           "imageUrl": "https://plus.unsplash.com/premium_photo-1700575181270-87f37b2ebb4f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "role": "Patient"
-        },
-        {
-          "author": "André Rodrigues",
-          "feedback": "Lorem ipsum dolor sit amet consectetur. Commodo pulvinar molestie pellentesque urna libero velit porta. Velit pellentesque hac gravida pellentesque est semper. Duis lectus gravida ultricies eleifend in pharetra faucibus orci sem. Proin ac a cursus praesent. ",
-          "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "role": "Patient"
-        },
-        {
-          "author": "André Rodrigues",
-          "feedback": "Lorem ipsum dolor sit amet consectetur. Commodo pulvinar molestie pellentesque urna libero velit porta. Velit pellentesque hac gravida pellentesque est semper. Duis lectus gravida ultricies eleifend in pharetra faucibus orci sem. Proin ac a cursus praesent. ",
-          "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "role": "Patient"
-        },
-        {
-          "author": "André Rodrigues",
-          "feedback": "Lorem ipsum dolor sit amet consectetur. Commodo pulvinar molestie pellentesque urna libero velit porta. Velit pellentesque hac gravida pellentesque est semper. Duis lectus gravida ultricies eleifend in pharetra faucibus orci sem. Proin ac a cursus praesent. ",
-          "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "role": "Patient"
-        },
-        {
-          "author": "André Rodrigues",
-          "feedback": "Lorem ipsum dolor sit amet consectetur. Commodo pulvinar molestie pellentesque urna libero velit porta. Velit pellentesque hac gravida pellentesque est semper. Duis lectus gravida ultricies eleifend in pharetra faucibus orci sem. Proin ac a cursus praesent. ",
-          "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "role": "Patient"
+          "role": "Client"
         }
       ]
     },
     "articles": {
-      "title": "Published Articles",
-      "subtitle": "News",
+      "title": "Latest News",
+      "subtitle": "Updates",
       "articles": [
         {
           "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "title": "The Disregard of Legal Personality in the Private Limited Company",
-          "description": "The use of disregard for legal personality, should be moderated as a mobile penduluum so that it is a truly credible, rational and fair resource of the economic-social model, acting as a mitigator of systemic deviations and inducer of confidence in the economic functioning, but with transparent criteria , analytically determinable and formally expressed, eliminating the ambiguity that arbitrariness can cause. If so, instead of generating the annihilation of legal personality, this resource will improve the collective institute, through the pursuit only of lawful social purposes, preventing the deviation of the purpose of corporate entities.",
+          "title": "The Future of Aesthetic Medicine",
+          "description": "Explore the latest advancements in aesthetic medicine and how they are transforming the industry.",
           "href": ""
         },
         {
           "imageUrl": "https://images.unsplash.com/photo-1619418602850-35ad20aa1700?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "title": "Amendments to the 2009 Labor Code.",
-          "description": "Despite the personality and the importance of this element in the individual employment situation, as work does not exist, what exists are people who work, work is, from the economic angle of the companies, a factor of production, which must be attractive so that can be searched. This does not mean that work can be carried out at all costs in the logic of absolute optimization of competitiveness and employability, but that in any economic situation it should always assume a captive place.",
-          "href": ""
-        },
-        {
-          "imageUrl": "https://images.unsplash.com/photo-1593115057322-e94b77572f20?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "title": "The judge’s margins in the face of restrictions on the fundamental right to retribution",
-          "description": "As a fundamental right, the retributive guarantee is an asset against the political majority and, therefore, acts as an armor in the face of interventions that affect the degree of concretization underlying it, as legislative concretizations reduce the degree of abstraction and generality of the rule, and increase the judge’s margin of control in the face of a restriction, by integrating the content made with the fundamental guarantee.",
-          "href": ""
-        },
-        {
-          "imageUrl": "https://images.unsplash.com/photo-1494888427482-242d32babc0b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "title": "Wage Reducibility and the Prohibition of Retrogression",
-          "description": "Armed with scientific courage and boldness, the author proposes a deconstruction of the principle of the prohibition of retrogression – which does not have to be an absolute principle, not least because Law is not a science that works with the absolute as a rule – to fit in due place reducing it to its own sense in the scale of the values of legal and labor institutions. And so, to the extent of the verification of its practical ineffectiveness, it makes the bridge with jusrationality to show the dogmatic incongruence that underlies the predicted principle.",
+          "title": "Innovative Skincare Solutions",
+          "description": "Discover the innovative skincare solutions that are making waves in the aesthetic industry.",
           "href": ""
         }
       ]
     },
     "faqs": {
-      "title": "Frequentley Asked Questions.",
+      "title": "Frequently Asked Questions",
       "questions": [
         {
-          "question": "Education Lawyer & Consultation",
-          "answer": "Lorem ipsum dolor sit amet consecter Commodo pulvinar molestie pellentesque urna libero"
+          "question": "What is Aesthetic Medicine?",
+          "answer": "Aesthetic medicine focuses on improving cosmetic appearance through treatments such as Botox, fillers, and laser therapy."
         },
         {
-          "question": "Education Lawyer & Consultation",
-          "answer": "Lorem ipsum dolor sit amet consecter Commodo pulvinar molestie pellentesque urna libero"
-        },
-        {
-          "question": "Education Lawyer & Consultation",
-          "answer": "Lorem ipsum dolor sit amet consecter Commodo pulvinar molestie pellentesque urna libero"
-        },
-        {
-          "question": "Education Lawyer & Consultation",
-          "answer": "Lorem ipsum dolor sit amet consecter Commodo pulvinar molestie pellentesque urna libero"
+          "question": "What should I expect during a consultation?",
+          "answer": "During a consultation, I will discuss your goals, assess your needs, and recommend personalized treatment options."
         }
       ]
     },
@@ -288,8 +186,8 @@
               "href": "/#about"
             },
             {
-              "name": "Practice areas",
-              "href": "/#practice-areas"
+              "name": "Services",
+              "href": "/#services"
             },
             {
               "name": "FAQs",
@@ -303,7 +201,7 @@
         },
 
         {
-          "name": "Contacts",
+          "name": "Contact",
           "subLinks": [
             {
               "name": "Rua Alvaro Velho, 2D, 2830-327 Azeitão",
@@ -316,8 +214,8 @@
               "icon": "mingcute:phone-fill"
             },
             {
-              "name": "sofiaptdiogo@gmail.com",
-              "href": "mailto: sofiaptdiogo@gmail.com",
+              "name": "contact@aestheticdoctor.com",
+              "href": "mailto: contact@aestheticdoctor.com",
               "icon": "ic:baseline-email"
             }
           ]
@@ -338,7 +236,7 @@
     "success": "Your message has been sent successfully!"
   },
   "metadata": {
-    "homeTitle": "Sofia Pimenta - General Practitioner",
-    "description": "Sofia Pimenta is a dedicated General Practitioner based in Portugal. With a specialized focus on palliative care, she brings a compassionate and personalized approach to her practice."
+    "homeTitle": "Aesthetic Doctor - Enhancing Your Natural Beauty",
+    "description": "I specialize in aesthetic medicine, offering a range of treatments to enhance your natural beauty and boost your confidence."
   }
 }

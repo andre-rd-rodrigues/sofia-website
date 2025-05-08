@@ -8,6 +8,7 @@ import IconContact from "../IconContact";
 import { useForm } from "@formspree/react";
 import * as Form from "../Form";
 import { Icon } from "@iconify/react";
+import Section from "../Section";
 
 type Contact = {
   description: string;
@@ -23,23 +24,18 @@ function Contacts() {
   const contacts: Contact[] = getTranslationsArray("pages.contacts.links");
 
   return (
-    <>
+    <Section
+      id="contacts"
+      sectionClassName="flex flex-wrap lg:flex-nowrap gap-10"
+    >
       {/* Left Side --------------------------------  */}
       <div className="w-full lg:w-1/2 justify-center items-center">
-        <Animated type="slide-in-left">
-          <h3 className="text-blue uppercase tracking-widest text-xs">
-            {t("pages.contacts.subtitle")}
-          </h3>
-        </Animated>
-        <Animated type="slide-in-left" delay={100}>
-          <h4 className="text-3xl sm:text-5xl text-blue mt-3">
-            {t("pages.contacts.title")}
-          </h4>
-        </Animated>
+        <Section.Title
+          title={t("pages.contacts.title")}
+          subtitle={t("pages.contacts.subtitle")}
+        />
         <Animated type="slide-in-left" delay={300}>
-          <p className="my-7 text-zinc-500">
-            {t("pages.contacts.description")}
-          </p>
+          <p className="my-7">{t("pages.contacts.description")}</p>
         </Animated>
 
         {contacts.map(({ description, icon, href }, i) => (
@@ -49,8 +45,6 @@ function Contacts() {
             </div>
           </Animated>
         ))}
-
-        {/* Contacts */}
       </div>
 
       {/* Right Side -------------------------------- */}
@@ -74,13 +68,13 @@ function Contacts() {
               <form onSubmit={handleSubmit}>
                 <div className="flex gap-9 mb-8">
                   <Form.Input
-                    icon="solar-user-outline"
+                    icon="mynaui:user"
                     label="Nome"
                     placeholder="Name"
                     required
                   />
                   <Form.Input
-                    icon="mage:email"
+                    icon="mdi-light:email"
                     label="Email"
                     type="email"
                     placeholder="Email"
@@ -89,7 +83,7 @@ function Contacts() {
                 </div>
                 <div className="flex gap-9 mb-8">
                   <Form.Input
-                    icon="solar:phone-rounded-outline"
+                    icon="mdi-light:phone"
                     label="Telefone"
                     type="tel"
                     placeholder="Phone number"
@@ -102,7 +96,7 @@ function Contacts() {
                   />
                 </div>
                 <Form.Input
-                  icon="cil:pencil"
+                  icon="mdi-light:pencil"
                   label="Mensagem"
                   placeholder="How can I help you?"
                   required
@@ -116,7 +110,7 @@ function Contacts() {
           )}
         </div>
       </div>
-    </>
+    </Section>
   );
 }
 
