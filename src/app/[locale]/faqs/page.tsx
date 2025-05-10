@@ -1,38 +1,45 @@
 "use client";
-import React, { useState } from "react";
-import Animated from "./Animated";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
+import Animated from "@/components/Animated";
+import Page from "@/components/Page";
+import Section from "@/components/Section";
 import useTranslation from "@/hooks/useTranslation";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
 import { Icon } from "@iconify/react";
-import Section from "./Section";
 
-type Faqs = {
+type FaqsType = {
   answer: string;
   question: string;
 };
 
-export default function Faqs() {
-  const t = useTranslations("components.faqs");
+const FaqsPage = () => {
+  const t = useTranslations("pages.faqs");
   const { getTranslationsArray } = useTranslation();
 
-  const faqs: Faqs[] = getTranslationsArray("components.faqs.questions");
+  const faqs: FaqsType[] = getTranslationsArray("components.faqs.questions");
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
   const handleToggle = (index: number) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
-    <Section id="faqs" sectionClassName="flex flex-wrap lg:flex-nowrap gap-10">
-      <div className="w-full lg:w-1/2 justify-center items-center">
-        <Section.Title title={t("title")} subtitle="FAQ's" />
-        {/* FAQs Questions */}
+    <Page>
+      <Page.Title
+        src="https://askproject.net/medral/wp-content/uploads/sites/154/2023/09/small-white-ceramic-mortar-with-eucalyptus-leaves-AANHPA2.jpg"
+        title={"FAQs"}
+      />
+      <Section>
+        <Section.Title title={t("title")} subtitle="FAQS" className="mb-6" />
+        <p className="mb-8">
+          Encontre respostas para as perguntas mais comuns sobre medicina
+          integrativa e os meus serviços. Se tiver mais dúvidas, não hesite em
+          contactar-me.
+        </p>
         <ul className="mt-8 sm:m-5">
           {faqs.map((faq, index) => (
-            <Animated type="slide" delay={index * 100} key={index}>
-              <li className="text-blue bg-white p-4">
+            <Animated key={index} type="slide" delay={index * 100}>
+              <li key={index} className="text-blue bg-white p-4">
                 <button
                   onClick={() => handleToggle(index)}
                   className="flex items-center justify-between w-full"
@@ -63,20 +70,9 @@ export default function Faqs() {
             </Animated>
           ))}
         </ul>
-      </div>
-
-      <div className="w-full lg:w-1/2">
-        <div className="relative min-h-80 w-full overflow-hidden rounded-lg shadow-2xl">
-          <Animated delay={500}>
-            <Image
-              src="https://images.unsplash.com/photo-1550160770-005c21924d66?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Contactos - Dr.ª Sofia Diogo"
-              objectFit="cover"
-              fill
-            />
-          </Animated>
-        </div>
-      </div>
-    </Section>
+      </Section>
+    </Page>
   );
-}
+};
+
+export default FaqsPage;

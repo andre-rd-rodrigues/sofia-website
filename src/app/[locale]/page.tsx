@@ -1,21 +1,20 @@
 import Animated from "@/components/Animated";
+import Button from "@/components/Button";
 import * as Calendar from "@/components/Calendar";
 import Contacts from "@/components/Contacts";
 import Faqs from "@/components/Faqs";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import IconCard from "@/components/IconCard/IconCard";
-import { getBgColor } from "@/components/IconCard/iconcard.utils";
 import Section from "@/components/Section";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import useTranslation from "@/hooks/useTranslation";
+import { Link } from "@/navigation";
+import { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { Locale } from "../../../locale.types";
-import { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
 import { getMetadata } from "../../../metadata/metadata.utils";
-import { Link } from "@/navigation";
-import Button from "@/components/Button";
 
 export type MetadataProps = {
   params: { locale: Locale };
@@ -36,7 +35,9 @@ export default function Home() {
   const t = useTranslations("pages");
   const { getTranslationsArray } = useTranslation();
 
-  const services = getTranslationsArray("pages.homepage.services");
+  const treatmentSteps = getTranslationsArray(
+    "pages.homepage.treatments.steps"
+  );
 
   return (
     <main>
@@ -67,15 +68,6 @@ export default function Home() {
             {t("homepage.subtitle")}
           </h2>
         </Animated>
-        {/*    <Animated
-          type="fade"
-          delay={500}
-          config={{
-            config: { tension: 150, friction: 60 }
-          }}
-        >
-          <Calendar.Button className="m-auto" />
-        </Animated> */}
       </HeroSection>
 
       {/* About me */}
@@ -109,17 +101,17 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Practice Areas  */}
+      {/* Treatments  */}
       <Section id="practice-areas" containerClassName="bg-bgBlue text-blue">
         <Section.Title
-          title={t("homepage.practice.title")}
-          subtitle={t("homepage.practice.subtitle")}
+          title={t("homepage.treatments.title")}
+          subtitle={t("homepage.treatments.subtitle")}
         />
         <Animated>
-          <p className="max-w-xl">{t("homepage.practice.description")}</p>
+          <p className="max-w-xl">{t("homepage.treatments.description")}</p>
         </Animated>
-        <div className="flex flex-wrap justify-center md:justify-start lg:justify-between gap-5 mt-12">
-          {services.map(({ title, description, icon }, i) => (
+        <div className="flex flex-wrap gap-5 mt-12 justify-center">
+          {treatmentSteps.map(({ title, description, icon }, i) => (
             <Animated type="slide" delay={i * 100} key={title}>
               <IconCard title={title} description={description} icon={icon} />
             </Animated>
@@ -127,7 +119,7 @@ export default function Home() {
         </div>
         <Animated>
           <Button className="mt-12 m-auto">
-            <Link href="/services">{t("homepage.practice.link")}</Link>
+            <Link href="/treatments">{t("homepage.treatments.link")}</Link>
           </Button>
         </Animated>
       </Section>

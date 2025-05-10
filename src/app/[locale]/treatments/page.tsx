@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 
 type Props = {};
 
-const Services = (props: Props) => {
+const Treatments = (props: Props) => {
   const t = useTranslations("pages.treatments");
   return (
     <Page>
@@ -24,4 +24,4 @@ const Services = (props: Props) => {
   );
 };
 
-export default Services;
+export default Treatments;

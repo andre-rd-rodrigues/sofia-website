@@ -9,7 +9,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "metadata" });
 
   return getMetadata({
-    title: t("servicesTitle"),
+    title: t("faqsPageTitle"),
     description: t("description")
   });
 }

@@ -25,23 +25,22 @@ const TreatmentCard = ({
   details
 }: TreatmentCardProps) => {
   return (
-    <section className="flex flex-col lg:flex-row gap-10 items-start">
+    <section className="flex flex-col lg:flex-row gap-6 items-start">
       {/* Image and button */}
       <div className="w-full lg:w-1/2 flex flex-col h-full">
         <h2 className="text-3xl mb-6">{category}</h2>
-        <div className="relative flex-1 shadow-lg mb-6">
+        <div className="relative min-h-44 flex-1 shadow-lg md:mb-6">
           <Image src={image} alt={name} fill className="object-cover" />
         </div>
-        <Button label={"make appointment"} />
+        <Button label={"make appointment"} className="hidden md:block" />
       </div>
 
-      {/* Objective and treatment details */}
+      {/* Treatment details */}
       <div className="w-full lg:w-1/2 space-y-6">
         <div className="bg-background-alt text-white p-6">
           <h5 className="mb-1 font-normal">Objective</h5>
           <p>{objective}</p>
         </div>
-
         <div className="border p-6  space-y-4 text-neutral-700 ">
           <div>
             <h5 className="font-normal">Application Time</h5>
@@ -60,6 +59,7 @@ const TreatmentCard = ({
             <p>{details.recovery}</p>
           </div>
         </div>
+        <Button label={"make appointment"} className="w-full block md:hidden" />
       </div>
     </section>
   );

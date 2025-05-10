@@ -9,11 +9,23 @@
         "description": "Welcome to my Aesthetic Medicine practice, where I focus on enhancing your natural beauty with personalized treatments. As a dedicated professional, I am committed to providing the highest quality care, using the latest techniques and technologies to achieve stunning results. Whether you're looking for rejuvenation, anti-aging solutions, or cosmetic enhancements, I am here to guide you on your aesthetic journey.",
         "extraInfo": []
       },
-      "practice": {
-        "subtitle": "Services",
+      "treatments": {
+        "subtitle": "Treatments",
         "title": "Personalized Aesthetic Excellence",
         "description": "I offer a wide range of aesthetic services, from skincare and injectables to advanced laser treatments. My goal is to help you achieve your beauty goals with safe and effective procedures tailored to your unique needs.",
-        "link": "View Services"
+        "link": "View Treatments",
+        "steps": [
+          {
+            "title": "1º Appointment",
+            "description": "Experience the latest in skincare technology with my advanced treatments designed to rejuvenate and refresh your skin.",
+            "icon": "solar:skincare-bold"
+          },
+          {
+            "title": "Personalized Treatment",
+            "description": "Achieve a youthful appearance with my range of injectable treatments, including Botox and dermal fillers.",
+            "icon": "solar:injectables-bold"
+          }
+        ]
       },
       "hero1": {
         "title": "A Personalized Approach to Aesthetic Medicine.",
@@ -24,23 +36,6 @@
         "subtitle": "Contact Me",
         "description": "Whether you're interested in learning more about my services or ready to book a consultation, I am here to assist you. Reach out today and take the first step towards achieving your aesthetic goals."
       },
-      "services": [
-        {
-          "title": "Advanced Skincare",
-          "description": "Experience the latest in skincare technology with my advanced treatments designed to rejuvenate and refresh your skin.",
-          "icon": "solar:skincare-bold"
-        },
-        {
-          "title": "Injectables",
-          "description": "Achieve a youthful appearance with my range of injectable treatments, including Botox and dermal fillers.",
-          "icon": "solar:injectables-bold"
-        },
-        {
-          "title": "Laser Treatments",
-          "description": "Explore my cutting-edge laser treatments for skin resurfacing, hair removal, and more.",
-          "icon": "solar:laser-bold"
-        }
-      ],
       "heroSection1": {
         "subtitle": "Aesthetic Excellence",
         "title": "Transforming Beauty with Expert Care.",
@@ -57,10 +52,9 @@
 
       "description": "I am committed to delivering the highest standard of aesthetic care. With a focus on innovation and excellence, I offer a comprehensive range of services to help you look and feel your best. As an experienced professional, I am here to support you every step of the way, ensuring a safe and satisfying experience."
     },
-    "practiceAreas": {
-      "title": "My Services",
-      "citizens": "Individuals",
-      "companies": "Clinics"
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "description": "Achieve a youthful appearance with my range of injectable treatments, including Botox and dermal fillers."
     },
     "contacts": {
       "subtitle": "Contacts",
@@ -90,27 +84,23 @@
       "links": [
         {
           "name": "About",
-          "href": "#about"
+          "href": "/about"
         },
         {
-          "name": "Services",
-          "href": "#services"
-        },
-        {
-          "name": "Testimonials",
-          "href": "#testimonials"
+          "name": "Treatments",
+          "href": "/treatments"
         },
         {
           "name": "FAQs",
-          "href": "#faqs"
+          "href": "/faqs"
         },
         {
-          "name": "Contact",
-          "href": "#contact"
+          "name": "Contacts",
+          "href": "/contacts"
         }
       ]
     },
-    "practiceAreas": [
+    "treatments": [
       {
         "title": "Facial Rejuvenation",
         "description": "Specializing in non-surgical facial rejuvenation techniques to enhance your natural beauty.",
@@ -145,24 +135,6 @@
           "feedback": "I am thrilled with the results of my treatment. The personalized attention was exceptional.",
           "imageUrl": "https://plus.unsplash.com/premium_photo-1700575181270-87f37b2ebb4f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "role": "Client"
-        }
-      ]
-    },
-    "articles": {
-      "title": "Latest News",
-      "subtitle": "Updates",
-      "articles": [
-        {
-          "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "title": "The Future of Aesthetic Medicine",
-          "description": "Explore the latest advancements in aesthetic medicine and how they are transforming the industry.",
-          "href": ""
-        },
-        {
-          "imageUrl": "https://images.unsplash.com/photo-1619418602850-35ad20aa1700?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "title": "Innovative Skincare Solutions",
-          "description": "Discover the innovative skincare solutions that are making waves in the aesthetic industry.",
-          "href": ""
         }
       ]
     },
@@ -244,6 +216,7 @@
   "metadata": {
     "homeTitle": "Aesthetic Doctor - Enhancing Your Natural Beauty",
     "description": "I specialize in aesthetic medicine, offering a range of treatments to enhance your natural beauty and boost your confidence.",
-    "servicesTitle": "Treatments - Dr. Sofia Diogo"
+    "treatmentsPageTitle": "Treatments - Dr. Sofia Diogo",
+    "faqsPageTitle": "FAQ's - Dr. Sofia Diogo"
   }
 }
