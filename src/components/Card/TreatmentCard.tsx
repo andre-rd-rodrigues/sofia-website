@@ -28,7 +28,8 @@ const TreatmentCard = ({
     <section className="flex flex-col lg:flex-row gap-6 items-start">
       {/* Image and button */}
       <div className="w-full lg:w-1/2 flex flex-col h-full">
-        <h2 className="text-3xl mb-6">{category}</h2>
+        <h2 className="text-3xl">{name}</h2>
+        <p className="text-sm text-neutral-500 mb-6">{category}</p>
         <div className="relative min-h-44 flex-1 shadow-lg md:mb-6">
           <Image src={image} alt={name} fill className="object-cover" />
         </div>
