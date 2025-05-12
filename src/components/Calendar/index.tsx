@@ -1,10 +1,10 @@
-"use client";
-import { useEffect, useState } from "react";
-import { PopupWidget, PopupButton, InlineWidget } from "react-calendly";
-import ButtonApp from "@/components/Button";
+'use client';
+import { useEffect, useState } from 'react';
+import { PopupWidget, PopupButton, InlineWidget } from 'react-calendly';
+import ButtonApp from '@/components/Button';
 
 type CalendlyProps = {
-  format: "widget" | "text" | "inline";
+  format: 'widget' | 'text' | 'inline';
   className?: string;
 };
 
@@ -13,8 +13,8 @@ const CalendarView: React.FC<CalendlyProps> = ({ format, className }) => {
   const [rootElement, setRootElement] = useState<Element | null>(null);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const element = document.getElementById("calendly-modal");
+    if (typeof window !== 'undefined') {
+      const element = document.getElementById('calendly-modal');
       setRootElement(element);
     }
   }, []);
@@ -22,18 +22,18 @@ const CalendarView: React.FC<CalendlyProps> = ({ format, className }) => {
   const settings = {
     url: process.env.NEXT_PUBLIC_CALENDLY_URL!,
     rootElement,
-    text: "MAKE AN APPOINTMENT",
-    color: "#FD7959",
+    text: 'MAKE AN APPOINTMENT',
+    color: '#FD7959',
     className,
   };
 
   const calendlyElement = () => {
     switch (format) {
-      case "widget":
+      case 'widget':
         // @ts-expect-error check later
         return <PopupWidget {...settings} />;
 
-      case "text":
+      case 'text':
         // @ts-expect-error check later
         return <PopupButton {...settings} />;
 
@@ -55,10 +55,10 @@ type ButtonProps = {
 };
 const Button: React.FC<ButtonProps> = ({ className }) => {
   return (
-    <div className={`relative block w-[220px] h-[54px] ${className}`}>
+    <div className={`relative block h-[54px] w-[220px] ${className}`}>
       <ButtonApp icon="ph:calendar-light" label="appointment" />
-      <div className="absolute top-0 left-0">
-        <CalendarView format="text" className="opacity-0 p-[1rem]" />
+      <div className="absolute left-0 top-0">
+        <CalendarView format="text" className="p-[1rem] opacity-0" />
       </div>
     </div>
   );

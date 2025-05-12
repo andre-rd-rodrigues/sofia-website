@@ -1,4 +1,4 @@
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from 'next/navigation';
 
 /**
  * Represents the current state of all filters
@@ -86,10 +86,10 @@ export const useFilters = (config: FilterConfig) => {
 
   // Get filters from URL
   const filters: FilterState = {
-    search: searchParams.get("search") || "",
-    category: searchParams.get("category") || "",
-    duration: searchParams.get("duration") || "",
-    price: searchParams.get("price") || "",
+    search: searchParams.get('search') || '',
+    category: searchParams.get('category') || '',
+    duration: searchParams.get('duration') || '',
+    price: searchParams.get('price') || '',
   };
 
   /**
@@ -101,30 +101,30 @@ export const useFilters = (config: FilterConfig) => {
 
     // Handle search filter
     if (newFilters.search) {
-      params.set("search", newFilters.search);
+      params.set('search', newFilters.search);
     } else {
-      params.delete("search");
+      params.delete('search');
     }
 
     // Handle category filter
-    if (newFilters.category && newFilters.category !== "all") {
-      params.set("category", newFilters.category);
+    if (newFilters.category && newFilters.category !== 'all') {
+      params.set('category', newFilters.category);
     } else {
-      params.delete("category");
+      params.delete('category');
     }
 
     // Handle duration filter
-    if (newFilters.duration && newFilters.duration !== "all") {
-      params.set("duration", newFilters.duration);
+    if (newFilters.duration && newFilters.duration !== 'all') {
+      params.set('duration', newFilters.duration);
     } else {
-      params.delete("duration");
+      params.delete('duration');
     }
 
     // Handle price filter
-    if (newFilters.price && newFilters.price !== "all") {
-      params.set("price", newFilters.price);
+    if (newFilters.price && newFilters.price !== 'all') {
+      params.set('price', newFilters.price);
     } else {
-      params.delete("price");
+      params.delete('price');
     }
     const newUrl = params.toString()
       ? `?${params.toString()}`

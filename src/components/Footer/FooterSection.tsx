@@ -1,5 +1,5 @@
-import { Icon } from "@iconify/react";
-import Link from "next/link";
+import { Icon } from '@iconify/react';
+import Link from 'next/link';
 
 interface SubLink {
   name: string;
@@ -18,12 +18,12 @@ const FooterSection: React.FC<FooterSectionProps> = ({
   sectionHref,
   subLinks,
 }) => {
-  const isContact = title.toLowerCase().includes("contact");
+  const isContact = title.toLowerCase().includes('contact');
 
   return (
     <div>
       <h4
-        className={`text-sm font-medium mb-2 uppercase tracking-widest text-white`}
+        className={`mb-2 text-sm font-medium uppercase tracking-widest text-white`}
       >
         {title}
       </h4>
@@ -33,7 +33,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({
             <li key={i}>
               <Link
                 href={href}
-                className="hover:underline flex gap-1 items-center mb-2 mt-1"
+                className="mb-2 mt-1 flex items-center gap-1 hover:underline"
               >
                 <Icon icon={icon} fontSize={15} />
                 <p className="text-sm">{name}</p>
@@ -41,7 +41,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({
             </li>
           ) : (
             <li key={i}>
-              <Link href={href} className="hover:underline text-sm font-light">
+              <Link href={href} className="text-sm font-light hover:underline">
                 {name}
               </Link>
             </li>
@@ -51,7 +51,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({
         {/* When no sub links are provided */}
         {!subLinks && (
           <li>
-            <Link href={sectionHref} className="hover:underline text-xs">
+            <Link href={sectionHref} className="text-xs hover:underline">
               {title}
             </Link>
           </li>

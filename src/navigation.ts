@@ -1,31 +1,31 @@
 import {
   createLocalizedPathnamesNavigation,
   Pathnames,
-} from "next-intl/navigation";
+} from 'next-intl/navigation';
 
-export const locales = ["en", "pt"] as const;
-export const localePrefix = "always"; // Default
+export const locales = ['en', 'pt'] as const;
+export const localePrefix = 'always'; // Default
 
 export const pathnames = {
-  "/": "/",
+  '/': '/',
 
-  "/about": {
-    en: "/about",
-    pt: "/sobre",
+  '/about': {
+    en: '/about',
+    pt: '/sobre',
   },
 
-  "/treatments": {
-    en: "/treatments",
-    pt: "/tratamentos",
+  '/treatments': {
+    en: '/treatments',
+    pt: '/tratamentos',
   },
 
-  "/faqs": "/faqs",
+  '/faqs': '/faqs',
 
-  "/blog": "/blog",
+  '/blog': '/blog',
 
-  "/contacts": {
-    en: "/contacts",
-    pt: "/contactos",
+  '/contacts': {
+    en: '/contacts',
+    pt: '/contactos',
   },
 } satisfies Pathnames<typeof locales>;
 

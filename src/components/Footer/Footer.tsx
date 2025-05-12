@@ -1,13 +1,13 @@
-"use client";
-import React from "react";
-import FooterSection from "./FooterSection";
-import { useTranslations } from "next-intl";
-import useTranslation from "@/hooks/useTranslation";
+'use client';
+import React from 'react';
+import FooterSection from './FooterSection';
+import { useTranslations } from 'next-intl';
+import useTranslation from '@/hooks/useTranslation';
 
-import Link from "next/link";
-import { Icon } from "@iconify/react";
-import Container from "../Container";
-import { SOCIAL_MEDIA } from "@/constants/marketing.constants";
+import Link from 'next/link';
+import { Icon } from '@iconify/react';
+import Container from '../Container';
+import { SOCIAL_MEDIA } from '@/constants/marketing.constants';
 
 interface SocialMediaLink {
   icon: string;
@@ -25,10 +25,10 @@ interface FooterLink {
 }
 
 const Footer: React.FC = () => {
-  const t = useTranslations("components");
+  const t = useTranslations('components');
   const { getTranslationsArray } = useTranslation();
   const footerLinks: FooterLink[] = getTranslationsArray(
-    "components.footer.links",
+    'components.footer.links',
   );
 
   return (
@@ -39,9 +39,9 @@ const Footer: React.FC = () => {
 
         {/* Description & Social Media */}
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0 sm:max-w-72">
-            <p className="text-white text-sm">{t("footer.description")}</p>
-            <div className="flex gap-4 mt-3 justify-center sm:justify-start">
+          <div className="mb-6 sm:max-w-72 md:mb-0">
+            <p className="text-sm text-white">{t('footer.description')}</p>
+            <div className="mt-3 flex justify-center gap-4 sm:justify-start">
               {SOCIAL_MEDIA.map((social: SocialMediaLink) => (
                 <Link href={social.href} key={social.href} passHref>
                   <Icon color="white" icon={social.icon} fontSize={20} />
@@ -50,10 +50,10 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <hr className="mb-9 border-gray-200 mx-auto opacity-50" />
+          <hr className="mx-auto mb-9 border-gray-200 opacity-50" />
 
           {/* Footer Links */}
-          <div className="flex flex-wrap gap-5 sm:gap-24 justify-between sm:justify-normal">
+          <div className="flex flex-wrap justify-between gap-5 sm:justify-normal sm:gap-24">
             {footerLinks.map((link: FooterLink, i: number) => (
               <FooterSection
                 key={i}
@@ -65,15 +65,15 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <hr className="mt-10 mb-4 border-gray-300 mx-auto opacity-50" />
+        <hr className="mx-auto mb-4 mt-10 border-gray-300 opacity-50" />
 
         {/* Copyright */}
-        <div className="text-center pb-5 text-white text-sm">
+        <div className="pb-5 text-center text-sm text-white">
           <span className="font-proxima-nova font-light">
-            © 2025{" "}
+            © 2025{' '}
             <a
               href="https://andrerodrigo.com"
-              className="hover:underline text-sm font-medium"
+              className="text-sm font-medium hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
             </a>
             . All Rights Reserved.
           </span>
-          <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0"></div>
+          <div className="mt-4 flex space-x-5 sm:mt-0 sm:justify-center"></div>
         </div>
       </Container>
     </footer>

@@ -1,11 +1,11 @@
-"use client";
-import useTranslation from "@/hooks/useTranslation";
-import { useTranslations } from "next-intl";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
-import Testimonial from "./Testimonial";
-import Section from "../Section";
+'use client';
+import useTranslation from '@/hooks/useTranslation';
+import { useTranslations } from 'next-intl';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import Testimonial from './Testimonial';
+import Section from '../Section';
 
 const settings = {
   dots: true,
@@ -43,20 +43,20 @@ export interface TestimonialType {
 }
 
 function Testimonials() {
-  const t = useTranslations("components");
+  const t = useTranslations('components');
   const { getTranslationsArray } = useTranslation();
 
   const testimonials: TestimonialType[] = getTranslationsArray(
-    "components.testimonials.feedback",
+    'components.testimonials.feedback',
   );
 
   return (
     <Section id="testimonials">
-      <div className="relative flex mb-10 sm:mb-20">
+      <div className="relative mb-10 flex sm:mb-20">
         <div className="relative mt-5">
           <Section.Title
-            title={t("testimonials.title")}
-            subtitle={t("testimonials.subtitle")}
+            title={t('testimonials.title')}
+            subtitle={t('testimonials.subtitle')}
           />
         </div>
       </div>

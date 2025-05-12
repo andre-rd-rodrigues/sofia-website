@@ -1,6 +1,6 @@
-"use client";
-import { Icon } from "@iconify/react";
-import React from "react";
+'use client';
+import { Icon } from '@iconify/react';
+import React from 'react';
 
 type IconContactProps = {
   icon: string;
@@ -16,17 +16,18 @@ function IconContact({ icon, contact, className, href }: IconContactProps) {
     <a
       href={href}
       target="_blank"
-      className={`${className} inline-flex gap-2 justify-center items-center`}
+      className={`${className} inline-flex items-center justify-center gap-2`}
+      rel="noreferrer"
     >
       {renderIcon}
-      <p className="hover:text-zinc-800 text-zinc-500">{contact}</p>
+      <p className="text-zinc-500 hover:text-zinc-800">{contact}</p>
     </a>
   ) : (
     <div
-      className={`${className} inline-flex gap-2 justify-center items-center `}
+      className={`${className} inline-flex items-center justify-center gap-2 `}
     >
       {renderIcon}
-      <p className="hover:text-zinc-800 text-zinc-500">{contact}</p>
+      <p className="text-zinc-500 hover:text-zinc-800">{contact}</p>
     </div>
   );
 }

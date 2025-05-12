@@ -1,25 +1,25 @@
-"use client";
-import useTranslation from "@/hooks/useTranslation";
+'use client';
+import useTranslation from '@/hooks/useTranslation';
 
-import { useState } from "react";
+import { useState } from 'react';
 
-import { proximaNova } from "@/fonts";
-import { Link } from "@/navigation";
-import Image from "next/image";
-import { usePathname } from "next/navigation";
-import LanguageSelector from "./LanguageSelector";
+import { proximaNova } from '@/fonts';
+import { Link } from '@/navigation';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   const { getTranslationsArray } = useTranslation();
 
-  const navlinks = getTranslationsArray("components.navbar.links");
+  const navlinks = getTranslationsArray('components.navbar.links');
   const pathname = usePathname();
 
   const burgerButton = (
     <button
-      className="text-blue cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+      className="text-blue block cursor-pointer rounded border border-solid border-transparent bg-transparent px-3 py-1 text-xl leading-none outline-none focus:outline-none lg:hidden"
       type="button"
       onClick={() => setNavbarOpen((prevState) => !prevState)}
     >
@@ -39,8 +39,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 z-50 w-full sm:left-4 sm:right-4 sm:top-4 sm:w-auto">
       <div className="relative h-full bg-white bg-opacity-40 shadow-lg backdrop-blur-[20px] sm:rounded-full">
-        <div className="w-full flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <div className="flex w-full flex-wrap items-center justify-between">
+          <div className="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
             <Link href="/">
               <Image
                 width={40}
@@ -53,22 +53,22 @@ const Navbar = () => {
           </div>
           <div
             className={
-              "lg:flex w-full lg:w-auto justify-end transition-all duration-300" +
-              (navbarOpen ? "flex" : " hidden")
+              'w-full justify-end transition-all duration-300 lg:flex lg:w-auto' +
+              (navbarOpen ? 'flex' : ' hidden')
             }
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <ul className="flex list-none flex-col lg:ml-auto lg:flex-row">
               {navlinks.map(({ href, name }) => (
                 <Link
-                  className={`px-5 py-3 flex items-center justify-end lg:justify-center text-md text-left text-blue hover:opacity-75`}
+                  className={`text-md text-blue flex items-center justify-end px-5 py-3 text-left hover:opacity-75 lg:justify-center`}
                   href={href}
                   key={name}
                   onClick={() => setNavbarOpen((prevState) => !prevState)}
                 >
                   <li
                     className={`${
-                      pathname === href ? "border-b-2 border-blue" : ""
-                    } ${proximaNova.className} font-normal text-sm`}
+                      pathname === href ? 'border-blue border-b-2' : ''
+                    } ${proximaNova.className} text-sm font-normal`}
                   >
                     {name}
                   </li>

@@ -1,11 +1,11 @@
-"use client";
-import React, { useState } from "react";
-import Animated from "./Animated";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
-import useTranslation from "@/hooks/useTranslation";
-import { Icon } from "@iconify/react";
-import Section from "./Section";
+'use client';
+import React, { useState } from 'react';
+import Animated from './Animated';
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import useTranslation from '@/hooks/useTranslation';
+import { Icon } from '@iconify/react';
+import Section from './Section';
 
 type Faqs = {
   answer: string;
@@ -13,10 +13,10 @@ type Faqs = {
 };
 
 export default function Faqs() {
-  const t = useTranslations("components.faqs");
+  const t = useTranslations('components.faqs');
   const { getTranslationsArray } = useTranslation();
 
-  const faqs: Faqs[] = getTranslationsArray("components.faqs.questions");
+  const faqs: Faqs[] = getTranslationsArray('components.faqs.questions');
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -26,8 +26,8 @@ export default function Faqs() {
 
   return (
     <Section id="faqs" sectionClassName="flex flex-wrap lg:flex-nowrap gap-10">
-      <div className="w-full lg:w-1/2 justify-center items-center">
-        <Section.Title title={t("title")} subtitle="FAQ's" />
+      <div className="w-full items-center justify-center lg:w-1/2">
+        <Section.Title title={t('title')} subtitle="FAQ's" />
         {/* FAQs Questions */}
         <ul className="mt-8 sm:m-5">
           {faqs.map((faq, index) => (
@@ -35,9 +35,9 @@ export default function Faqs() {
               <li className="text-blue bg-white p-4">
                 <button
                   onClick={() => handleToggle(index)}
-                  className="flex items-center justify-between w-full"
+                  className="flex w-full items-center justify-between"
                 >
-                  <h6 className="text-md sm:text-lg font-medium">
+                  <h6 className="text-md font-medium sm:text-lg">
                     {faq.question}
                   </h6>
                   <span>
@@ -52,8 +52,8 @@ export default function Faqs() {
                 <div
                   className={`px-4 transition-all duration-300 ${
                     openIndex === index
-                      ? "max-h-80 opacity-100 pt-3"
-                      : "max-h-0 opacity-0"
+                      ? 'max-h-80 pt-3 opacity-100'
+                      : 'max-h-0 opacity-0'
                   } overflow-hidden`}
                 >
                   <p>{faq.answer}</p>

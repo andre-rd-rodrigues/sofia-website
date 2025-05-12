@@ -1,6 +1,6 @@
-"use client";
-import { Icon } from "@iconify/react";
-import React from "react";
+'use client';
+import { Icon } from '@iconify/react';
+import React from 'react';
 
 type Props = {
   title: string;
@@ -10,9 +10,9 @@ type Props = {
 
 const IconCard = ({ title, description, icon }: Props) => {
   return (
-    <div className="w-80 h-96 px-11 flex flex-col items-center justify-center text-center shadow-lg rounded-lg">
+    <div className="flex h-96 w-80 flex-col items-center justify-center rounded-lg px-11 text-center shadow-lg">
       <Icon icon={icon} fontSize={60} />
-      <h5 className="font-proxima-nova font-medium  text-xl my-4">{title}</h5>
+      <h5 className="my-4 font-proxima-nova  text-xl font-medium">{title}</h5>
       <p>{description}</p>
     </div>
   );

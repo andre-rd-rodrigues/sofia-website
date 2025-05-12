@@ -1,8 +1,8 @@
-"use client";
-import React, { ButtonHTMLAttributes } from "react";
-import { Icon } from "@iconify/react";
-import { proximaNova } from "@/fonts";
-import { useTranslations } from "next-intl";
+'use client';
+import React, { ButtonHTMLAttributes } from 'react';
+import { Icon } from '@iconify/react';
+import { proximaNova } from '@/fonts';
+import { useTranslations } from 'next-intl';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
@@ -24,13 +24,13 @@ function Button({
   children,
   ...buttonProps
 }: ButtonProps) {
-  const t = useTranslations("components.buttons");
+  const t = useTranslations('components.buttons');
 
   const baseClasses =
-    "border px-4 py-2 text-sm font-normal transition flex items-center justify-center gap-2";
+    'border px-4 py-2 text-sm font-normal transition flex items-center justify-center gap-2';
 
-  const darkClasses = "border-black bg-black text-white hover:bg-gray-800";
-  const whiteClasses = "border-black bg-white text-black hover:bg-gray-100";
+  const darkClasses = 'border-black bg-black text-white hover:bg-gray-800';
+  const whiteClasses = 'border-black bg-white text-black hover:bg-gray-100';
 
   const buttonClasses = `${baseClasses} ${
     variant ? darkClasses : whiteClasses

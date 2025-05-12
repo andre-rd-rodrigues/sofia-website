@@ -1,14 +1,14 @@
-"use client";
-import { useTranslations } from "next-intl";
-import React from "react";
-import Animated from "../Animated";
-import Button from "../Button";
-import useTranslation from "@/hooks/useTranslation";
-import IconContact from "../IconContact";
-import { useForm } from "@formspree/react";
-import * as Form from "../Form";
-import { Icon } from "@iconify/react";
-import Section from "../Section";
+'use client';
+import { useTranslations } from 'next-intl';
+import React from 'react';
+import Animated from '../Animated';
+import Button from '../Button';
+import useTranslation from '@/hooks/useTranslation';
+import IconContact from '../IconContact';
+import { useForm } from '@formspree/react';
+import * as Form from '../Form';
+import { Icon } from '@iconify/react';
+import Section from '../Section';
 
 type Contact = {
   description: string;
@@ -17,11 +17,11 @@ type Contact = {
 };
 
 function Contacts() {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM || "");
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM || '');
   const t = useTranslations();
   const { getTranslationsArray } = useTranslation();
 
-  const contacts: Contact[] = getTranslationsArray("pages.contacts.links");
+  const contacts: Contact[] = getTranslationsArray('pages.contacts.links');
 
   return (
     <Section
@@ -29,13 +29,13 @@ function Contacts() {
       sectionClassName="flex flex-wrap lg:flex-nowrap gap-10"
     >
       {/* Left Side --------------------------------  */}
-      <div className="w-full lg:w-1/2 justify-center items-center">
+      <div className="w-full items-center justify-center lg:w-1/2">
         <Section.Title
-          title={t("pages.contacts.title")}
-          subtitle={t("pages.contacts.subtitle")}
+          title={t('pages.contacts.title')}
+          subtitle={t('pages.contacts.subtitle')}
         />
         <Animated type="slide-in-left" delay={300}>
-          <p className="my-7">{t("pages.contacts.description")}</p>
+          <p className="my-7">{t('pages.contacts.description')}</p>
         </Animated>
 
         {contacts.map(({ description, icon, href }, i) => (
@@ -48,7 +48,7 @@ function Contacts() {
       </div>
 
       {/* Right Side -------------------------------- */}
-      <div className="w-full lg:w-1/2 mt-0 lg:mt-9">
+      <div className="mt-0 w-full lg:mt-9 lg:w-1/2">
         <div className="m-auto">
           {state.succeeded ? (
             <Animated
@@ -61,12 +61,12 @@ function Contacts() {
                 fontSize={90}
               />
 
-              <p className="text-blue text-lg">{t("notifications.success")}</p>
+              <p className="text-blue text-lg">{t('notifications.success')}</p>
             </Animated>
           ) : (
             <Animated delay={400}>
               <form onSubmit={handleSubmit}>
-                <div className="flex gap-9 mb-8">
+                <div className="mb-8 flex gap-9">
                   <Form.Input
                     icon="mynaui:user"
                     label="Nome"
@@ -81,7 +81,7 @@ function Contacts() {
                     required
                   />
                 </div>
-                <div className="flex gap-9 mb-8">
+                <div className="mb-8 flex gap-9">
                   <Form.Input
                     icon="mdi-light:phone"
                     label="Telefone"

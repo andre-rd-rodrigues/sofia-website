@@ -1,6 +1,6 @@
-import { useTranslations } from "next-intl";
-import { useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useTranslations } from 'next-intl';
+import { useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 interface FilterOption {
   value: string;
@@ -39,10 +39,10 @@ const Filters = ({ filters, onFilterChange, namespace }: FiltersProps) => {
   const searchParams = useSearchParams();
 
   const [filterState, setFilterState] = useState<FilterState>({
-    search: searchParams.get("search") || "",
-    category: searchParams.get("category") || "",
-    duration: searchParams.get("duration") || "",
-    price: searchParams.get("price") || "",
+    search: searchParams.get('search') || '',
+    category: searchParams.get('category') || '',
+    duration: searchParams.get('duration') || '',
+    price: searchParams.get('price') || '',
   });
 
   const handleFilterChange = (key: keyof FilterState, value: string) => {
@@ -52,24 +52,24 @@ const Filters = ({ filters, onFilterChange, namespace }: FiltersProps) => {
   };
 
   return (
-    <div className="bg-white p-6 shadow-mg mb-12 border border-gray-200">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div className="shadow-mg mb-12 border border-gray-200 bg-white p-6">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
         {/* Search filter */}
         {filters.search && (
           <div>
             <label
               htmlFor="search"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="mb-1 block text-sm font-medium text-gray-700"
             >
-              {t("search")}
+              {t('search')}
             </label>
             <input
               type="text"
               id="search"
               value={filterState.search}
-              onChange={(e) => handleFilterChange("search", e.target.value)}
-              className="w-full px-3 py-[6px] border border-gray-300  focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder={t("searchPlaceholder")}
+              onChange={(e) => handleFilterChange('search', e.target.value)}
+              className="w-full border border-gray-300 px-3 py-[6px]  focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder={t('searchPlaceholder')}
             />
           </div>
         )}
@@ -79,17 +79,17 @@ const Filters = ({ filters, onFilterChange, namespace }: FiltersProps) => {
           <div>
             <label
               htmlFor="category"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="mb-1 block text-sm font-medium text-gray-700"
             >
               {filters.category.label}
             </label>
             <select
               id="category"
               value={filterState.category}
-              onChange={(e) => handleFilterChange("category", e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onChange={(e) => handleFilterChange('category', e.target.value)}
+              className="w-full border border-gray-300 px-3 py-2  focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <option value="all">{t("allCategories")}</option>
+              <option value="all">{t('allCategories')}</option>
               {filters.category.options.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
@@ -104,17 +104,17 @@ const Filters = ({ filters, onFilterChange, namespace }: FiltersProps) => {
           <div>
             <label
               htmlFor="duration"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="mb-1 block text-sm font-medium text-gray-700"
             >
               {filters.duration.label}
             </label>
             <select
               id="duration"
               value={filterState.duration}
-              onChange={(e) => handleFilterChange("duration", e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onChange={(e) => handleFilterChange('duration', e.target.value)}
+              className="w-full border border-gray-300 px-3 py-2  focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <option value="all">{t("allDurations")}</option>
+              <option value="all">{t('allDurations')}</option>
               {filters.duration.options.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
@@ -129,17 +129,17 @@ const Filters = ({ filters, onFilterChange, namespace }: FiltersProps) => {
           <div>
             <label
               htmlFor="price"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="mb-1 block text-sm font-medium text-gray-700"
             >
               {filters.price.label}
             </label>
             <select
               id="price"
               value={filterState.price}
-              onChange={(e) => handleFilterChange("price", e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onChange={(e) => handleFilterChange('price', e.target.value)}
+              className="w-full border border-gray-300 px-3 py-2  focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <option value="all">{t("allPrices")}</option>
+              <option value="all">{t('allPrices')}</option>
               {filters.price.options.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}

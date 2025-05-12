@@ -1,6 +1,6 @@
-import { FC } from "react";
-import Container from "../Container";
-import styles from "./herosection.module.scss";
+import { FC } from 'react';
+import Container from '../Container';
+import styles from './herosection.module.scss';
 
 interface Props {
   imageSrc: string;
@@ -18,9 +18,9 @@ const HeroSection: FC<Props> = ({
   overlayClassName,
 }: Props) => {
   const containerStyle = {
-    background: imageSrc ? `url(${imageSrc}) no-repeat center center` : "",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+    background: imageSrc ? `url(${imageSrc}) no-repeat center center` : '',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
     ...style,
   };
 

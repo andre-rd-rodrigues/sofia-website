@@ -1,7 +1,7 @@
-import { Icon } from "@iconify/react";
-import React from "react";
-import Avatar from "../Avatar";
-import { TestimonialType } from "./Testimonials";
+import { Icon } from '@iconify/react';
+import React from 'react';
+import Avatar from '../Avatar';
+import { TestimonialType } from './Testimonials';
 
 const Testimonial: React.FC<TestimonialType> = ({
   author,
@@ -18,12 +18,12 @@ const Testimonial: React.FC<TestimonialType> = ({
           className="text-cyan"
         />
       </div>
-      <div className="px-6 flex flex-col text-left">
+      <div className="flex flex-col px-6 text-left">
         <p className="text-blue mb-4">{feedback}</p>
         <div className="flex items-center">
           <Avatar imageUrl={imageUrl} alt={author} />
           <div className="ml-4">
-            <p className="font-semibold text-blue">{author}</p>
+            <p className="text-blue font-semibold">{author}</p>
             <p className="text-zinc-400">{role}</p>
           </div>
         </div>

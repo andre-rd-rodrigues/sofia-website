@@ -1,12 +1,12 @@
-import useIsMobile from "@/hooks/useIsMobile";
+import useIsMobile from '@/hooks/useIsMobile';
 
-import { Popover, Transition } from "@headlessui/react";
-import { Icon } from "@iconify/react";
+import { Popover, Transition } from '@headlessui/react';
+import { Icon } from '@iconify/react';
 
-import { Fragment } from "react";
-import { Link, usePathname } from "../navigation";
-import { useLocale } from "next-intl";
-import { proximaNova } from "@/fonts";
+import { Fragment } from 'react';
+import { Link, usePathname } from '../navigation';
+import { useLocale } from 'next-intl';
+import { proximaNova } from '@/fonts';
 
 function LanguageSelector() {
   const pathname = usePathname();
@@ -21,7 +21,7 @@ function LanguageSelector() {
   return (
     <Popover className="relative mx-5 my-1 flex justify-end">
       {/* Icon Button */}
-      <Popover.Button className="h-full flex items-center justify-center focus:outline-none">
+      <Popover.Button className="flex h-full items-center justify-center focus:outline-none">
         <Icon icon="ph:globe-thin" fontSize={33} className="text-blue" />
       </Popover.Button>
 
@@ -37,24 +37,24 @@ function LanguageSelector() {
       >
         <Popover.Panel
           className={`absolute ${
-            isMobile ? "left-0" : "right-0"
-          } z-10 mt-2 overflow-hidden bg-white shadow-lg text-dark`}
+            isMobile ? 'left-0' : 'right-0'
+          } text-dark z-10 mt-2 overflow-hidden bg-white shadow-lg`}
         >
           <Popover.Button
             as={Link}
             href={pathname}
             locale="en"
-            className={`group relative flex items-center px-9 py-4 text-m  hover:bg-gray-50 ${proximaNova.className}`}
+            className={`text-m group relative flex items-center px-9 py-4  hover:bg-gray-50 ${proximaNova.className}`}
           >
-            English {checkMark("en")}
+            English {checkMark('en')}
           </Popover.Button>
           <Popover.Button
             as={Link}
             href={pathname}
             locale="pt"
-            className={`group relative flex items-center px-9 py-4 text-m  hover:bg-gray-50 ${proximaNova.className}`}
+            className={`text-m group relative flex items-center px-9 py-4  hover:bg-gray-50 ${proximaNova.className}`}
           >
-            Português {checkMark("pt")}
+            Português {checkMark('pt')}
           </Popover.Button>
         </Popover.Panel>
       </Transition>

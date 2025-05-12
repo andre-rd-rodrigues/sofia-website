@@ -1,11 +1,11 @@
-"use client";
-import Animated from "@/components/Animated";
-import Page from "@/components/Page";
-import Section from "@/components/Section";
-import useTranslation from "@/hooks/useTranslation";
-import { useTranslations } from "next-intl";
-import { useState } from "react";
-import { Icon } from "@iconify/react";
+'use client';
+import Animated from '@/components/Animated';
+import Page from '@/components/Page';
+import Section from '@/components/Section';
+import useTranslation from '@/hooks/useTranslation';
+import { useTranslations } from 'next-intl';
+import { useState } from 'react';
+import { Icon } from '@iconify/react';
 
 type FaqsType = {
   answer: string;
@@ -13,10 +13,10 @@ type FaqsType = {
 };
 
 const FaqsPage = () => {
-  const t = useTranslations("pages.faqs");
+  const t = useTranslations('pages.faqs');
   const { getTranslationsArray } = useTranslation();
 
-  const faqs: FaqsType[] = getTranslationsArray("components.faqs.questions");
+  const faqs: FaqsType[] = getTranslationsArray('components.faqs.questions');
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const handleToggle = (index: number) => {
@@ -27,10 +27,10 @@ const FaqsPage = () => {
     <Page>
       <Page.Title
         src="https://askproject.net/medral/wp-content/uploads/sites/154/2023/09/small-white-ceramic-mortar-with-eucalyptus-leaves-AANHPA2.jpg"
-        title={"FAQs"}
+        title={'FAQs'}
       />
       <Section>
-        <Section.Title title={t("title")} subtitle="FAQS" className="mb-6" />
+        <Section.Title title={t('title')} subtitle="FAQS" className="mb-6" />
         <p className="mb-8">
           Encontre respostas para as perguntas mais comuns sobre medicina
           integrativa e os meus serviços. Se tiver mais dúvidas, não hesite em
@@ -42,9 +42,9 @@ const FaqsPage = () => {
               <li key={index} className="text-blue bg-white p-4">
                 <button
                   onClick={() => handleToggle(index)}
-                  className="flex items-center justify-between w-full"
+                  className="flex w-full items-center justify-between"
                 >
-                  <h6 className="text-md sm:text-lg font-medium">
+                  <h6 className="text-md font-medium sm:text-lg">
                     {faq.question}
                   </h6>
                   <span>
@@ -59,8 +59,8 @@ const FaqsPage = () => {
                 <div
                   className={`px-4 transition-all duration-300 ${
                     openIndex === index
-                      ? "max-h-80 opacity-100 pt-3"
-                      : "max-h-0 opacity-0"
+                      ? 'max-h-80 pt-3 opacity-100'
+                      : 'max-h-0 opacity-0'
                   } overflow-hidden`}
                 >
                   <p>{faq.answer}</p>

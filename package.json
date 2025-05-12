@@ -14,7 +14,6 @@
     "lint:fix": "next lint --fix",
     "lint:strict": "next lint '*/**/*.{js,jsx,ts,tsx}'",
     "prettier": "prettier --write \"**/*.{js,jsx,json,ts,tsx,scss,css,md}\"",
-    "postbuild": "next-sitemap",
     "prod": "next build && next start",
     "prepare": "husky install",
     "type-check": "tsc --noEmit",

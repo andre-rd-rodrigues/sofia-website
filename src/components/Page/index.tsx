@@ -1,5 +1,5 @@
-import clsx from "clsx";
-import Title from "./Title";
+import clsx from 'clsx';
+import Title from './Title';
 
 const Page = ({
   children,
@@ -8,7 +8,7 @@ const Page = ({
   children: React.ReactNode;
   className?: string;
 }) => {
-  return <div className={clsx("min-h-screen", className)}>{children}</div>;
+  return <div className={clsx('min-h-screen', className)}>{children}</div>;
 };
 Page.Title = Title;
 export default Page;

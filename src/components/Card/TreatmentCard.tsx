@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Button from "@/components/Button";
+import Image from 'next/image';
+import Button from '@/components/Button';
 
 interface TreatmentDetails {
   duration: string;
@@ -25,24 +25,24 @@ const TreatmentCard = ({
   details,
 }: TreatmentCardProps) => {
   return (
-    <section className="flex flex-col lg:flex-row gap-6 items-start">
+    <section className="flex flex-col items-start gap-6 lg:flex-row">
       {/* Image and button */}
-      <div className="w-full lg:w-1/2 flex flex-col h-full">
+      <div className="flex h-full w-full flex-col lg:w-1/2">
         <h2 className="text-3xl">{name}</h2>
-        <p className="text-sm text-neutral-500 mb-6">{category}</p>
+        <p className="mb-6 text-sm text-neutral-500">{category}</p>
         <div className="relative min-h-44 flex-1 shadow-lg md:mb-6">
           <Image src={image} alt={name} fill className="object-cover" />
         </div>
-        <Button label={"make appointment"} className="hidden md:block" />
+        <Button label={'make appointment'} className="hidden md:block" />
       </div>
 
       {/* Treatment details */}
-      <div className="w-full lg:w-1/2 space-y-6">
-        <div className="bg-background-alt text-white p-6">
+      <div className="w-full space-y-6 lg:w-1/2">
+        <div className="bg-background-alt p-6 text-white">
           <h5 className="mb-1 font-normal">Objective</h5>
           <p>{objective}</p>
         </div>
-        <div className="border p-6  space-y-4 text-neutral-700 ">
+        <div className="space-y-4 border  p-6 text-neutral-700 ">
           <div>
             <h5 className="font-normal">Application Time</h5>
             <p>{details.duration}</p>
@@ -60,7 +60,7 @@ const TreatmentCard = ({
             <p>{details.recovery}</p>
           </div>
         </div>
-        <Button label={"make appointment"} className="w-full block md:hidden" />
+        <Button label={'make appointment'} className="block w-full md:hidden" />
       </div>
     </section>
   );

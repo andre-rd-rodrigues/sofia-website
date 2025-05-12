@@ -1,10 +1,10 @@
-"use client";
-import React from "react";
-import { useSpring, animated, useInView } from "@react-spring/web";
+'use client';
+import React from 'react';
+import { useSpring, animated, useInView } from '@react-spring/web';
 
 interface AnimatedProps {
   delay?: number;
-  type?: "fade" | "slide-in-left" | "slide-in-right" | "slide";
+  type?: 'fade' | 'slide-in-left' | 'slide-in-right' | 'slide';
   className?: string;
   children: React.ReactNode;
   config?: {
@@ -17,7 +17,7 @@ interface AnimatedProps {
 
 const Animated = ({
   delay = 0,
-  type = "fade",
+  type = 'fade',
   children,
   config,
   className,
@@ -28,27 +28,27 @@ const Animated = ({
 
   const getTransformFrom = () => {
     switch (type) {
-      case "slide-in-left":
-        return "translateX(-20px)";
-      case "slide-in-right":
-        return "translateX(20px)";
-      case "slide":
-        return "translateY(-20px)";
+      case 'slide-in-left':
+        return 'translateX(-20px)';
+      case 'slide-in-right':
+        return 'translateX(20px)';
+      case 'slide':
+        return 'translateY(-20px)';
       default:
-        return "none";
+        return 'none';
     }
   };
 
   const getTransformTo = () => {
     switch (type) {
-      case "slide-in-left":
-        return "translateX(0px)";
-      case "slide-in-right":
-        return "translateX(0px)";
-      case "slide":
-        return "translateY(0px)";
+      case 'slide-in-left':
+        return 'translateX(0px)';
+      case 'slide-in-right':
+        return 'translateX(0px)';
+      case 'slide':
+        return 'translateY(0px)';
       default:
-        return "none";
+        return 'none';
     }
   };
 

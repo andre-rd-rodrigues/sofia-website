@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode } from 'react';
 
 interface ContainerProps {
   children: ReactNode;
@@ -7,7 +7,7 @@ interface ContainerProps {
 
 const Container: React.FC<ContainerProps> = ({ children, className }) => {
   return (
-    <div className={`max-w-7xl mx-auto px-6 ${className}`}>{children}</div>
+    <div className={`mx-auto max-w-7xl px-6 ${className}`}>{children}</div>
   );
 };
 

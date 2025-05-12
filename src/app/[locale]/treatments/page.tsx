@@ -1,14 +1,14 @@
-"use client";
-import TreatmentCard from "@/components/Card/TreatmentCard";
-import Filters from "@/components/Filters/Filters";
-import Page from "@/components/Page";
-import { treatments } from "@/constants/treatments.constants";
-import { useFilters } from "@/hooks/useFilters";
-import { useTranslations } from "next-intl";
-import { useMemo } from "react";
+'use client';
+import TreatmentCard from '@/components/Card/TreatmentCard';
+import Filters from '@/components/Filters/Filters';
+import Page from '@/components/Page';
+import { treatments } from '@/constants/treatments.constants';
+import { useFilters } from '@/hooks/useFilters';
+import { useTranslations } from 'next-intl';
+import { useMemo } from 'react';
 
 const Treatments = () => {
-  const t = useTranslations("pages.treatments");
+  const t = useTranslations('pages.treatments');
   const tComponents = useTranslations();
 
   // Get unique categories
@@ -42,35 +42,35 @@ const Treatments = () => {
     search: true,
     category: {
       options: categories,
-      label: tComponents("components.filters.category"),
+      label: tComponents('components.filters.category'),
     },
     duration: {
       options: [
         {
-          value: "short",
-          label: tComponents("components.filters.shortDuration"),
+          value: 'short',
+          label: tComponents('components.filters.shortDuration'),
         },
         {
-          value: "medium",
-          label: tComponents("components.filters.mediumDuration"),
+          value: 'medium',
+          label: tComponents('components.filters.mediumDuration'),
         },
         {
-          value: "long",
-          label: tComponents("components.filters.longDuration"),
+          value: 'long',
+          label: tComponents('components.filters.longDuration'),
         },
       ],
-      label: tComponents("components.filters.duration"),
+      label: tComponents('components.filters.duration'),
     },
     price: {
       options: [
-        { value: "low", label: tComponents("components.filters.lowPrice") },
+        { value: 'low', label: tComponents('components.filters.lowPrice') },
         {
-          value: "medium",
-          label: tComponents("components.filters.mediumPrice"),
+          value: 'medium',
+          label: tComponents('components.filters.mediumPrice'),
         },
-        { value: "high", label: tComponents("components.filters.highPrice") },
+        { value: 'high', label: tComponents('components.filters.highPrice') },
       ],
-      label: tComponents("components.filters.price"),
+      label: tComponents('components.filters.price'),
     },
   };
 
@@ -85,18 +85,18 @@ const Treatments = () => {
       category: (treatment, category) => treatment.category === category,
       duration: (treatment, duration) => {
         const treatmentDuration = treatment.details.duration.toLowerCase();
-        if (duration === "short") {
+        if (duration === 'short') {
           return (
-            treatmentDuration.includes("15") || treatmentDuration.includes("30")
+            treatmentDuration.includes('15') || treatmentDuration.includes('30')
           );
         }
-        if (duration === "medium") {
+        if (duration === 'medium') {
           return (
-            treatmentDuration.includes("40") || treatmentDuration.includes("45")
+            treatmentDuration.includes('40') || treatmentDuration.includes('45')
           );
         }
-        if (duration === "long") {
-          return treatmentDuration.includes("variável");
+        if (duration === 'long') {
+          return treatmentDuration.includes('variável');
         }
         return true;
       },
@@ -107,20 +107,20 @@ const Treatments = () => {
     <Page>
       <Page.Title
         src="https://askproject.net/medral/wp-content/uploads/sites/154/2023/09/small-white-ceramic-mortar-with-eucalyptus-leaves-AANHPA2.jpg"
-        title={t("title")}
+        title={t('title')}
       />
-      <section className="bg-white text-neutral-800 py-12 px-4 md:px-12">
+      <section className="bg-white px-4 py-12 text-neutral-800 md:px-12">
         <Filters
           filters={filterOptions}
           onFilterChange={handleFilterChange}
           namespace="treatments"
         />
         {filteredTreatments.length === 0 ? (
-          <div className="text-center py-12">
-            <h3 className="text-xl font-medium text-gray-900 mb-2">
-              {t("noResults.title")}
+          <div className="py-12 text-center">
+            <h3 className="mb-2 text-xl font-medium text-gray-900">
+              {t('noResults.title')}
             </h3>
-            <p className="text-gray-600">{t("noResults.description")}</p>
+            <p className="text-gray-600">{t('noResults.description')}</p>
           </div>
         ) : (
           <div className="grid gap-10 md:grid-cols-2">

@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
-import Animated from "@/components/Animated";
-import clsx from "clsx";
+'use client';
+import React from 'react';
+import Animated from '@/components/Animated';
+import clsx from 'clsx';
 
 type SectionTitleProps = {
   title: string;
@@ -21,8 +21,8 @@ const SectionTitle = ({
       <Animated type="slide-in-left">
         <h3
           className={clsx(
-            "font-proxima-nova font-normal mb-3 text-sm uppercase tracking-widest",
-            color ? color : "text-gray-400",
+            'mb-3 font-proxima-nova text-sm font-normal uppercase tracking-widest',
+            color ? color : 'text-gray-400',
           )}
         >
           {subtitle}
@@ -31,8 +31,8 @@ const SectionTitle = ({
       <Animated type="slide-in-left" delay={100}>
         <h2
           className={clsx(
-            "text-3xl sm:text-5xl",
-            color ? color : "text-[var(--color-primary)]",
+            'text-3xl sm:text-5xl',
+            color ? color : 'text-[var(--color-primary)]',
           )}
         >
           {title}

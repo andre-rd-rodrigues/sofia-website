@@ -1,8 +1,8 @@
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar";
-import { kumlien, proximaNova } from "@/fonts";
-import { NextIntlClientProvider, useMessages } from "next-intl";
-import "./globals.scss";
+import Footer from '@/components/Footer/Footer';
+import Navbar from '@/components/Navbar';
+import { kumlien, proximaNova } from '@/fonts';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
+import './globals.scss';
 
 export default function RootLayout({
   children,
