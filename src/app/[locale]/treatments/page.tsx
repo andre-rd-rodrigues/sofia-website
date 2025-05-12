@@ -1,21 +1,15 @@
 "use client";
 import TreatmentCard from "@/components/Card/TreatmentCard";
-import Filters, { FilterState } from "@/components/Filters/Filters";
+import Filters from "@/components/Filters/Filters";
 import Page from "@/components/Page";
 import { treatments } from "@/constants/treatments.constants";
+import { useFilters } from "@/hooks/useFilters";
 import { useTranslations } from "next-intl";
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
 
 const Treatments = () => {
   const t = useTranslations("pages.treatments");
   const tComponents = useTranslations();
-
-  const [filters, setFilters] = useState<FilterState>({
-    search: "",
-    category: "",
-    duration: "",
-    price: ""
-  });
 
   // Get unique categories
   const categories = useMemo(() => {
@@ -43,56 +37,6 @@ const Treatments = () => {
       }
     }));
   }, [tComponents]);
-
-  // Filter treatments
-  const filteredTreatments = useMemo(() => {
-    return translatedTreatments.filter((treatment) => {
-      // Search filter
-      if (
-        filters.search &&
-        !treatment.name.toLowerCase().includes(filters.search.toLowerCase())
-      ) {
-        return false;
-      }
-
-      // Category filter
-      if (filters.category && treatment.category !== filters.category) {
-        return false;
-      }
-
-      // Duration filter
-      if (filters.duration) {
-        const duration = treatment.details.duration.toLowerCase();
-        if (
-          filters.duration === "short" &&
-          !duration.includes("15") &&
-          !duration.includes("30")
-        ) {
-          return false;
-        }
-        if (
-          filters.duration === "medium" &&
-          !duration.includes("40") &&
-          !duration.includes("45")
-        ) {
-          return false;
-        }
-        if (filters.duration === "long" && !duration.includes("variável")) {
-          return false;
-        }
-      }
-
-      // Price filter (you'll need to add price information to your treatments data)
-      // This is a placeholder implementation
-      if (filters.price) {
-        // Add your price filtering logic here
-        // For now, we'll just return true
-        return true;
-      }
-
-      return true;
-    });
-  }, [translatedTreatments, filters]);
 
   const filterOptions = {
     search: true,
@@ -127,6 +71,35 @@ const Treatments = () => {
     }
   };
 
+  const { filters, handleFilterChange, filterItems } =
+    useFilters(filterOptions);
+
+  // Filter treatments
+  const filteredTreatments = useMemo(() => {
+    return filterItems(translatedTreatments, {
+      search: (treatment, search) =>
+        treatment.name.toLowerCase().includes(search.toLowerCase()),
+      category: (treatment, category) => treatment.category === category,
+      duration: (treatment, duration) => {
+        const treatmentDuration = treatment.details.duration.toLowerCase();
+        if (duration === "short") {
+          return (
+            treatmentDuration.includes("15") || treatmentDuration.includes("30")
+          );
+        }
+        if (duration === "medium") {
+          return (
+            treatmentDuration.includes("40") || treatmentDuration.includes("45")
+          );
+        }
+        if (duration === "long") {
+          return treatmentDuration.includes("variável");
+        }
+        return true;
+      }
+    });
+  }, [translatedTreatments, filters, filterItems]);
+
   return (
     <Page>
       <Page.Title
@@ -136,7 +109,7 @@ const Treatments = () => {
       <section className="bg-white text-neutral-800 py-12 px-4 md:px-12">
         <Filters
           filters={filterOptions}
-          onFilterChange={setFilters}
+          onFilterChange={handleFilterChange}
           namespace="treatments"
         />
         {filteredTreatments.length === 0 ? (

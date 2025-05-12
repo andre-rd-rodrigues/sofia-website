@@ -86,7 +86,7 @@ const Filters = ({ filters, onFilterChange, namespace }: FiltersProps) => {
               onChange={(e) => handleFilterChange("category", e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <option value="">{t("allCategories")}</option>
+              <option value="all">{t("allCategories")}</option>
               {filters.category.options.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
@@ -111,7 +111,7 @@ const Filters = ({ filters, onFilterChange, namespace }: FiltersProps) => {
               onChange={(e) => handleFilterChange("duration", e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <option value="">{t("allDurations")}</option>
+              <option value="all">{t("allDurations")}</option>
               {filters.duration.options.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
@@ -136,7 +136,7 @@ const Filters = ({ filters, onFilterChange, namespace }: FiltersProps) => {
               onChange={(e) => handleFilterChange("price", e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <option value="">{t("allPrices")}</option>
+              <option value="all">{t("allPrices")}</option>
               {filters.price.options.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
