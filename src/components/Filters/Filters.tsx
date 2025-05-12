@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 interface FilterOption {
   value: string;
@@ -35,11 +36,13 @@ export interface FilterState {
 
 const Filters = ({ filters, onFilterChange, namespace }: FiltersProps) => {
   const t = useTranslations(`components.filters.${namespace}`);
+  const searchParams = useSearchParams();
+
   const [filterState, setFilterState] = useState<FilterState>({
-    search: "",
-    category: "",
-    duration: "",
-    price: ""
+    search: searchParams.get("search") || "",
+    category: searchParams.get("category") || "",
+    duration: searchParams.get("duration") || "",
+    price: searchParams.get("price") || ""
   });
 
   const handleFilterChange = (key: keyof FilterState, value: string) => {
