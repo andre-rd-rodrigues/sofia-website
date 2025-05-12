@@ -1,97 +1,128 @@
 {
   "pages": {
     "homepage": {
-      "subtitle": "Medicina Geral e Familiar",
+      "subtitle": "Medicina Estética",
       "practice": {
         "title": "Áreas de Atuação",
         "subtitle": "A minha prática gira em torno da confiança, da ética e do empenhamento. Especializada em direito internacional, direito de cidadania e direito societário, apresento resultados com cuidado e precisão. O seu aliado legal para uma viagem sem problemas através das complexidades da paisagem legal. Explore o poder da advocacia legal comigo."
       },
       "about": {
-        "title": "Ajudando a superar e aliviar o fardo jurídico.",
-        "subtitle": "Sobre mim",
-        "description": "O meu nome é Bárbara Barbizani de Carvalho, tenho uma matriz de atuação orientada para o cliente, na qual confiança, ética e compromisso permanecem como fundamentais na criação de relacionamentos comerciais duradouros.\n Só aceito casos quando detenho nível de conhecimento e experiência para prestar um serviço tempestivo e de excelência. Atuo localmente com uma mentalidade global, especializada em empresas e cidadãos portugueses, brasileiros e chineses.\n Trabalho em conjunto com empresas e indivíduos com uma mentalidade de parceria, alinhada com os seus objetivos e otimização de valor nos seus problemas e disputas jurídicas.\n Procuro que os clientes sintam um elevado grau de segurança de que fizeram a escolha certa na nossa parceiria e respeitar o seu tempo.\n Crio um processo coerente que permite não apenas entregar resultados de excelência técnica, mas também fazê-lo de forma rápida e robusta.",
-        "extraInfo": [
+        "title": "Realçando a Sua Beleza Natural.",
+        "subtitle": "Sobre Mim",
+        "description": "Bem-vindo à minha prática de Medicina Estética, onde me foco em realçar a sua beleza natural através de tratamentos personalizados. Como profissional dedicada, comprometo-me a prestar cuidados da mais alta qualidade, utilizando as técnicas e tecnologias mais recentes para alcançar resultados impressionantes. Quer procure rejuvenescimento, soluções anti-envelhecimento ou melhorias estéticas, estou aqui para o(a) guiar na sua jornada estética.",
+        "extraInfo": []
+      },
+      "treatments": {
+        "subtitle": "Tratamentos",
+        "title": "Excelência Estética Personalizada",
+        "description": "Ofereço uma ampla gama de serviços estéticos, desde cuidados com a pele e injetáveis até tratamentos avançados com laser. O meu objetivo é ajudá-lo(a) a atingir os seus objetivos de beleza com procedimentos seguros e eficazes, adaptados às suas necessidades únicas.",
+        "link": "Ver Tratamentos",
+        "steps": [
           {
-            "title": "Experiência",
-            "value": 10
+            "title": "Consulta de Avaliação",
+            "description": "Nesta consulta inicial, a médica analisa o seu histórico clínico, avalia a estrutura e proporções faciais, identifica sinais de flacidez ou perda de volume e elabora um plano de tratamento personalizado com base nas suas necessidades e objetivos."
           },
           {
-            "title": "Casos",
-            "value": 100
-          },
-          {
-            "title": "Clientes",
-            "value": 128
+            "title": "Consulta de Cuidados com a Pele",
+            "description": "A médica avalia o seu tipo e estado de pele, hábitos atuais de cuidados, hidratação e nutrição. Com base nesta avaliação, é criada uma rotina personalizada com produtos específicos para o dia e a noite."
           }
         ]
       },
       "hero1": {
-        "title": "Uma abordagem cuidadosa, comprometida e digna da advocacia.",
-        "description": "Como sua parceira jurídica, forneço soluções personalizadas que protegem os seus interesses e orientam para decisões informadas. Vamos trabalhar juntos para encontrar clareza em questões legais. Marque uma sessão hoje e dê o primeiro passo para a paz de espírito."
+        "title": "Uma Abordagem Personalizada à Medicina Estética.",
+        "description": "Descubra a arte da medicina estética com a minha abordagem personalizada. Ofereço soluções sob medida para realçar a sua beleza natural e aumentar a sua confiança. Marque uma consulta hoje e explore as possibilidades."
       },
       "contacts": {
-        "title": "Entre em Contato para Consultoria Especializada",
-        "subtitle": "Contatos",
-        "description": "Esteja você navegando por questões legais complexas ou apenas buscando orientação, estou aqui para ajudar. Vamos embarcar juntos nesta jornada - seus assuntos legais merecem a atenção e a experiência que ofereço. Entre em contato hoje e experimente a consultoria personalizada que coloca suas necessidades em primeiro lugar. Suas preocupações são importantes, e estou comprometido em fornecer o aconselhamento especializado que você merece. Aguardo seu contato para atender às suas necessidades legais com cuidado e precisão."
+        "title": "Conecte-se com a Sua Especialista em Estética",
+        "subtitle": "Contacte-me",
+        "description": "Se deseja saber mais sobre os meus serviços ou agendar uma consulta, estou aqui para ajudar. Entre em contacto hoje e dê o primeiro passo para alcançar os seus objetivos estéticos."
+      },
+      "heroSection1": {
+        "subtitle": "Excelência Estética",
+        "title": "Transformando Beleza com Cuidado Especializado.",
+        "description": "Como especialista em estética, dedico-me a oferecer um cuidado excecional e alcançar resultados belos. Descubra a diferença com os meus tratamentos personalizados e orientação especializada."
       }
     },
     "about": {
-      "title": "Sobre",
-      "title2": "Ajudando-o a superar e aliviar o fardo legal.",
-      "description": "Além de consultoria jurídica e disputas em tribunal para cidadãos e empresas, criou o departamento jurídico do Grupo Abraito em Portugal. Residente em Portugal nos últimos 10 anos, mas nascida no Brasil, defendeu em ambos os países, detendo um alto entendimento das suas diferenças legais, culturais e sistémicas.\nMestre em Ciências Jurídicas e Laborais – Universidade de Direito de Lisboa.\nEspecialista avançada em Direito Comercial e do Trabalho pela Faculdade de Direito da Universidade de Lisboa. Advogada e consultora jurídica, Membro da Ordem dos Advogados Portugueses. Membro da Ordem dos Advogados do Brasil. Pesquisadora académico com vários artigos e livros publicados, destacando-se a publicação em Direito Constitucional «[Ir]Redutibilidade Salarial e Princípio da Proibição do Retrocesso», em 2017.\n\nORDEM DOS ADVOGADOS DE PORTUGAL No 52419L\n\nORDEM DOS ADVOGADOS DO BRASIL / PR No 63348",
-      "hero": {
-        "title": "Empowering You Through Expert Legal Services and Consulting",
-        "description": "I'm dedicated to providing expert advice and comprehensive consulting services tailored to your unique needs. Whether you're facing intricate legal challenges or simply seeking guidance, I am here to assist you. My commitment is to safeguard your interests and guide you towards well-informed decisions, ensuring you receive the highest level of professional expertise. Explore the range of services."
-      }
+      "title": "Sobre Mim",
+      "title2": "A Sua Parceira de Confiança em Medicina Estética.",
+      "description": "Comprometo-me a oferecer cuidados estéticos do mais alto nível. Com foco na inovação e excelência, disponibilizo uma gama abrangente de serviços para ajudá-lo(a) a sentir-se e parecer no seu melhor. Como profissional experiente, estou aqui para o(a) acompanhar em cada etapa, garantindo uma experiência segura e satisfatória."
     },
     "practiceAreas": {
       "title": "Áreas de Atuação",
       "citizens": "Cidadãos",
       "companies": "Empresas"
     },
+    "faqs": {
+      "title": "Perguntas Frequentes",
+      "description": "Alcance uma aparência jovem com a minha gama de tratamentos injetáveis, incluindo Botox e preenchimentos dérmicos."
+    },
     "contacts": {
-      "title": "Contactos",
-      "formTitle": "Envie uma mensagem direta.",
-      "formDescription": "Se tiver dúvidas, precisar de ajuda ou apenas quiser estabelecer contacto, enviar uma mensagem direta é uma forma simples de entrar em contacto comigo. Basta clicar no botão 'Enviar mensagem' abaixo e partilhar as suas ideias, preocupações ou questões. Valorizo a sua comunicação e estou empenhado em fornecer-lhe uma resposta rápida e útil.",
-      "title2": "Conexão para compreensão.",
-      "description": "Os assuntos jurídicos exigem uma comunicação rápida e fiável. Se tiver dúvidas, precisar de assistência jurídica ou quiser marcar uma consulta, estou aqui para o ajudar. Sinta-se à vontade para entrar em contacto através dos seguintes canais: ",
+      "subtitle": "Contactos",
+      "title": "Tem perguntas?",
+      "sectionTitle": "Estou aqui para ajudar.",
+      "description": "Estou aqui para responder a qualquer pergunta que tenha sobre os meus serviços ou para ajudar a agendar uma consulta. Sinta-se à vontade para contactar através dos seguintes canais:",
       "links": [
         {
-          "description": "Rua Alvaro Velho, 2D, 2830-327 Barreiro",
-          "icon": "mdi:location",
+          "description": "A Minha Localização",
+          "icon": "material-symbols-light:location-on-outline-rounded",
           "href": "https://maps.app.goo.gl/3uHBdwxH8aqrWCp76"
         },
         {
           "description": "+351 211 956 606",
           "href": "tel:+351211956606",
-          "icon": "mingcute:phone-fill"
+          "icon": "mdi-light:phone"
         },
         {
-          "description": "Bárbara Barbizani - +351 916 690 609",
-          "href": "https://wa.me/916690609",
-          "icon": "mingcute:whatsapp-fill"
-        },
-        {
-          "description": "barbara.caiado@caiadolaw.com",
-          "href": "mailto: barbara.caiado@caiadolaw.com",
-          "icon": "ic:baseline-email"
+          "description": "contact@aestheticdoctor.com",
+          "href": "mailto: contact@aestheticdoctor.com",
+          "icon": "mdi-light:email"
         }
-      ],
-      "info": [
+      ]
+    },
+    "treatments": {
+      "title": "Tratamentos",
+      "description": "Ofereço uma ampla gama de serviços estéticos, desde cuidados com a pele e injetáveis até tratamentos avançados com laser. O meu objetivo é ajudá-lo(a) a atingir os seus objetivos de beleza com procedimentos seguros e eficazes, adaptados às suas necessidades únicas.",
+      "noResults": {
+        "title": "Nenhum tratamento encontrado",
+        "description": "Não foi possível encontrar tratamentos que correspondam aos seus critérios de pesquisa. Tente ajustar os filtros ou termos de pesquisa."
+      }
+    },
+    "filters": {
+      "search": "Pesquisar",
+      "searchPlaceholder": "Pesquisar tratamentos...",
+      "category": "Categoria",
+      "allCategories": "Todas as Categorias",
+      "duration": "Duração",
+      "allDurations": "Todas as Durações",
+      "shortDuration": "Curta (15-30 min)",
+      "mediumDuration": "Média (40-45 min)",
+      "longDuration": "Longa (Variável)",
+      "price": "Preço",
+      "allPrices": "Todos os Preços",
+      "lowPrice": "Baixo",
+      "mediumPrice": "Médio",
+      "highPrice": "Alto"
+    }
+  },
+  "components": {
+    "navbar": {
+      "links": [
         {
-          "title": "Morada",
-          "value": "Rua Alvaro Velho, 2D, 2830-327 Azeitão",
-          "icon": "mdi:location"
+          "name": "Sobre",
+          "href": "/about"
         },
         {
-          "title": "Telefone",
-          "value": "+351 211 956 606",
-          "icon": "mingcute:phone-fill"
+          "name": "Tratamentos",
+          "href": "/treatments"
         },
         {
-          "title": "Email",
-          "value": "contact@aestheticdoctor.com",
-          "icon": "ic:baseline-email"
+          "name": "Perguntas Frequentes",
+          "href": "/faqs"
+        },
+        {
+          "name": "Contactos",
+          "href": "/contacts"
         }
       ]
     },
@@ -186,32 +217,123 @@
           "name": "Preenchedores com Ácido Hialurónico Corporal",
           "objective": "Tratar perdas de volume, definir contornos e projeção"
         }
-      ],
-      "noResults": {
-        "title": "Nenhum tratamento encontrado",
-        "description": "Não encontramos nenhum tratamento que corresponda aos seus critérios de pesquisa. Tente ajustar os filtros ou os termos de pesquisa."
-      }
+      ]
+    },
+    "testimonials": {
+      "title": "Experiências de Clientes",
+      "subtitle": "Testemunhos",
+      "feedback": [
+        {
+          "author": "Maria Silva",
+          "feedback": "O cuidado personalizado que recebi foi incrível! Senti-me confortável e os resultados foram fantásticos.",
+          "imageUrl": "https://images.unsplash.com/photo-1673623702948-082634e585e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D",
+          "role": "Cliente"
+        },
+        {
+          "author": "João Santos",
+          "feedback": "Estou muito satisfeito com os resultados do meu tratamento. A atenção personalizada foi excecional.",
+          "imageUrl": "https://plus.unsplash.com/premium_photo-1700575181270-87f37b2ebb4f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "role": "Cliente"
+        }
+      ]
+    },
+    "faqs": {
+      "title": "Perguntas Frequentes",
+      "questions": [
+        {
+          "question": "O que é Medicina Estética?",
+          "answer": "A medicina estética concentra-se na melhoria da aparência cosmética através de tratamentos como Botox, preenchimentos e terapia a laser."
+        },
+        {
+          "question": "O que devo esperar durante uma consulta?",
+          "answer": "Durante uma consulta, discutirei os seus objetivos, avaliarei as suas necessidades e recomendarei opções de tratamento personalizadas."
+        }
+      ]
+    },
+    "footer": {
+      "description": "Seja para tirar dúvidas, precisar de ajuda ou apenas querer estabelecer contacto, estou aqui para ajudar.",
+      "links": [
+        {
+          "name": "Secções",
+          "href": "",
+          "subLinks": [
+            {
+              "name": "Sobre",
+              "href": "/#about"
+            },
+            {
+              "name": "Serviços",
+              "href": "/#services"
+            },
+            {
+              "name": "Perguntas Frequentes",
+              "href": "/#faqs"
+            },
+            {
+              "name": "Testemunhos",
+              "href": "/#testimonials"
+            }
+          ]
+        },
+        {
+          "name": "Contacto",
+          "subLinks": [
+            {
+              "name": "Rua Alvaro Velho, 2D, 2830-327 Azeitão",
+              "icon": "mdi:location",
+              "href": "https://maps.app.goo.gl/3uHBdwxH8aqrWCp76"
+            },
+            {
+              "name": "+351 211 956 606",
+              "href": "tel:+351211956606",
+              "icon": "mingcute:phone-fill"
+            },
+            {
+              "name": "contact@aestheticdoctor.com",
+              "href": "mailto: contact@aestheticdoctor.com",
+              "icon": "ic:baseline-email"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": {
+      "send": "Enviar",
+      "contact": "Contactar",
+      "see more": "Ver mais",
+      "read more": "Ler mais",
+      "services": "Serviços",
+      "fill form": "Enviar Mensagem",
+      "appointment": "Consulta",
+      "make appointment": "Marcar Consulta"
     },
     "filters": {
-      "search": "Pesquisar",
-      "searchPlaceholder": "Pesquisar tratamentos...",
       "category": "Categoria",
-      "allCategories": "Todas as Categorias",
       "duration": "Duração",
-      "allDurations": "Todas as Durações",
+      "price": "Preço",
       "shortDuration": "Curta (15-30 min)",
       "mediumDuration": "Média (40-45 min)",
       "longDuration": "Longa (Variável)",
-      "price": "Preço",
-      "allPrices": "Todos os Preços",
       "lowPrice": "Baixo",
       "mediumPrice": "Médio",
-      "highPrice": "Alto"
+      "highPrice": "Alto",
+      "treatments": {
+        "search": "Pesquisar",
+        "searchPlaceholder": "Pesquisar tratamentos...",
+        "allCategories": "Todas as Categorias",
+        "allDurations": "Todas as Durações",
+        "allPrices": "Todos os Preços"
+      }
     }
   },
-
+  "notifications": {
+    "success": "A sua mensagem foi enviada com sucesso!"
+  },
   "metadata": {
-    "homeTitle": "Sofia Pimenta - Medicina Geral e Familiar",
-    "description": "A minha prática gira em torno da confiança, da ética e do empenhamento. Especializada em Medicina Geral e Familiar, apresento resultados com cuidado e precisão. O seu aliado médico para uma viagem sem problemas através das complexidades da paisagem médica. Explore o poder da medicina comigo."
+    "homeTitle": "Médica Estética - Realçando a Sua Beleza Natural",
+    "description": "Especializo-me em medicina estética, oferecendo uma variedade de tratamentos para realçar a sua beleza natural e aumentar a sua confiança.",
+    "treatmentsPageTitle": "Tratamentos - Dra. Sofia Diogo",
+    "faqsPageTitle": "Perguntas Frequentes - Dra. Sofia Diogo",
+    "contactsPageTitle": "Contactos - Dra. Sofia Diogo"
   }
 }
