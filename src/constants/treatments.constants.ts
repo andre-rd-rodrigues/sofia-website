@@ -10,8 +10,8 @@ export const treatments = [
       duration: "components.treatments.details.values.Cerca de 15 minutos",
       effectDuration: "components.treatments.details.values.4 a 6 meses",
       anesthesia: "components.treatments.details.values.Não necessita",
-      recovery: "components.treatments.details.values.Imediata"
-    }
+      recovery: "components.treatments.details.values.Imediata",
+    },
   },
   {
     slug: "preenchimento-acido-hialuronico",
@@ -24,8 +24,8 @@ export const treatments = [
       duration: "components.treatments.details.values.Cerca de 45 minutos",
       effectDuration: "components.treatments.details.values.9 a 12 meses",
       anesthesia: "components.treatments.details.values.Local",
-      recovery: "components.treatments.details.values.Imediata"
-    }
+      recovery: "components.treatments.details.values.Imediata",
+    },
   },
   {
     slug: "bioestimuladores-colagenio",
@@ -38,8 +38,8 @@ export const treatments = [
       duration: "components.treatments.details.values.Cerca de 40 minutos",
       effectDuration: "components.treatments.details.values.18 meses",
       anesthesia: "components.treatments.details.values.Local",
-      recovery: "components.treatments.details.values.Imediata"
-    }
+      recovery: "components.treatments.details.values.Imediata",
+    },
   },
   {
     slug: "microagulhamento",
@@ -54,8 +54,8 @@ export const treatments = [
       anesthesia:
         "components.treatments.details.values.Anestesia tópica – indolor",
       recovery:
-        "components.treatments.details.values.0 a 15 dias (depende da profundidade)"
-    }
+        "components.treatments.details.values.0 a 15 dias (depende da profundidade)",
+    },
   },
   {
     slug: "peeling-quimico",
@@ -69,8 +69,8 @@ export const treatments = [
       effectDuration: "components.treatments.details.values.Definitivo",
       anesthesia: "components.treatments.details.values.Não",
       recovery:
-        "components.treatments.details.values.0 a 15 dias (depende da profundidade)"
-    }
+        "components.treatments.details.values.0 a 15 dias (depende da profundidade)",
+    },
   },
   {
     slug: "skincare",
@@ -83,8 +83,8 @@ export const treatments = [
       duration: "components.treatments.details.values.Cerca de 40 minutos",
       effectDuration: "components.treatments.details.values.Variável",
       anesthesia: "components.treatments.details.values.Não",
-      recovery: "components.treatments.details.values.Imediata"
-    }
+      recovery: "components.treatments.details.values.Imediata",
+    },
   },
   {
     slug: "escleroterapia",
@@ -97,8 +97,8 @@ export const treatments = [
       duration: "components.treatments.details.values.Cerca de 30 minutos",
       effectDuration: "components.treatments.details.values.Definitivo",
       anesthesia: "components.treatments.details.values.Não",
-      recovery: "components.treatments.details.values.Imediata"
-    }
+      recovery: "components.treatments.details.values.Imediata",
+    },
   },
   {
     slug: "prp",
@@ -111,8 +111,8 @@ export const treatments = [
       duration: "components.treatments.details.values.Cerca de 45 minutos",
       effectDuration: "components.treatments.details.values.6 a 12 meses",
       anesthesia: "components.treatments.details.values.Não",
-      recovery: "components.treatments.details.values.Imediata"
-    }
+      recovery: "components.treatments.details.values.Imediata",
+    },
   },
   {
     slug: "mesoterapia-facial",
@@ -125,8 +125,8 @@ export const treatments = [
       duration: "components.treatments.details.values.Cerca de 30 minutos",
       effectDuration: "components.treatments.details.values.5 a 6 meses",
       anesthesia: "components.treatments.details.values.Não",
-      recovery: "components.treatments.details.values.Imediata"
-    }
+      recovery: "components.treatments.details.values.Imediata",
+    },
   },
   {
     slug: "fios-pdo",
@@ -139,8 +139,8 @@ export const treatments = [
       duration: "components.treatments.details.values.Cerca de 40 minutos",
       effectDuration: "components.treatments.details.values.18 meses",
       anesthesia: "components.treatments.details.values.Local",
-      recovery: "components.treatments.details.values.Imediata"
-    }
+      recovery: "components.treatments.details.values.Imediata",
+    },
   },
   {
     slug: "mesoterapia-corporal",
@@ -153,8 +153,8 @@ export const treatments = [
       duration: "components.treatments.details.values.Variável",
       effectDuration: "components.treatments.details.values.Variável",
       anesthesia: "components.treatments.details.values.Local",
-      recovery: "components.treatments.details.values.Imediata"
-    }
+      recovery: "components.treatments.details.values.Imediata",
+    },
   },
   {
     slug: "bioestimuladores-corporais",
@@ -167,8 +167,8 @@ export const treatments = [
       duration: "components.treatments.details.values.Variável",
       effectDuration: "components.treatments.details.values.Variável",
       anesthesia: "components.treatments.details.values.Local",
-      recovery: "components.treatments.details.values.Imediata"
-    }
+      recovery: "components.treatments.details.values.Imediata",
+    },
   },
   {
     slug: "preenchedores-corporais",
@@ -181,7 +181,7 @@ export const treatments = [
       duration: "components.treatments.details.values.Variável",
       effectDuration: "components.treatments.details.values.Variável",
       anesthesia: "components.treatments.details.values.Local",
-      recovery: "components.treatments.details.values.Imediata"
-    }
-  }
+      recovery: "components.treatments.details.values.Imediata",
+    },
+  },
 ];

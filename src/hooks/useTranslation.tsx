@@ -34,7 +34,7 @@ const useTranslation = () => {
 
   return {
     translations,
-    getTranslationsArray
+    getTranslationsArray,
   };
 };
 

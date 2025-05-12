@@ -42,7 +42,7 @@ const Filters = ({ filters, onFilterChange, namespace }: FiltersProps) => {
     search: searchParams.get("search") || "",
     category: searchParams.get("category") || "",
     duration: searchParams.get("duration") || "",
-    price: searchParams.get("price") || ""
+    price: searchParams.get("price") || "",
   });
 
   const handleFilterChange = (key: keyof FilterState, value: string) => {

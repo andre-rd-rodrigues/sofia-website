@@ -4,13 +4,13 @@ import { Metadata, MetadataProps, getMetadata } from "../../../../metadata";
 import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({
-  params: { locale }
+  params: { locale },
 }: MetadataProps): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "metadata" });
 
   return getMetadata({
     title: t("treatmentsPageTitle"),
-    description: t("description")
+    description: t("description"),
   });
 }
 

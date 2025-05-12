@@ -1,25 +1,25 @@
 export const LANGUAGES_CODES = [
   {
     language: "Português",
-    code: "PT"
+    code: "PT",
   },
   {
     language: "English",
-    code: "EN"
-  }
+    code: "EN",
+  },
 ];
 
 export const HEAD_ROUTES = {
   "/": {
-    title: "homeTitle"
+    title: "homeTitle",
   },
   "/about": {
-    title: "aboutTitle"
+    title: "aboutTitle",
   },
   "/practice-areas": {
-    title: "practiceTitle"
+    title: "practiceTitle",
   },
   "/contacts": {
-    title: "contactsTitle"
-  }
+    title: "contactsTitle",
+  },
 };

@@ -14,7 +14,7 @@ const SectionTitle = ({
   title,
   subtitle,
   className,
-  color
+  color,
 }: SectionTitleProps) => {
   return (
     <div className={className}>
@@ -22,7 +22,7 @@ const SectionTitle = ({
         <h3
           className={clsx(
             "font-proxima-nova font-normal mb-3 text-sm uppercase tracking-widest",
-            color ? color : "text-gray-400"
+            color ? color : "text-gray-400",
           )}
         >
           {subtitle}
@@ -32,7 +32,7 @@ const SectionTitle = ({
         <h2
           className={clsx(
             "text-3xl sm:text-5xl",
-            color ? color : "text-[var(--color-primary)]"
+            color ? color : "text-[var(--color-primary)]",
           )}
         >
           {title}

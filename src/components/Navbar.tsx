@@ -3,7 +3,7 @@ import useTranslation from "@/hooks/useTranslation";
 
 import { useState } from "react";
 
-import { libre } from "@/fonts";
+import { proximaNova } from "@/fonts";
 import { Link } from "@/navigation";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -37,9 +37,9 @@ const Navbar = () => {
     </button>
   );
   return (
-    <header className="fixed z-50 w-full bg-white">
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3  mb-3">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+    <nav className="fixed top-0 z-50 w-full sm:left-4 sm:right-4 sm:top-4 sm:w-auto">
+      <div className="relative h-full bg-white bg-opacity-40 shadow-lg backdrop-blur-[20px] sm:rounded-full">
+        <div className="w-full flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">
               <Image
@@ -68,7 +68,7 @@ const Navbar = () => {
                   <li
                     className={`${
                       pathname === href ? "border-b-2 border-blue" : ""
-                    } ${libre.className} font-medium text-sm`}
+                    } ${proximaNova.className} font-normal text-sm`}
                   >
                     {name}
                   </li>
@@ -78,8 +78,8 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 };
 

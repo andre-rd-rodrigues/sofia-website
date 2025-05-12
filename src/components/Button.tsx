@@ -1,7 +1,7 @@
 "use client";
 import React, { ButtonHTMLAttributes } from "react";
 import { Icon } from "@iconify/react";
-import { libre } from "@/fonts";
+import { proximaNova } from "@/fonts";
 import { useTranslations } from "next-intl";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -34,7 +34,7 @@ function Button({
 
   const buttonClasses = `${baseClasses} ${
     variant ? darkClasses : whiteClasses
-  } ${className} ${libre.className}`;
+  } ${className} ${proximaNova.className}`;
 
   return (
     <button className={buttonClasses} onClick={onClick} {...buttonProps}>

@@ -15,13 +15,13 @@ const HeroSection: FC<Props> = ({
   children,
   className,
   style,
-  overlayClassName
+  overlayClassName,
 }: Props) => {
   const containerStyle = {
     background: imageSrc ? `url(${imageSrc}) no-repeat center center` : "",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    ...style
+    ...style,
   };
 
   return (

@@ -17,7 +17,6 @@
 
   /* Fonts */
   --font-kumlien: "Kumlien", sans-serif;
-  --font-libre-franklin: "Libre Franklin", sans-serif;
 
   /* Sizes */
   --fs-xxl: clamp(3.5rem, 10vw, 5rem);
@@ -88,7 +87,6 @@ button {
   font-size: var(--fs-m);
 }
 
-nav,
 footer {
   padding: 0 var(--padding-y);
 }

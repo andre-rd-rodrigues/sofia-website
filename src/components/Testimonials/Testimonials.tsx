@@ -21,18 +21,18 @@ const settings = {
         slidesToShow: 2,
         slidesToScroll: 2,
         infinite: true,
-        dots: true
-      }
+        dots: true,
+      },
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        initialSlide: 2
-      }
-    }
-  ]
+        initialSlide: 2,
+      },
+    },
+  ],
 };
 
 export interface TestimonialType {
@@ -47,7 +47,7 @@ function Testimonials() {
   const { getTranslationsArray } = useTranslation();
 
   const testimonials: TestimonialType[] = getTranslationsArray(
-    "components.testimonials.feedback"
+    "components.testimonials.feedback",
   );
 
   return (

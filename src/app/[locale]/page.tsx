@@ -21,13 +21,13 @@ export type MetadataProps = {
 };
 
 export async function generateMetadata({
-  params: { locale }
+  params: { locale },
 }: MetadataProps): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "metadata" });
 
   return getMetadata({
     title: t("homeTitle"),
-    description: t("description")
+    description: t("description"),
   });
 }
 
@@ -36,7 +36,7 @@ export default function Home() {
   const { getTranslationsArray } = useTranslation();
 
   const treatmentSteps = getTranslationsArray(
-    "pages.homepage.treatments.steps"
+    "pages.homepage.treatments.steps",
   );
 
   return (
@@ -45,7 +45,7 @@ export default function Home() {
         imageSrc="https://images.squarespace-cdn.com/content/v1/64ad8b4cb2f8735d2ed972ed/b73cdd39-e04c-44b1-b2e3-e8af43f1dec4/kaboompics_travertine-coffee-table-and-greige-linen-couch-28884.jpg?format=1000w"
         style={{
           height: "700px",
-          textAlign: "center"
+          textAlign: "center",
         }}
       >
         <Animated type="slide">

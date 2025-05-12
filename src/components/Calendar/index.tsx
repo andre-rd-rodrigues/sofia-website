@@ -24,7 +24,7 @@ const CalendarView: React.FC<CalendlyProps> = ({ format, className }) => {
     rootElement,
     text: "MAKE AN APPOINTMENT",
     color: "#FD7959",
-    className
+    className,
   };
 
   const calendlyElement = () => {

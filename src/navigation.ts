@@ -1,6 +1,6 @@
 import {
   createLocalizedPathnamesNavigation,
-  Pathnames
+  Pathnames,
 } from "next-intl/navigation";
 
 export const locales = ["en", "pt"] as const;
@@ -11,12 +11,12 @@ export const pathnames = {
 
   "/about": {
     en: "/about",
-    pt: "/sobre"
+    pt: "/sobre",
   },
 
   "/treatments": {
     en: "/treatments",
-    pt: "/tratamentos"
+    pt: "/tratamentos",
   },
 
   "/faqs": "/faqs",
@@ -25,8 +25,8 @@ export const pathnames = {
 
   "/contacts": {
     en: "/contacts",
-    pt: "/contactos"
-  }
+    pt: "/contactos",
+  },
 } satisfies Pathnames<typeof locales>;
 
 export const { Link, redirect, usePathname, useRouter, getPathname } =

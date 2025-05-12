@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
   const t = useTranslations("components");
   const { getTranslationsArray } = useTranslation();
   const footerLinks: FooterLink[] = getTranslationsArray(
-    "components.footer.links"
+    "components.footer.links",
   );
 
   return (

@@ -7,7 +7,7 @@ const Testimonial: React.FC<TestimonialType> = ({
   author,
   imageUrl,
   feedback,
-  role
+  role,
 }) => {
   return (
     <div className="flex">

@@ -20,10 +20,10 @@ const Animated = ({
   type = "fade",
   children,
   config,
-  className
+  className,
 }: AnimatedProps) => {
   const [ref, inView] = useInView({
-    once: true
+    once: true,
   });
 
   const getTransformFrom = () => {
@@ -55,19 +55,19 @@ const Animated = ({
   const props = useSpring({
     from: {
       opacity: 0,
-      transform: getTransformFrom()
+      transform: getTransformFrom(),
     },
     to: async (next) => {
       if (inView) {
         await next({
           opacity: 1,
-          transform: getTransformTo()
+          transform: getTransformTo(),
         });
       }
     },
     config: { tension: 150, friction: 40 },
     delay,
-    ...config
+    ...config,
   });
 
   return (

@@ -16,7 +16,7 @@ interface FooterSectionProps {
 const FooterSection: React.FC<FooterSectionProps> = ({
   title,
   sectionHref,
-  subLinks
+  subLinks,
 }) => {
   const isContact = title.toLowerCase().includes("contact");
 
@@ -45,7 +45,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({
                 {name}
               </Link>
             </li>
-          )
+          ),
         )}
 
         {/* When no sub links are provided */}

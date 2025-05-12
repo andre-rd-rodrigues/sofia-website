@@ -14,11 +14,11 @@ const Treatments = () => {
   // Get unique categories
   const categories = useMemo(() => {
     const uniqueCategories = new Set(
-      treatments.map((treatment) => tComponents(treatment.category))
+      treatments.map((treatment) => tComponents(treatment.category)),
     );
     return Array.from(uniqueCategories).map((category) => ({
       value: category,
-      label: category
+      label: category,
     }));
   }, [tComponents]);
 
@@ -33,8 +33,8 @@ const Treatments = () => {
         duration: tComponents(treatment.details.duration),
         effectDuration: tComponents(treatment.details.effectDuration),
         anesthesia: tComponents(treatment.details.anesthesia),
-        recovery: tComponents(treatment.details.recovery)
-      }
+        recovery: tComponents(treatment.details.recovery),
+      },
     }));
   }, [tComponents]);
 
@@ -42,33 +42,36 @@ const Treatments = () => {
     search: true,
     category: {
       options: categories,
-      label: tComponents("components.filters.category")
+      label: tComponents("components.filters.category"),
     },
     duration: {
       options: [
         {
           value: "short",
-          label: tComponents("components.filters.shortDuration")
+          label: tComponents("components.filters.shortDuration"),
         },
         {
           value: "medium",
-          label: tComponents("components.filters.mediumDuration")
+          label: tComponents("components.filters.mediumDuration"),
         },
-        { value: "long", label: tComponents("components.filters.longDuration") }
+        {
+          value: "long",
+          label: tComponents("components.filters.longDuration"),
+        },
       ],
-      label: tComponents("components.filters.duration")
+      label: tComponents("components.filters.duration"),
     },
     price: {
       options: [
         { value: "low", label: tComponents("components.filters.lowPrice") },
         {
           value: "medium",
-          label: tComponents("components.filters.mediumPrice")
+          label: tComponents("components.filters.mediumPrice"),
         },
-        { value: "high", label: tComponents("components.filters.highPrice") }
+        { value: "high", label: tComponents("components.filters.highPrice") },
       ],
-      label: tComponents("components.filters.price")
-    }
+      label: tComponents("components.filters.price"),
+    },
   };
 
   const { filters, handleFilterChange, filterItems } =
@@ -96,7 +99,7 @@ const Treatments = () => {
           return treatmentDuration.includes("variável");
         }
         return true;
-      }
+      },
     });
   }, [translatedTreatments, filters, filterItems]);
 

@@ -4,14 +4,14 @@ const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}"
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
         background: "var(--color-background)",
@@ -21,14 +21,14 @@ const config: Config = {
         secondary: "var(--color-secondary)",
         text: "var(--color-text)",
         accent: "var(--color-accent)",
-        danger: "var(--color-danger)"
+        danger: "var(--color-danger)",
       },
       fontFamily: {
         "proxima-nova": "var(--font-proxima-nova)",
-        kumlien: "var(--font-kumlien)"
-      }
-    }
+        kumlien: "var(--font-kumlien)",
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };
 export default config;

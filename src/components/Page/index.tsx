@@ -3,7 +3,7 @@ import Title from "./Title";
 
 const Page = ({
   children,
-  className
+  className,
 }: {
   children: React.ReactNode;
   className?: string;

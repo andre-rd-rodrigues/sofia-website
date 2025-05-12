@@ -89,7 +89,7 @@ export const useFilters = (config: FilterConfig) => {
     search: searchParams.get("search") || "",
     category: searchParams.get("category") || "",
     duration: searchParams.get("duration") || "",
-    price: searchParams.get("price") || ""
+    price: searchParams.get("price") || "",
   };
 
   /**
@@ -146,7 +146,7 @@ export const useFilters = (config: FilterConfig) => {
       category?: (item: T, category: string) => boolean;
       duration?: (item: T, duration: string) => boolean;
       price?: (item: T, price: string) => boolean;
-    }
+    },
   ) => {
     return items.filter((item) => {
       // Search filter
@@ -193,6 +193,6 @@ export const useFilters = (config: FilterConfig) => {
     filters,
     handleFilterChange,
     filterItems,
-    config
+    config,
   };
 };

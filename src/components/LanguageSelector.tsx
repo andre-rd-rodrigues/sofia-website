@@ -1,4 +1,3 @@
-import { dm_sans } from "@/fonts";
 import useIsMobile from "@/hooks/useIsMobile";
 
 import { Popover, Transition } from "@headlessui/react";
@@ -7,6 +6,7 @@ import { Icon } from "@iconify/react";
 import { Fragment } from "react";
 import { Link, usePathname } from "../navigation";
 import { useLocale } from "next-intl";
+import { proximaNova } from "@/fonts";
 
 function LanguageSelector() {
   const pathname = usePathname();
@@ -44,7 +44,7 @@ function LanguageSelector() {
             as={Link}
             href={pathname}
             locale="en"
-            className={`group relative flex items-center px-9 py-4 text-m  hover:bg-gray-50 ${dm_sans.className}`}
+            className={`group relative flex items-center px-9 py-4 text-m  hover:bg-gray-50 ${proximaNova.className}`}
           >
             English {checkMark("en")}
           </Popover.Button>
@@ -52,7 +52,7 @@ function LanguageSelector() {
             as={Link}
             href={pathname}
             locale="pt"
-            className={`group relative flex items-center px-9 py-4 text-m  hover:bg-gray-50 ${dm_sans.className}`}
+            className={`group relative flex items-center px-9 py-4 text-m  hover:bg-gray-50 ${proximaNova.className}`}
           >
             Português {checkMark("pt")}
           </Popover.Button>

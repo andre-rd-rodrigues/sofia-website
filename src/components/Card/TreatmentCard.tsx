@@ -22,7 +22,7 @@ const TreatmentCard = ({
   image,
 
   objective,
-  details
+  details,
 }: TreatmentCardProps) => {
   return (
     <section className="flex flex-col lg:flex-row gap-6 items-start">
