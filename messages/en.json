@@ -44,7 +44,11 @@
     },
     "treatments": {
       "title": "Treatments",
-      "description": "I offer a wide range of aesthetic services, from skincare and injectables to advanced laser treatments. My goal is to help you achieve your beauty goals with safe and effective procedures tailored to your unique needs."
+      "description": "I offer a wide range of aesthetic services, from skincare and injectables to advanced laser treatments. My goal is to help you achieve your beauty goals with safe and effective procedures tailored to your unique needs.",
+      "noResults": {
+        "title": "No treatments found",
+        "description": "We couldn't find any treatments matching your search criteria. Try adjusting your filters or search terms."
+      }
     },
     "about": {
       "title": "About Me",
@@ -282,6 +286,27 @@
       "fill form": "Send Message",
       "appointment": "Appointment",
       "make appointment": "Make an Appointment"
+    },
+    "filters": {
+      "category": "Category",
+
+      "duration": "Duration",
+      "price": "Price",
+      "shortDuration": "Short (15-30 min)",
+      "mediumDuration": "Medium (40-45 min)",
+      "longDuration": "Long (Variable)",
+
+      "lowPrice": "Low",
+      "mediumPrice": "Medium",
+      "highPrice": "High",
+
+      "treatments": {
+        "search": "Search",
+        "searchPlaceholder": "Search treatments...",
+        "allCategories": "All Categories",
+        "allDurations": "All Durations",
+        "allPrices": "All Prices"
+      }
     }
   },
   "notifications": {
