@@ -320,6 +320,99 @@
       "services": "Serviços",
       "fill form": "Enviar Mensagem",
       "appointment": "Marcar consulta"
+    },
+    "treatments": {
+      "categories": {
+        "Rugas de Expressão": "Rugas de Expressão",
+        "Rejuvenescimento Facial": "Rejuvenescimento Facial",
+        "Tratamentos de Pele": "Tratamentos de Pele",
+        "Cuidados com a Pele": "Cuidados com a Pele",
+        "Tratamentos Vasculares": "Tratamentos Vasculares",
+        "Rejuvenescimento e Capilar": "Rejuvenescimento e Capilar",
+        "Hidratação e Rejuvenescimento": "Hidratação e Rejuvenescimento",
+        "Lifting Facial": "Lifting Facial",
+        "Tratamentos Corporais": "Tratamentos Corporais"
+      },
+      "details": {
+        "duration": "Duração",
+        "effectDuration": "Duração do Efeito",
+        "anesthesia": "Anestesia",
+        "recovery": "Recuperação",
+        "values": {
+          "Cerca de 15 minutos": "Cerca de 15 minutos",
+          "Cerca de 45 minutos": "Cerca de 45 minutos",
+          "Cerca de 40 minutos": "Cerca de 40 minutos",
+          "Cerca de 30 minutos": "Cerca de 30 minutos",
+          "Variável": "Variável",
+          "4 a 6 meses": "4 a 6 meses",
+          "9 a 12 meses": "9 a 12 meses",
+          "18 meses": "18 meses",
+          "3 a 6 meses": "3 a 6 meses",
+          "Definitivo": "Definitivo",
+          "5 a 6 meses": "5 a 6 meses",
+          "6 a 12 meses": "6 a 12 meses",
+          "Não necessita": "Não necessita",
+          "Local": "Local",
+          "Anestesia tópica – indolor": "Anestesia tópica – indolor",
+          "Não": "Não",
+          "Imediata": "Imediata",
+          "0 a 15 dias (depende da profundidade)": "0 a 15 dias (depende da profundidade)"
+        }
+      },
+      "treatments": [
+        {
+          "name": "Botox® - Toxina Botulínica",
+          "objective": "Prevenir e tratar rugas de expressão"
+        },
+        {
+          "name": "Preenchimento com Ácido Hialurónico",
+          "objective": "Repor volumes perdidos, definir contornos faciais e prevenir e tratar rugas"
+        },
+        {
+          "name": "Bioestimuladores de Colagénio",
+          "objective": "Combater a flacidez da pele, rejuvenescer, melhorar a textura, firmeza e luminosidade da pele"
+        },
+        {
+          "name": "Microagulhamento",
+          "objective": "Melhorar a qualidade global da pele, tratar cicatrizes de acne, estrias e hidratação"
+        },
+        {
+          "name": "Peeling Químico",
+          "objective": "Melhorar a textura, tonalidade e qualidade da pele"
+        },
+        {
+          "name": "Skincare",
+          "objective": "Cuidado personalizado da pele"
+        },
+        {
+          "name": "Escleroterapia",
+          "objective": "Tratar os microvasos das pernas"
+        },
+        {
+          "name": "PRP (Plasma Rico em Plaquetas)",
+          "objective": "Rejuvenescimento facial, regeneração, combate à queda capilar, perda de densidade capilar e melhora da qualidade dos fios"
+        },
+        {
+          "name": "Mesoterapia Facial",
+          "objective": "Hidratar e suavizar as rugas, melhorar a luminosidade e textura da pele"
+        },
+        {
+          "name": "Fios de PDO",
+          "objective": "Estimular a produção de colagénio, melhorar o contorno facial"
+        },
+        {
+          "name": "Mesoterapia / Intradermoterapia Corporal",
+          "objective": "Tratar celulite ou gordura localizada"
+        },
+        {
+          "name": "Bioestimuladores Corporais",
+          "objective": "Tratar flacidez, reafirmar e tratar celulite"
+        },
+        {
+          "name": "Preenchedores com Ácido Hialurónico Corporal",
+          "objective": "Tratar perdas de volume, definir contornos e projeção"
+        }
+      ]
     }
   },
 

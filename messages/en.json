@@ -102,24 +102,95 @@
       ]
     },
     "treatments": {
-      "homepage": [
+      "categories": {
+        "Rugas de Expressão": "Expression Lines",
+        "Rejuvenescimento Facial": "Facial Rejuvenation",
+        "Tratamentos de Pele": "Skin Treatments",
+        "Cuidados com a Pele": "Skin Care",
+        "Tratamentos Vasculares": "Vascular Treatments",
+        "Rejuvenescimento e Capilar": "Rejuvenation and Hair",
+        "Hidratação e Rejuvenescimento": "Hydration and Rejuvenation",
+        "Lifting Facial": "Facial Lifting",
+        "Tratamentos Corporais": "Body Treatments"
+      },
+      "details": {
+        "duration": "Duration",
+        "effectDuration": "Effect Duration",
+        "anesthesia": "Anesthesia",
+        "recovery": "Recovery",
+        "values": {
+          "Cerca de 15 minutos": "About 15 minutes",
+          "Cerca de 45 minutos": "About 45 minutes",
+          "Cerca de 40 minutos": "About 40 minutes",
+          "Cerca de 30 minutos": "About 30 minutes",
+          "Variável": "Variable",
+          "4 a 6 meses": "4 to 6 months",
+          "9 a 12 meses": "9 to 12 months",
+          "18 meses": "18 months",
+          "3 a 6 meses": "3 to 6 months",
+          "Definitivo": "Permanent",
+          "5 a 6 meses": "5 to 6 months",
+          "6 a 12 meses": "6 to 12 months",
+          "Não necessita": "Not required",
+          "Local": "Local",
+          "Anestesia tópica – indolor": "Topical anesthesia - painless",
+          "Não": "No",
+          "Imediata": "Immediate",
+          "0 a 15 dias (depende da profundidade)": "0 to 15 days (depends on depth)"
+        }
+      },
+      "treatments": [
         {
-          "title": "Facial Rejuvenation",
-          "description": "Specializing in non-surgical facial rejuvenation techniques to enhance your natural beauty.",
-          "imageUrl": "https://images.unsplash.com/photo-1614107151491-6876eecbff89?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "type": "Individuals"
+          "name": "Botox® - Botulinum Toxin",
+          "objective": "Prevent and treat expression lines"
         },
         {
-          "title": "Body Contouring",
-          "description": "Offering advanced body contouring solutions to help you achieve your desired shape.",
-          "imageUrl": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1596&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "type": "Individuals"
+          "name": "Hyaluronic Acid Fillers",
+          "objective": "Restore lost volume, define facial contours and prevent and treat wrinkles"
         },
         {
-          "title": "Skin Treatments",
-          "description": "Providing a range of skin treatments to address various concerns and enhance your complexion.",
-          "imageUrl": "https://images.unsplash.com/photo-1604156425963-9be03f86a428?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "type": "Individuals"
+          "name": "Collagen Biostimulators",
+          "objective": "Combat skin sagging, rejuvenate, improve texture, firmness and skin radiance"
+        },
+        {
+          "name": "Microneedling",
+          "objective": "Improve overall skin quality, treat acne scars, stretch marks and hydration"
+        },
+        {
+          "name": "Chemical Peel",
+          "objective": "Improve skin texture, tone and quality"
+        },
+        {
+          "name": "Skincare",
+          "objective": "Personalized skin care"
+        },
+        {
+          "name": "Sclerotherapy",
+          "objective": "Treat leg microvessels"
+        },
+        {
+          "name": "PRP (Platelet Rich Plasma)",
+          "objective": "Facial rejuvenation, regeneration, combat hair loss, improve hair density and quality"
+        },
+        {
+          "name": "Facial Mesotherapy",
+          "objective": "Hydrate and smooth wrinkles, improve skin radiance and texture"
+        },
+        {
+          "name": "PDO Threads",
+          "objective": "Stimulate collagen production, improve facial contour"
+        },
+        {
+          "name": "Body Mesotherapy / Intradermotherapy",
+          "objective": "Treat cellulite or localized fat"
+        },
+        {
+          "name": "Body Biostimulators",
+          "objective": "Treat sagging, firm and treat cellulite"
+        },
+        {
+          "name": "Body Hyaluronic Acid Fillers",
+          "objective": "Treat volume loss, define contours and projection"
         }
       ]
     },
