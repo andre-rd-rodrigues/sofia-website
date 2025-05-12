@@ -16,15 +16,14 @@
         "link": "View Treatments",
         "steps": [
           {
-            "title": "1º Appointment",
-            "description": "Experience the latest in skincare technology with my advanced treatments designed to rejuvenate and refresh your skin.",
-            "icon": "solar:skincare-bold"
+            "title": "Assessment Consultation",
+            "description": "In this initial consultation, the doctor reviews your medical history, evaluates facial structure and proportions, identifies signs of skin laxity or volume loss, and designs a personalized treatment plan based on your needs and goals."
           },
           {
-            "title": "Personalized Treatment",
-            "description": "Achieve a youthful appearance with my range of injectable treatments, including Botox and dermal fillers.",
-            "icon": "solar:injectables-bold"
+            "title": "Skincare Consultation",
+            "description": "The doctor assesses your skin type and condition, current skincare habits, hydration, and nutrition. Based on this evaluation, a personalized skincare routine is created with specific day and night products."
           }
+          
         ]
       },
       "hero1": {

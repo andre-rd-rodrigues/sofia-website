@@ -4,7 +4,7 @@ import * as Calendar from '@/components/Calendar';
 import Contacts from '@/components/Contacts';
 import Faqs from '@/components/Faqs';
 import HeroSection from '@/components/HeroSection/HeroSection';
-import IconCard from '@/components/IconCard/IconCard';
+import ImageCard from '@/components/ImageCard/ImageCard';
 import Section from '@/components/Section';
 import Testimonials from '@/components/Testimonials/Testimonials';
 import useTranslation from '@/hooks/useTranslation';
@@ -37,7 +37,13 @@ export default function Home() {
 
   const treatmentSteps = getTranslationsArray(
     'pages.homepage.treatments.steps',
-  );
+  ).map((step, index) => ({
+    ...step,
+    imageSrc: index === 0 
+      ? '/img/treatment_step.png'
+      : '/img/treatment_step_2.png',
+    imageAlt: step.title
+  }));
 
   return (
     <main>
@@ -111,9 +117,14 @@ export default function Home() {
           <p className="max-w-xl">{t('homepage.treatments.description')}</p>
         </Animated>
         <div className="mt-12 flex flex-wrap justify-center gap-5">
-          {treatmentSteps.map(({ title, description, icon }, i) => (
+          {treatmentSteps.map(({ title, description, imageSrc, imageAlt }, i) => (
             <Animated type="slide" delay={i * 100} key={title}>
-              <IconCard title={title} description={description} icon={icon} />
+              <ImageCard 
+                title={title} 
+                description={description} 
+                imageSrc={imageSrc} 
+                imageAlt={imageAlt} 
+              />
             </Animated>
           ))}
         </div>
