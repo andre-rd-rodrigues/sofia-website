@@ -76,6 +76,23 @@
           "href": "mailto: barbara.caiado@caiadolaw.com",
           "icon": "ic:baseline-email"
         }
+      ],
+      "info": [
+        {
+          "title": "Morada",
+          "value": "Rua Alvaro Velho, 2D, 2830-327 Azeitão",
+          "icon": "mdi:location"
+        },
+        {
+          "title": "Telefone",
+          "value": "+351 211 956 606",
+          "icon": "mingcute:phone-fill"
+        },
+        {
+          "title": "Email",
+          "value": "contact@aestheticdoctor.com",
+          "icon": "ic:baseline-email"
+        }
       ]
     }
   },

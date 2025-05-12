@@ -58,7 +58,8 @@
     },
     "contacts": {
       "subtitle": "Contacts",
-      "title": "Have Questions? Contact Me.",
+      "title": "Have questions?",
+      "sectionTitle": "I'm here to help you.",
       "description": "I am here to answer any questions you may have about my services or to help you schedule a consultation. Feel free to reach out through the following channels:",
       "links": [
         {
@@ -217,6 +218,7 @@
     "homeTitle": "Aesthetic Doctor - Enhancing Your Natural Beauty",
     "description": "I specialize in aesthetic medicine, offering a range of treatments to enhance your natural beauty and boost your confidence.",
     "treatmentsPageTitle": "Treatments - Dr. Sofia Diogo",
-    "faqsPageTitle": "FAQ's - Dr. Sofia Diogo"
+    "faqsPageTitle": "FAQ's - Dr. Sofia Diogo",
+    "contactsPageTitle": "Contacts - Dr. Sofia Diogo"
   }
 }
