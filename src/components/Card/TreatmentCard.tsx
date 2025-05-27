@@ -42,7 +42,7 @@ const TreatmentCard = ({
           <h5 className="mb-1 font-normal">Objective</h5>
           <p>{objective}</p>
         </div>
-        <div className="space-y-4 border  p-6 text-neutral-700 ">
+        <div className="space-y-4 border p-6 text-neutral-700">
           <div>
             <h5 className="font-normal">Application Time</h5>
             <p>{details.duration}</p>

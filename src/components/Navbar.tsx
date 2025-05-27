@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const burgerButton = (
     <button
-      className="text-blue block cursor-pointer rounded border border-solid border-transparent bg-transparent px-3 py-1 text-xl leading-none outline-none focus:outline-none lg:hidden"
+      className="text-blue block cursor-pointer rounded border border-solid border-transparent bg-transparent px-3 py-1 text-xl leading-none outline-none focus:outline-none md:hidden"
       type="button"
       onClick={() => setNavbarOpen((prevState) => !prevState)}
     >
@@ -37,10 +37,10 @@ const Navbar = () => {
     </button>
   );
   return (
-    <nav className="fixed top-0 z-50 w-full sm:left-4 sm:right-4 sm:top-4 sm:w-auto">
-      <div className="relative h-full bg-white bg-opacity-40 shadow-lg backdrop-blur-[20px] sm:rounded-full">
+    <nav className="fixed top-0 z-50 w-full md:left-4 md:right-4 md:top-4 md:w-auto">
+      <div className="relative h-full bg-white bg-opacity-40 shadow-lg backdrop-blur-[20px] md:rounded-full">
         <div className="flex w-full flex-wrap items-center justify-between">
-          <div className="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
+          <div className="relative flex w-full justify-between md:static md:block md:w-auto md:justify-start">
             <Link href="/">
               <Image
                 width={40}
@@ -53,17 +53,17 @@ const Navbar = () => {
           </div>
           <div
             className={
-              'w-full justify-end transition-all duration-300 lg:flex lg:w-auto' +
+              'w-full justify-end transition-all duration-300 md:flex md:w-auto' +
               (navbarOpen ? 'flex' : ' hidden')
             }
           >
-            <ul className="flex list-none flex-col lg:ml-auto lg:flex-row">
+            <ul className="flex list-none flex-col md:ml-auto md:flex-row">
               {navlinks.map(({ href, name }) => (
                 <Link
-                  className={`text-md text-blue flex items-center justify-end px-5 py-3 text-left hover:opacity-75 lg:justify-center`}
+                  className={`text-md text-blue flex items-center justify-end px-5 py-3 text-left hover:opacity-75 md:justify-center`}
                   href={href}
                   key={name}
-                  onClick={() => setNavbarOpen((prevState) => !prevState)}
+                  onClick={() => setNavbarOpen(false)}
                 >
                   <li
                     className={`${

@@ -15,7 +15,9 @@ function LanguageSelector() {
   const isMobile = useIsMobile();
 
   const checkMark = (lang: string) => (
-    <span className="ml-4">{locale === lang && `✔`}</span>
+    <span className="ml-4">
+      {locale === lang && <Icon icon="material-symbols:check" fontSize={20} />}
+    </span>
   );
 
   return (
@@ -38,13 +40,13 @@ function LanguageSelector() {
         <Popover.Panel
           className={`absolute ${
             isMobile ? 'left-0' : 'right-0'
-          } text-dark z-10 mt-2 overflow-hidden bg-white shadow-lg`}
+          } text-dark z-10 mt-2 overflow-hidden rounded-md bg-white bg-opacity-90 shadow-lg`}
         >
           <Popover.Button
             as={Link}
             href={pathname}
             locale="en"
-            className={`text-m group relative flex items-center px-9 py-4  hover:bg-gray-50 ${proximaNova.className}`}
+            className={`text-md group relative flex items-center px-9 py-4  hover:bg-gray-50 ${proximaNova.className}`}
           >
             English {checkMark('en')}
           </Popover.Button>

@@ -39,10 +39,9 @@ export default function Home() {
     'pages.homepage.treatments.steps',
   ).map((step, index) => ({
     ...step,
-    imageSrc: index === 0 
-      ? '/img/treatment_step.png'
-      : '/img/treatment_step_2.png',
-    imageAlt: step.title
+    imageSrc:
+      index === 0 ? '/img/treatment_step.png' : '/img/treatment_step_2.png',
+    imageAlt: step.title,
   }));
 
   return (
@@ -117,16 +116,18 @@ export default function Home() {
           <p className="max-w-xl">{t('homepage.treatments.description')}</p>
         </Animated>
         <div className="mt-12 flex flex-wrap justify-center gap-5">
-          {treatmentSteps.map(({ title, description, imageSrc, imageAlt }, i) => (
-            <Animated type="slide" delay={i * 100} key={title}>
-              <ImageCard 
-                title={title} 
-                description={description} 
-                imageSrc={imageSrc} 
-                imageAlt={imageAlt} 
-              />
-            </Animated>
-          ))}
+          {treatmentSteps.map(
+            ({ title, description, imageSrc, imageAlt }, i) => (
+              <Animated type="slide" delay={i * 100} key={title}>
+                <ImageCard
+                  title={title}
+                  description={description}
+                  imageSrc={imageSrc}
+                  imageAlt={imageAlt}
+                />
+              </Animated>
+            ),
+          )}
         </div>
         <Animated>
           <Button className="m-auto mt-12">

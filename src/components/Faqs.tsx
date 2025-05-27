@@ -7,7 +7,7 @@ import useTranslation from '@/hooks/useTranslation';
 import { Icon } from '@iconify/react';
 import Section from './Section';
 
-type Faqs = {
+type FaqsType = {
   answer: string;
   question: string;
 };
@@ -16,7 +16,7 @@ export default function Faqs() {
   const t = useTranslations('components.faqs');
   const { getTranslationsArray } = useTranslation();
 
-  const faqs: Faqs[] = getTranslationsArray('components.faqs.questions');
+  const faqs: FaqsType[] = getTranslationsArray('components.faqs.questions');
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
