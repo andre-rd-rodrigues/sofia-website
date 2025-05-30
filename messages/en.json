@@ -50,9 +50,13 @@
     },
     "about": {
       "title": "About Me",
-      "title2": "Your Trusted Partner in Aesthetic Medicine.",
+      "subtitle": "Your Trusted Partner in Aesthetic Medicine.",
 
-      "description": "I am committed to delivering the highest standard of aesthetic care. With a focus on innovation and excellence, I offer a comprehensive range of services to help you look and feel your best. As an experienced professional, I am here to support you every step of the way, ensuring a safe and satisfying experience."
+      "description": "I am committed to delivering the highest standard of aesthetic care. With a focus on innovation and excellence, I offer a comprehensive range of services to help you look and feel your best. As an experienced professional, I am here to support you every step of the way, ensuring a safe and satisfying experience.",
+      "heroSection1": {
+        "title": "A Personalized Approach to Aesthetic Medicine.",
+        "description": "Discover the art of aesthetic medicine with my personalized approach. I offer customized solutions to enhance your natural beauty and boost your confidence. Schedule a consultation today and explore the possibilities."
+      }
     },
     "faqs": {
       "title": "Frequently Asked Questions",

@@ -107,19 +107,20 @@ export default function Home() {
       </Section>
 
       {/* Treatments  */}
-      <Section id="practice-areas" containerClassName="bg-bgBlue text-blue">
+      <Section id="practice-areas">
         <Section.Title
           title={t('homepage.treatments.title')}
           subtitle={t('homepage.treatments.subtitle')}
         />
         <Animated>
-          <p className="max-w-xl">{t('homepage.treatments.description')}</p>
+          <p className="max-w-xl ">{t('homepage.treatments.description')}</p>
         </Animated>
         <div className="mt-12 flex flex-wrap justify-center gap-5">
           {treatmentSteps.map(
             ({ title, description, imageSrc, imageAlt }, i) => (
               <Animated type="slide" delay={i * 100} key={title}>
                 <ImageCard
+                  className="bg-white"
                   title={title}
                   description={description}
                   imageSrc={imageSrc}

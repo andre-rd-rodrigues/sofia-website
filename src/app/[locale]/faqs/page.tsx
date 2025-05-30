@@ -39,7 +39,7 @@ const FaqsPage = () => {
         <ul className="mt-8 sm:m-5">
           {faqs.map((faq, index) => (
             <Animated key={index} type="slide" delay={index * 100}>
-              <li key={index} className="text-blue bg-white p-4">
+              <li key={index} className=" bg-white p-4">
                 <button
                   onClick={() => handleToggle(index)}
                   className="flex w-full items-center justify-between"

@@ -19,11 +19,11 @@ const Testimonial: React.FC<TestimonialType> = ({
         />
       </div>
       <div className="flex flex-col px-6 text-left">
-        <p className="text-blue mb-4">{feedback}</p>
+        <p className=" mb-4">{feedback}</p>
         <div className="flex items-center">
           <Avatar imageUrl={imageUrl} alt={author} />
           <div className="ml-4">
-            <p className="text-blue font-semibold">{author}</p>
+            <p className=" font-semibold">{author}</p>
             <p className="text-zinc-400">{role}</p>
           </div>
         </div>

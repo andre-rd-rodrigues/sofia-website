@@ -24,7 +24,7 @@ function LanguageSelector() {
     <Popover className="relative mx-5 my-1 flex justify-end">
       {/* Icon Button */}
       <Popover.Button className="flex h-full items-center justify-center focus:outline-none">
-        <Icon icon="ph:globe-thin" fontSize={33} className="text-blue" />
+        <Icon icon="ph:globe-thin" fontSize={33} className="" />
       </Popover.Button>
 
       {/* Dropdown */}

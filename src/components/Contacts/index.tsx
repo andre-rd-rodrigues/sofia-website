@@ -61,7 +61,7 @@ function Contacts() {
                 fontSize={90}
               />
 
-              <p className="text-blue text-lg">{t('notifications.success')}</p>
+              <p className=" text-lg">{t('notifications.success')}</p>
             </Animated>
           ) : (
             <Animated delay={400}>

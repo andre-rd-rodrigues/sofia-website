@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         background: 'var(--color-background)',
         'background-alt': 'var(--color-background-alt)',
+        'background-light': 'var(--color-background-light)',
         foreground: 'var(--color-foreground)',
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',

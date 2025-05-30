@@ -1,4 +1,5 @@
 'use client';
+import clsx from 'clsx';
 import Image from 'next/image';
 
 type Props = {
@@ -6,11 +7,23 @@ type Props = {
   description: string;
   imageSrc: string;
   imageAlt: string;
+  className?: string;
 };
 
-const ImageCard = ({ title, description, imageSrc, imageAlt }: Props) => {
+const ImageCard = ({
+  title,
+  description,
+  imageSrc,
+  imageAlt,
+  className,
+}: Props) => {
   return (
-    <div className="flex h-full w-80 flex-col items-center  rounded-lg  shadow-lg">
+    <div
+      className={clsx(
+        'flex h-full w-80 flex-col items-center overflow-hidden rounded-lg shadow-lg',
+        className,
+      )}
+    >
       <div className="relative min-h-36 w-full">
         <Image
           src={imageSrc}

@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const burgerButton = (
     <button
-      className="text-blue block cursor-pointer rounded border border-solid border-transparent bg-transparent px-3 py-1 text-xl leading-none outline-none focus:outline-none md:hidden"
+      className=" block cursor-pointer rounded border border-solid border-transparent bg-transparent px-3 py-1 text-xl leading-none outline-none focus:outline-none md:hidden"
       type="button"
       onClick={() => setNavbarOpen((prevState) => !prevState)}
     >
@@ -60,7 +60,7 @@ const Navbar = () => {
             <ul className="flex list-none flex-col md:ml-auto md:flex-row">
               {navlinks.map(({ href, name }) => (
                 <Link
-                  className={`text-md text-blue flex items-center justify-end px-5 py-3 text-left hover:opacity-75 md:justify-center`}
+                  className={`text-md  flex items-center justify-end px-5 py-3 text-left hover:opacity-75 md:justify-center`}
                   href={href}
                   key={name}
                   onClick={() => setNavbarOpen(false)}

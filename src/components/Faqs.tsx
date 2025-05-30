@@ -32,7 +32,7 @@ export default function Faqs() {
         <ul className="mt-8 sm:m-5">
           {faqs.map((faq, index) => (
             <Animated type="slide" delay={index * 100} key={index}>
-              <li className="text-blue bg-white p-4">
+              <li className=" bg-white p-4">
                 <button
                   onClick={() => handleToggle(index)}
                   className="flex w-full items-center justify-between"
